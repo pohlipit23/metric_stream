@@ -1,0 +1,51 @@
+name = "daily-index-tracker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Environment configuration
+[env.development]
+name = "daily-index-tracker-dev"
+
+[env.staging]
+name = "daily-index-tracker-staging"
+
+[env.production]
+name = "daily-index-tracker-prod"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+# Queues
+[[queues.producers]]
+queue = "data-collection-queue"
+binding = "DATA_COLLECTION_QUEUE"
+
+[[queues.producers]]
+queue = "chart-generation-queue"
+binding = "CHART_GENERATION_QUEUE"
+
+[[queues.producers]]
+queue = "llm-analysis-queue"
+binding = "LLM_ANALYSIS_QUEUE"
+
+[[queues.producers]]
+queue = "packaging-queue"
+binding = "PACKAGING_QUEUE"
+
+[[queues.producers]]
+queue = "delivery-queue"
+binding = "DELIVERY_QUEUE"
+
+# Cron Triggers (will be configured via Admin Console)
+[[triggers.crons]]
+cron = "0 */6 * * *"  # Every 6 hours - example schedule
+globs = ["src/workers/scheduler.ts"]
+
+# Variables (non-sensitive configuration)
+[vars]
+ENVIRONMENT = "development"
+LOG_LEVEL = "info"
