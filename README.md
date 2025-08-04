@@ -1,6 +1,6 @@
 # Daily Index Tracker
 
-A hybrid crypto market monitoring system that combines the Cloudflare Developer Platform for serverless components with a hosted N8N instance for workflow automation.
+A hybrid crypto market monitoring system that combines the Cloudflare Developer Platform for serverless components with a hosted N8N instance for workflow automation
 
 ## Architecture Overview
 
