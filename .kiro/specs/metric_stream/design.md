@@ -1,3 +1,8 @@
+---
+title: "Design Document"
+type: "spec"
+---
+
 # Design Document
 
 ## Overview

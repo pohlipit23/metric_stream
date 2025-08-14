@@ -1,3 +1,8 @@
+---
+title: "Requirements Document"
+type: "spec"
+---
+
 # Requirements Document
 
 ## Introduction

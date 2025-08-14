@@ -1,3 +1,8 @@
+---
+title: "Implementation Tasks"
+type: "spec"
+---
+
 # Implementation Plan: Daily Index Tracker
 
 This document outlines the implementation tasks based on the `design.md`. The project is divided into sequential phases to ensure a logical build-out, starting with a core MVP and progressively adding features and robustness.
