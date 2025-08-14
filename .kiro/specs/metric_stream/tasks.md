@@ -14,27 +14,27 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 **Goal**: Manually prototype N8N workflows to define a stable data contract (the JSON payload structure) before Cloudflare development begins.
 
 - [ ] **Task 1.1: N8N Workflow Development (User Responsibility)**
-  - [ ] **Note**: User will independently develop prototype N8N workflows for 2-3 distinct KPI types (e.g., a simple Price KPI, a Ratio KPI, an Index KPI).
-  - [ ] User will provide webhook trigger URLs and endpoint specifications for each workflow type.
+  - [x] **Note**: User will independently develop prototype N8N workflows for 2-3 distinct KPI types (e.g., a simple Price KPI, a Ratio KPI, an Index KPI).
+  - [x] User will provide webhook trigger URLs and endpoint specifications for each workflow type.
 
-- [ ] **Task 1.2: Receive Sample Payloads from User**
-  - [ ] **Note**: User will execute their prototype workflows and provide sample JSON outputs.
-  - [ ] Receive and document the exact JSON payloads for both successful runs and error conditions from user-developed workflows.
+- [x] **Task 1.2: Receive Sample Payloads from User**
+  - [x] **Note**: User will execute their prototype workflows and provide sample JSON outputs.
+  - [x] Receive and document the exact JSON payloads for both successful runs and error conditions from user-developed workflows.
 
-- [ ] **Task 1.3: Define Finalized Data Contract**
-  - [ ] Analyze the sample payloads.
-  - [ ] Formally define and document the `KPIDataUpdate` and `KPIErrorUpdate` schemas (e.g., as TypeScript interfaces in a shared `types` directory).
-  - [ ] This contract will govern the development of the Ingestion Worker.
+- [x] **Task 1.3: Define Finalized Data Contract**
+  - [x] Analyze the sample payloads.
+  - [x] Formally define and document the `KPIDataUpdate` and `KPIErrorUpdate` schemas as Python dataclasses in a shared `schemas` module.
+  - [x] This contract will govern the development of the Ingestion Worker.
 
-- [ ] **Task 1.4: Validate Data Structures and Update Design Document**
-  - [ ] Review all JSON payloads and data structures generated from the N8N prototype workflows.
-  - [ ] Validate that the actual data structures align with the assumptions in the design document.
-  - [ ] Update the `design.md` file with the real schemas, interfaces, and data flow patterns discovered during N8N prototyping.
-  - [ ] Document any deviations from the original design and adjust the architecture accordingly.
-  - [ ] Ensure the KV store schema and key naming conventions match the actual data structures.
-  - [ ] Update the Ingestion Worker specifications in the design to reflect the finalized JSON payload formats.
-  - [ ] Define backward compatibility strategies for data structure evolution to ensure future N8N workflow changes don't break existing system components.
-  - [ ] Create versioning scheme for data contracts to handle schema migrations gracefully.
+- [x] **Task 1.4: Validate Data Structures and Update Design Document**
+  - [x] Review all JSON payloads and data structures generated from the N8N prototype workflows.
+  - [x] Validate that the actual data structures align with the assumptions in the design document.
+  - [x] Update the `design.md` file with the real schemas, interfaces, and data flow patterns discovered during N8N prototyping.
+  - [x] Document any deviations from the original design and adjust the architecture accordingly.
+  - [x] Ensure the KV store schema and key naming conventions match the actual data structures.
+  - [x] Update the Ingestion Worker specifications in the design to reflect the finalized JSON payload formats.
+  - [x] Define backward compatibility strategies for data structure evolution to ensure future N8N workflow changes don't break existing system components.
+  - [x] Create versioning scheme for data contracts to handle schema migrations gracefully.
 
 ---
 
@@ -49,7 +49,8 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 - [ ] **Task 2.2: Setup Local Development Environment**
   - [ ] Create a `docker-compose.yml` for running a local N8N instance.
-  - [ ] Install and configure Node.js, npm, and the Cloudflare Wrangler CLI.
+  - [ ] Install and configure Python 3.11+, pip, and the Cloudflare Wrangler CLI.
+  - [ ] Set up Python virtual environment and requirements.txt for dependencies.
   - [ ] Document the setup process for new developers.
 
 - [ ] **Task 2.3: Provision Cloudflare Resources**
@@ -80,21 +81,21 @@ This document outlines the implementation tasks based on the `design.md`. The pr
   - [ ] Document the integration requirements for the user's workflow.
 
 - [ ] **Task 3.2: Implement the Ingestion Worker**
-  - [ ] Create a new Cloudflare Worker.
+  - [ ] Create a new Cloudflare Worker using Python runtime.
   - [ ] Implement the `/api/kpi-data` endpoint.
   - [ ] Add logic for:
     - [ ] Request validation (shared secret/API key).
-    - [ ] Flexible JSON payload parsing.
-    - [ ] Idempotency check (prevent duplicate `timestamp` for a `kpiId`).
-    - [ ] Appending the new data point to the `timeseries:{kpiId}` key in KV.
-    - [ ] Creating/updating the `job:{traceId}` key in KV to track progress.
+    - [ ] Flexible JSON payload parsing using Python dataclasses.
+    - [ ] Idempotency check (prevent duplicate `timestamp` for a `kpi_id`).
+    - [ ] Appending the new data point to the `timeseries:{kpi_id}` key in KV.
+    - [ ] Creating/updating the `job:{trace_id}` key in KV to track progress.
 
 - [ ] **Task 3.3: Implement the Scheduler Worker**
-  - [ ] Create a new Cloudflare Worker.
+  - [ ] Create a new Cloudflare Worker using Python runtime.
   - [ ] Add logic to:
     - [ ] Be triggered by a Cron Trigger.
-    - [ ] Create a new job record in KV with a unique `traceId`.
-    - [ ] Trigger the sample N8N KPI workflow via its webhook URL.
+    - [ ] Create a new job record in KV with a unique `trace_id`.
+    - [ ] Trigger the sample N8N KPI workflow via its webhook URL using Python HTTP requests.
 
 - [ ] **Task 3.4: End-to-End Test**
   - [ ] Manually trigger the Scheduler Worker.
@@ -108,7 +109,7 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 - [ ] **Task 4.1: Scaffold Admin Console Frontend & Backend**
   - [ ] Initialize a React/Vue project for the frontend under Cloudflare Pages.
-  - [ ] Create the Admin Console Worker to serve as the API backend.
+  - [ ] Create the Admin Console Worker using Python runtime to serve as the API backend.
   - [ ] Set up Cloudflare Access for authentication.
 
 - [ ] **Task 4.2: Implement KPI Registry Management**
@@ -127,9 +128,9 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 **Goal**: Implement the fan-in mechanism and the downstream analysis, packaging, and delivery workflows.
 
 - [ ] **Task 5.1: Implement the Orchestration Worker**
-  - [ ] Create a scheduled Cloudflare Worker.
-  - [ ] Add logic to periodically poll the status of jobs (`job:{traceId}`) in KV.
-  - [ ] Implement the fan-in logic: when a job is complete or timed out, send a message with the `traceId` to the `LLM_ANALYSIS_QUEUE`.
+  - [ ] Create a scheduled Cloudflare Worker using Python runtime.
+  - [ ] Add logic to periodically poll the status of jobs (`job:{trace_id}`) in KV.
+  - [ ] Implement the fan-in logic: when a job is complete or timed out, send a message with the `trace_id` to the `LLM_ANALYSIS_QUEUE`.
 
 - [ ] **Task 5.2: N8N LLM Analysis Workflow Integration (User Provides Workflow)**
   - [ ] **Note**: User will create and provide the N8N LLM Analysis workflow.
@@ -170,8 +171,8 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 **Goal**: Add advanced features and complete the Admin Console functionality.
 
 - [ ] **Task 6.1: Implement Chart Generation**
-  - [ ] Create the optional Chart Generation Worker.
-  - [ ] Implement its API (`/api/charts/generate`).
+  - [ ] Create the optional Chart Generation Worker using Python runtime.
+  - [ ] Implement its API (`/api/charts/generate`) with Python libraries (matplotlib, plotly).
   - [ ] Integrate all three chart generation options (external service, N8N node, CF Worker) into the N8N KPI workflow structure, making it a configurable choice.
 
 - [ ] **Task 6.2: Implement Historical Data Import**
@@ -206,9 +207,10 @@ This document outlines the implementation tasks based on the `design.md`. The pr
     - [ ] Set up DDoS protection for all public-facing endpoints.
 
 - [ ] **Task 7.3: Write Tests**
-  - [ ] Write unit tests for all Cloudflare Workers (using Miniflare) and Admin Console components (using Jest/Vitest).
+  - [ ] Write unit tests for all Cloudflare Workers using Python testing frameworks (pytest, unittest).
+  - [ ] Write unit tests for Admin Console components (using Jest/Vitest for frontend).
   - [ ] Create integration tests (e.g., using Playwright) for key user flows in the Admin Console.
-  - [ ] Create end-to-end tests for the entire data pipeline.
+  - [ ] Create end-to-end tests for the entire data pipeline using Python test frameworks.
 
 - [ ] **Task 7.4: Load Testing**
   - [ ] Develop a load testing plan using a tool like Artillery.io.
@@ -224,8 +226,8 @@ This document outlines the implementation tasks based on the `design.md`. The pr
   - [ ] Set up GitHub Actions (or similar) to automatically deploy the Admin Console (Pages) and Workers on pushes to the main branch.
 
 - [ ] **Task 8.2: Implement Data Archiving**
-  - [ ] Create the scheduled Cleanup Worker to archive old time series data from KV to R2.
-  - [ ] Implement logic to prune archived data from KV.
+  - [ ] Create the scheduled Cleanup Worker using Python runtime to archive old time series data from KV to R2.
+  - [ ] Implement logic to prune archived data from KV using Python data processing libraries.
 
 - [ ] **Task 8.3: Implement Comprehensive Monitoring and Health Checks**
   - [ ] Create health check endpoints for all Cloudflare Workers (`/health`).

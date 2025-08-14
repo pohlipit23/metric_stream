@@ -177,31 +177,45 @@ sequenceDiagram
 **Note**: The Admin Console manages KPI configurations and settings, but the actual N8N workflows for each KPI must be configured separately within the N8N instance. 
 
 #### Admin Console Worker API Endpoints:
-```typescript
-// KPI Registry Management (simplified - no data source/chart configs)
-POST /api/kpis - Create new KPI registry entry (name, description, webhook URL, analysis config)
-GET /api/kpis - List all KPI registry entries
-PUT /api/kpis/:id - Update KPI registry entry
-DELETE /api/kpis/:id - Delete KPI registry entry
+```python
+# KPI Registry Management (simplified - no data source/chart configs)
+# POST /api/kpis - Create new KPI registry entry (name, description, webhook URL, analysis config)
+# GET /api/kpis - List all KPI registry entries
+# PUT /api/kpis/:id - Update KPI registry entry
+# DELETE /api/kpis/:id - Delete KPI registry entry
 
-// Workflow Management (controls N8N workflows via API)
-POST /api/workflows/:id/start - Start N8N workflow
-POST /api/workflows/:id/stop - Stop N8N workflow
-POST /api/workflows/:id/pause - Pause N8N workflow
+# Workflow Management (controls N8N workflows via API)
+# POST /api/workflows/:id/start - Start N8N workflow
+# POST /api/workflows/:id/stop - Stop N8N workflow
+# POST /api/workflows/:id/pause - Pause N8N workflow
 
-// Schedule Management
-POST /api/schedules - Create cron trigger
-PUT /api/schedules/:id - Update cron trigger
-DELETE /api/schedules/:id - Delete cron trigger
+# Schedule Management
+# POST /api/schedules - Create cron trigger
+# PUT /api/schedules/:id - Update cron trigger
+# DELETE /api/schedules/:id - Delete cron trigger
 
-// Configuration Management
-GET /api/config - Get system configuration
-PUT /api/config - Update system configuration
-PUT /api/config/retry - Update retry settings for all components
-PUT /api/config/fallback - Update fallback settings (URLs, text, disclaimers)
+# Configuration Management
+# GET /api/config - Get system configuration
+# PUT /api/config - Update system configuration
+# PUT /api/config/retry - Update retry settings for all components
+# PUT /api/config/fallback - Update fallback settings (URLs, text, disclaimers)
 
-// Historical Data Import
-POST /api/kpis/:id/import - Import historical CSV data with validation and error logging
+# Historical Data Import
+# POST /api/kpis/:id/import - Import historical CSV data with validation and error logging
+
+# Example endpoint implementation structure:
+from dataclasses import dataclass
+from typing import List, Dict, Any, Optional
+
+@dataclass
+class KPIRegistryEntry:
+    id: str
+    name: str
+    description: str
+    webhook_url: str
+    analysis_config: Dict[str, Any]
+    created_at: str
+    updated_at: str
 ```
 
 ### Ingestion Worker
@@ -238,18 +252,39 @@ POST /api/kpis/:id/import - Import historical CSV data with validation and error
 4. **Hybrid Approach**: Use appropriate method based on data size and complexity
 
 #### Ingestion Worker API Endpoints:
-```typescript
-POST /api/kpi-data - Receive successful KPI data from N8N workflows
-POST /api/kpi-error - Receive error notifications from N8N workflows
-GET /api/health - Health check endpoint for monitoring
+```python
+# POST /api/kpi-data - Receive successful KPI data from N8N workflows
+# POST /api/kpi-error - Receive error notifications from N8N workflows
+# GET /api/health - Health check endpoint for monitoring
+
+# Example endpoint handler structure:
+from dataclasses import dataclass
+from typing import Dict, Any
+
+@dataclass
+class KPIDataRequest:
+    trace_id: str
+    kpi_id: str
+    timestamp: str
+    kpi_type: str
+    data: Dict[str, Any]
+    metadata: Dict[str, Any]
 ```
 
 #### Chart Generation Worker API Endpoints:
-```typescript
-POST /api/charts/generate - Generate chart for specific KPI and time range
-GET /api/charts/:chartId - Retrieve generated chart
-POST /api/charts/batch - Generate multiple charts for a traceId
-GET /api/charts/health - Health check endpoint for monitoring
+```python
+# POST /api/charts/generate - Generate chart for specific KPI and time range
+# GET /api/charts/:chartId - Retrieve generated chart
+# POST /api/charts/batch - Generate multiple charts for a traceId
+# GET /api/charts/health - Health check endpoint for monitoring
+
+# Example chart generation request structure:
+@dataclass
+class ChartGenerationRequest:
+    kpi_id: str
+    time_range: str
+    chart_type: str
+    data_points: List[Dict[str, Any]]
 ```
 
 #### Data Processing Flow:
@@ -347,49 +382,69 @@ The N8N workflow sends data back to the Ingestion Worker via HTTP POST requests.
 3. **Ingestion Worker Configuration**: The Ingestion Worker will be configured to handle the finalized JSON payload structures
 
 **Expected Payload Elements** (subject to change based on N8N workflow outputs):
-```typescript
-// Preliminary interface - to be updated based on actual N8N workflow outputs
-interface KPIDataUpdate {
-  kpiId: string;
-  traceId: string; // Required for job status tracking
-  timestamp: string;
-  kpiType: string; // Helps determine how to parse the data structure
-  
-  // Flexible data structure - varies significantly by KPI type
-  data: any; // Could be:
-             // - Simple number for ratios (MVRV Z Score: 2.5)
-             // - Object for complex data (Price: {value: 45000, volume: 1M})
-             // - Array for multi-dimensional data
-  
-  // Optional fields that may or may not be present
-  chart?: {
-    url: string;
-    type: string;
-    timeRange: string;
-  };
-  
-  metadata?: {
-    source: string;
-    quality: string;
-    confidence: number;
-    [key: string]: any;
-  };
-  
-  // Additional fields will be defined based on N8N workflow configuration
-  [key: string]: any; // Maximum flexibility until N8N workflows are finalized
-}
+```python
+# Preliminary classes - to be updated based on actual N8N workflow outputs
+from dataclasses import dataclass
+from typing import Any, Optional, Dict
 
-// Error payload structure - also subject to N8N workflow configuration
-interface KPIErrorUpdate {
-  kpiId: string;
-  traceId: string;
-  timestamp: string;
-  error: string;
-  component?: string;
-  retryCount?: number;
-  // Additional error fields based on N8N error node configuration
-  [key: string]: any;
-}
+@dataclass
+class KPIDataUpdate:
+    kpi_id: str                # KPI identifier
+    trace_id: str              # Required for job status tracking
+    timestamp: str             # ISO 8601 timestamp
+    kpi_type: str              # Helps determine how to parse the data structure
+    data: Any                  # Flexible data structure - varies significantly by KPI type
+                              # Could be:
+                              # - Simple number for ratios (MVRV Z Score: 2.5)
+                              # - Dict for complex data (Price: {"value": 45000, "volume": 1000000})
+                              # - List for multi-dimensional data
+    chart: Optional[Dict[str, str]] = None      # Optional chart information
+    metadata: Optional[Dict[str, Any]] = None   # Optional metadata
+    additional_fields: Optional[Dict[str, Any]] = None  # Maximum flexibility
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        result = {
+            "kpiId": self.kpi_id,
+            "traceId": self.trace_id,
+            "timestamp": self.timestamp,
+            "kpiType": self.kpi_type,
+            "data": self.data
+        }
+        if self.chart:
+            result["chart"] = self.chart
+        if self.metadata:
+            result["metadata"] = self.metadata
+        if self.additional_fields:
+            result.update(self.additional_fields)
+        return result
+
+# Error payload structure - also subject to N8N workflow configuration
+@dataclass
+class KPIErrorUpdate:
+    kpi_id: str                # KPI identifier
+    trace_id: str              # Required for job status tracking
+    timestamp: str             # ISO 8601 timestamp
+    error: str                 # Error message
+    component: Optional[str] = None     # Component where error occurred
+    retry_count: Optional[int] = None   # Number of retry attempts
+    additional_fields: Optional[Dict[str, Any]] = None  # Additional error fields
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        result = {
+            "kpiId": self.kpi_id,
+            "traceId": self.trace_id,
+            "timestamp": self.timestamp,
+            "error": self.error
+        }
+        if self.component:
+            result["component"] = self.component
+        if self.retry_count is not None:
+            result["retryCount"] = self.retry_count
+        if self.additional_fields:
+            result.update(self.additional_fields)
+        return result
 ```
 
 **Flexibility Approach**:
@@ -553,36 +608,97 @@ Once the system is live, the N8N workflows will append new data points to the ex
 7. **Job Status Update**: The worker updates the overall job status in KV to track completion of the individual KPI.
 
 #### Time Series Append Mechanism
-```typescript
-// Note: The following is a conceptual illustration.
-// The final implementation of the Ingestion Worker's logic and the precise 
-// KV store schema will be determined once sample data payloads from the 
-// configured N8N workflows are available. The worker will be designed 
-// to flexibly handle various data structures based on a 'kpiType' identifier.
+```python
+# Note: The following is a conceptual illustration.
+# The final implementation of the Ingestion Worker's logic and the precise 
+# KV store schema will be determined once sample data payloads from the 
+# configured N8N workflows are available. The worker will be designed 
+# to flexibly handle various data structures based on a 'kpi_type' identifier.
 
-// Conceptual append operation (performed by Ingestion Worker)
-const appendToTimeSeries = async (kpiId: string, newData: KPIDataUpdate) => {
-  // 1. Retrieve existing time series data for the given kpiId.
-  const timeSeries = await KV.get(`timeseries:${kpiId}`, 'json') || createNewTimeSeries(kpiId);
-  
-  // 2. Perform an idempotency check to ensure the data point for the
-  //    given timestamp doesn't already exist.
-  if (isDuplicate(timeSeries, newData.timestamp)) {
-    return; // Skip update
-  }
-  
-  // 3. Parse the flexible 'newData.data' payload based on 'newData.kpiType'
-  //    to extract the relevant value and metadata. This logic will be
-  //    implemented once N8N output formats are finalized.
-  const newPoint = parseKPIData(newData); 
-  
-  // 4. Append the new, parsed data point to the time series array.
-  timeSeries.dataPoints.push(newPoint);
-  timeSeries.lastUpdated = newData.timestamp;
-  
-  // 5. Store the updated time series back into the KV store.
-  await KV.put(`timeseries:${kpiId}`, JSON.stringify(timeSeries));
-};
+import json
+from typing import Optional, Dict, Any
+from datetime import datetime
+
+async def append_to_time_series(kv_store, kpi_id: str, new_data: KPIDataUpdate) -> None:
+    """
+    Conceptual append operation (performed by Ingestion Worker)
+    """
+    # 1. Retrieve existing time series data for the given kpi_id
+    time_series_key = f"timeseries:{kpi_id}"
+    existing_data = await kv_store.get(time_series_key)
+    
+    if existing_data:
+        time_series = TimeSeriesData.from_dict(json.loads(existing_data))
+    else:
+        time_series = create_new_time_series(kpi_id)
+    
+    # 2. Perform an idempotency check to ensure the data point for the
+    #    given timestamp doesn't already exist
+    if is_duplicate(time_series, new_data.timestamp):
+        return  # Skip update
+    
+    # 3. Parse the flexible 'new_data.data' payload based on 'new_data.kpi_type'
+    #    to extract the relevant value and metadata. This logic will be
+    #    implemented once N8N output formats are finalized.
+    new_point = parse_kpi_data(new_data)
+    
+    # 4. Append the new, parsed data point to the time series array
+    time_series.data_points.append(new_point)
+    time_series.last_updated = new_data.timestamp
+    time_series.metadata.total_points += 1
+    
+    # 5. Store the updated time series back into the KV store
+    await kv_store.put(time_series_key, json.dumps(time_series.to_dict()))
+
+def create_new_time_series(kpi_id: str) -> TimeSeriesData:
+    """Create a new time series data structure"""
+    return TimeSeriesData(
+        kpi_id=kpi_id,
+        kpi_type="unknown",  # Will be updated when first data arrives
+        data_points=[],
+        last_updated=datetime.utcnow().isoformat(),
+        metadata=TimeSeriesMetadata(
+            source="n8n-workflow",
+            created=datetime.utcnow().isoformat(),
+            total_points=0
+        )
+    )
+
+def is_duplicate(time_series: TimeSeriesData, timestamp: str) -> bool:
+    """Check if timestamp already exists in time series"""
+    return any(point.timestamp == timestamp for point in time_series.data_points)
+
+def parse_kpi_data(new_data: KPIDataUpdate) -> TimeSeriesPoint:
+    """Parse KPI data based on type - to be implemented based on actual N8N outputs"""
+    # This will be implemented once N8N output formats are finalized
+    # For now, assume data contains a 'value' field
+    if isinstance(new_data.data, dict) and 'value' in new_data.data:
+        value = new_data.data['value']
+    elif isinstance(new_data.data, (int, float)):
+        value = new_data.data
+    else:
+        # Handle complex data structures based on kpi_type
+        value = extract_primary_value(new_data.data, new_data.kpi_type)
+    
+    return TimeSeriesPoint(
+        timestamp=new_data.timestamp,
+        value=value,
+        metadata=new_data.metadata
+    )
+
+def extract_primary_value(data: Any, kpi_type: str) -> float:
+    """Extract primary numeric value based on KPI type"""
+    # Implementation will depend on actual N8N workflow outputs
+    # This is a placeholder for type-specific parsing logic
+    if kpi_type == "cbbi-multi":
+        # Handle CBBI multi-KPI data structure
+        pass
+    elif kpi_type == "cmc-multi":
+        # Handle CMC multi-KPI data structure
+        pass
+    
+    # Default fallback
+    return 0.0
 ```
 
 #### Data Retrieval for Analysis
