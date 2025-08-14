@@ -4,7 +4,7 @@
 
 The Daily Index Tracker is a hybrid crypto market monitoring system that combines the Cloudflare Developer Platform for serverless components with a hosted N8N instance for workflow automation. The system follows a queue-based, event-driven architecture that ensures scalability, reliability, and modularity.
 
-The design implements a decoupled architecture where serverless components (Admin Console, Scheduler Workers, Queues, KV storage) run on Cloudflare, while workflow processing occurs on a hosted N8N instance (either N8N Cloud or self-hosted on a VPS). Each KPI has its own dedicated N8N workflow that handles both data collection and chart generation, while aggregate processes (LLM analysis, packaging, and delivery) operate as shared N8N workflows orchestrated through Cloudflare Queues.
+The design implements a decoupled architecture where serverless components (Admin Console, Scheduler Workers, Queues, KV storage) run on Cloudflare, while workflow processing occurs on a hosted N8N instance (either N8N Cloud or self-hosted on a VPS). Each KPI has its own dedicated N8N workflow that handles data collection and, for small datasets, chart generation. When a KPI requires rendering large time series data, the workflow invokes a dedicated Cloudflare Chart Generation Worker. Aggregate processes (LLM analysis, packaging, and delivery) operate as shared N8N workflows orchestrated through Cloudflare Queues.
 
 ## Architecture
 
@@ -65,6 +65,10 @@ graph TB
     KPI1 --> CS
     KPI2 --> CS
     KPIN --> CS
+    KPI1 -.Large data.-> CW
+    KPI2 -.Large data.-> CW
+    KPIN -.Large data.-> CW
+    CW --> KV
     LA --> LLM
     DL --> NC
     KPI1 --> IW
@@ -74,6 +78,11 @@ graph TB
     LA --> KV
     PK --> KV
 ```
+
+Chart generation occurs in two stages depending on dataset size:
+
+- **Small datasets**: N8N workflows generate charts directly using internal nodes or external chart services.
+- **Large datasets**: KPI workflows call the **Chart Generation Worker**, which reads the full time series from KV and returns a chart URL.
 
 ### Orchestration
 
@@ -286,7 +295,7 @@ The N8N workflows are divided into individual KPI workflows (one per KPI) and ag
 
 #### 1. Individual KPI Workflows (One per KPI)
 **Trigger**: Direct webhook trigger from Cloudflare Worker
-**Purpose**: Handle complete processing for a single KPI - data collection and optional chart generation.
+**Purpose**: Handle complete processing for a single KPI—data collection and chart generation. Charts for small datasets are generated within N8N, while large datasets trigger the Cloudflare Chart Generation Worker.
 **Output**: Sends a formatted data payload to the Ingestion Worker, which is responsible for updating the KV store and job status.
 
 **Workflow Structure**:
@@ -307,16 +316,16 @@ flowchart LR
     subgraph "Chart Generation Options"
         CG --> EXT[External Service<br/>chart-img.com]
         CG --> N8N[N8N Python Node<br/>matplotlib/plotly]
-        CG --> CF[Cloudflare Worker<br/>Chart Generation]
+        CG --> CF[Cloudflare Worker<br/>Chart Generation<br/>(large datasets)]
     end
 ```
 
 **Chart Generation Options**:
-The chart generation step within the N8N workflow is optional and configurable based on the KPI's requirements. The choice of method depends on factors like data complexity, performance needs, and cost. The N8N workflow can be configured to use one of the following methods:
+The chart generation step within the N8N workflow is optional and chosen based on dataset size and complexity. Small datasets are rendered directly within N8N, while large datasets call the Chart Generation Worker. The workflow can use one of the following methods:
 
-- **External Services (e.g., chart-img.com)**: Ideal for simple, quick chart generation with minimal configuration. The N8N workflow makes a direct API call to the service.
-- **N8N Internal Nodes (e.g., Python)**: For moderately complex visualizations where the data is already available within the workflow. Uses libraries like matplotlib or plotly.
-- **Dedicated Cloudflare Worker**: The preferred method for KPIs with large time series (e.g., historical BTC price). To generate a chart, the N8N workflow makes an authenticated API call to the `Chart Generation Worker` (`POST /api/charts/generate`), which then reads the full time series from KV storage and returns a chart URL. This approach is more efficient as it avoids transferring large datasets to N8N.
+- **External Services (small datasets, e.g., chart-img.com)**: Ideal for simple, quick chart generation with minimal configuration. The N8N workflow makes a direct API call to the service.
+- **N8N Internal Nodes (small datasets, e.g., Python)**: For moderately complex visualizations where the data is already available within the workflow. Uses libraries like matplotlib or plotly.
+- **Cloudflare Chart Generation Worker (large datasets)**: The preferred method for KPIs with large time series (e.g., historical BTC price). To generate a chart, the N8N workflow makes an authenticated API call to the `Chart Generation Worker` (`POST /api/charts/generate`), which then reads the full time series from KV storage and returns a chart URL. This approach is more efficient as it avoids transferring large datasets to N8N.
 
 **Error Handling Flow**:
 - Each processing node connects to a centralized Error Node
@@ -327,7 +336,7 @@ The chart generation step within the N8N workflow is optional and configurable b
 
 **Key Features**:
 - Each KPI has its own dedicated N8N workflow (configured manually in N8N)
-- Workflow handles data collection and optional chart generation in sequence
+- Workflow handles data collection and optional chart generation (internal for small datasets or via Chart Generation Worker for large datasets) in sequence
 - Only the latest value is queried and added to the time series in Cloudflare KV
 - Optimized for time series generation without querying entire historical data each run
 - Error handling with retry logic and direct administrator alerts on failure
