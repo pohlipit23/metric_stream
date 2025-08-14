@@ -8,12 +8,13 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Manually prototype N8N workflows to define a stable data contract (the JSON payload structure) before Cloudflare development begins.
 
-- [ ] **Task 1.1: Develop Prototype N8N Workflows**
-  - [ ] In the local N8N instance, manually build representative workflows for 2-3 distinct KPI types (e.g., a simple Price KPI, a Ratio KPI, an Index KPI) to understand data structure variations.
+- [ ] **Task 1.1: N8N Workflow Development (User Responsibility)**
+  - [ ] **Note**: User will independently develop prototype N8N workflows for 2-3 distinct KPI types (e.g., a simple Price KPI, a Ratio KPI, an Index KPI).
+  - [ ] User will provide webhook trigger URLs and endpoint specifications for each workflow type.
 
-- [ ] **Task 1.2: Generate Sample Payloads**
-  - [ ] Execute the prototype workflows.
-  - [ ] Capture and save the exact JSON output for both successful runs and simulated error conditions.
+- [ ] **Task 1.2: Receive Sample Payloads from User**
+  - [ ] **Note**: User will execute their prototype workflows and provide sample JSON outputs.
+  - [ ] Receive and document the exact JSON payloads for both successful runs and error conditions from user-developed workflows.
 
 - [ ] **Task 1.3: Define Finalized Data Contract**
   - [ ] Analyze the sample payloads.
@@ -36,17 +37,17 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Prepare the project structure, development environment, and initial cloud infrastructure.
 
-- [ ] **Task 1.1: Initialize Project Repository**
+- [ ] **Task 2.1: Initialize Project Repository**
   - [ ] Initialize a Git repository.
   - [ ] Create a standard project structure (`src`, `n8n`, `scripts`, `docs`).
   - [ ] Add `.gitignore` and basic repository configuration.
 
-- [ ] **Task 1.2: Setup Local Development Environment**
+- [ ] **Task 2.2: Setup Local Development Environment**
   - [ ] Create a `docker-compose.yml` for running a local N8N instance.
   - [ ] Install and configure Node.js, npm, and the Cloudflare Wrangler CLI.
   - [ ] Document the setup process for new developers.
 
-- [ ] **Task 1.3: Provision Cloudflare Resources**
+- [ ] **Task 2.3: Provision Cloudflare Resources**
   - [ ] Write a Wrangler script (`wrangler.toml`) to define and provision:
     - [ ] KV Namespaces (for time series, jobs, packages, config).
     - [ ] Queues (`LLM_ANALYSIS_QUEUE`, `PACKAGING_QUEUE`, `DELIVERY_QUEUE`).
@@ -54,25 +55,26 @@ This document outlines the implementation tasks based on the `design.md`. The pr
     - [ ] R2 bucket for long-term data archiving.
   - [ ] Configure Cloudflare Secrets for storing API keys and credentials.
 
-- [ ] **Task 1.4: Configure N8N Instance**
-  - [ ] Start the local N8N Docker container.
-  - [ ] Establish a secure way to manage N8N credentials for accessing Cloudflare and other external services.
+- [ ] **Task 2.4: N8N Instance Configuration Support**
+  - [ ] Provide documentation for N8N Docker container setup (user will handle actual N8N configuration).
+  - [ ] Define credential management requirements for N8N to access Cloudflare services.
+  - [ ] Document API endpoints and authentication methods that N8N workflows will need to integrate with.
 
 ---
 
-## Phase 3: Core Data Pipeline (MVP)**
+## Phase 3: Core Data Pipeline (MVP)
 
 **Goal**: Implement the simplest end-to-end "happy path" for data ingestion.
 
-- [ ] **Task 2.1: Develop a Single N8N KPI Workflow**
-  - [ ] Create a workflow for one sample KPI (e.g., BTC Price).
-  - [ ] The workflow should:
-    - [ ] Be triggered by a webhook.
-    - [ ] Fetch data from an external API.
-    - [ ] Format the data into the preliminary `KPIDataUpdate` JSON structure.
-    - [ ] Send the data to the (yet to be created) Ingestion Worker.
+- [ ] **Task 3.1: N8N KPI Workflow Integration (User Provides Workflow)**
+  - [ ] **Note**: User will create and provide a single N8N KPI workflow (e.g., BTC Price).
+  - [ ] Receive workflow specifications from user including:
+    - [ ] Webhook trigger URL and expected payload format.
+    - [ ] Expected JSON output structure for `KPIDataUpdate`.
+    - [ ] Target endpoint URL where workflow will send data (Ingestion Worker).
+  - [ ] Document the integration requirements for the user's workflow.
 
-- [ ] **Task 2.2: Implement the Ingestion Worker**
+- [ ] **Task 3.2: Implement the Ingestion Worker**
   - [ ] Create a new Cloudflare Worker.
   - [ ] Implement the `/api/kpi-data` endpoint.
   - [ ] Add logic for:
@@ -82,14 +84,14 @@ This document outlines the implementation tasks based on the `design.md`. The pr
     - [ ] Appending the new data point to the `timeseries:{kpiId}` key in KV.
     - [ ] Creating/updating the `job:{traceId}` key in KV to track progress.
 
-- [ ] **Task 2.3: Implement the Scheduler Worker**
+- [ ] **Task 3.3: Implement the Scheduler Worker**
   - [ ] Create a new Cloudflare Worker.
   - [ ] Add logic to:
     - [ ] Be triggered by a Cron Trigger.
     - [ ] Create a new job record in KV with a unique `traceId`.
     - [ ] Trigger the sample N8N KPI workflow via its webhook URL.
 
-- [ ] **Task 2.4: End-to-End Test**
+- [ ] **Task 3.4: End-to-End Test**
   - [ ] Manually trigger the Scheduler Worker.
   - [ ] Verify that the N8N workflow runs, calls the Ingestion Worker, and that data correctly appears in the KV store for both the time series and the job status.
 
@@ -99,17 +101,17 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Build the user interface for managing and monitoring the system.
 
-- [ ] **Task 3.1: Scaffold Admin Console Frontend & Backend**
+- [ ] **Task 4.1: Scaffold Admin Console Frontend & Backend**
   - [ ] Initialize a React/Vue project for the frontend under Cloudflare Pages.
   - [ ] Create the Admin Console Worker to serve as the API backend.
   - [ ] Set up Cloudflare Access for authentication.
 
-- [ ] **Task 3.2: Implement KPI Registry Management**
+- [ ] **Task 4.2: Implement KPI Registry Management**
   - [ ] Design the UI for CRUD operations on KPIs.
   - [ ] Implement the corresponding API endpoints in the Admin Console Worker (`/api/kpis`).
   - [ ] Ensure KPI configurations (name, description, webhook URL) are stored securely in KV.
 
-- [ ] **Task 3.3: Implement System Configuration Management**
+- [ ] **Task 4.3: Implement System Configuration Management**
   - [ ] Design the UI for managing system-level settings (timeouts, polling intervals).
   - [ ] Implement the `/api/config` endpoints in the Admin Console Worker.
 
@@ -119,40 +121,42 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Implement the fan-in mechanism and the downstream analysis, packaging, and delivery workflows.
 
-- [ ] **Task 4.1: Implement the Orchestration Worker**
+- [ ] **Task 5.1: Implement the Orchestration Worker**
   - [ ] Create a scheduled Cloudflare Worker.
   - [ ] Add logic to periodically poll the status of jobs (`job:{traceId}`) in KV.
   - [ ] Implement the fan-in logic: when a job is complete or timed out, send a message with the `traceId` to the `LLM_ANALYSIS_QUEUE`.
 
-- [ ] **Task 4.2: Develop N8N LLM Analysis Workflow**
-  - [ ] Create a new N8N workflow triggered by messages from `LLM_ANALYSIS_QUEUE`.
-  - [ ] The workflow should:
-    - [ ] Read all KPI data for the `traceId` from KV.
-    - [ ] Integrate with an LLM service for consolidated and individual analysis.
-    - [ ] Send analysis results back to the Ingestion Worker to update KPI packages in KV.
-    - [ ] Send a message to the `PACKAGING_QUEUE`.
+- [ ] **Task 5.2: N8N LLM Analysis Workflow Integration (User Provides Workflow)**
+  - [ ] **Note**: User will create and provide the N8N LLM Analysis workflow.
+  - [ ] Define and document the integration requirements for user's workflow:
+    - [ ] Queue message format for `LLM_ANALYSIS_QUEUE` trigger.
+    - [ ] KV data access patterns and authentication methods.
+    - [ ] Expected analysis result format for sending back to Ingestion Worker.
+    - [ ] Queue message format for triggering `PACKAGING_QUEUE`.
+  - [ ] Provide API specifications and authentication details for Cloudflare services integration.
 
-- [ ] **Task 4.3: Develop N8N Packaging Workflow**
-  - [ ] Create a new N8N workflow triggered by `PACKAGING_QUEUE`.
-  - [ ] The workflow should:
-    - [ ] Read all data for the `traceId` from KV.
-    - [ ] Generate a comprehensive document (PDF or Google Doc).
-    - [ ] Store the document in R2 and its link in KV.
-    - [ ] Format messages for each delivery channel.
-    - [ ] Store the final consolidated package in KV.
-    - [ ] Send a message to the `DELIVERY_QUEUE`.
+- [ ] **Task 5.3: N8N Packaging Workflow Integration (User Provides Workflow)**
+  - [ ] **Note**: User will create and provide the N8N Packaging workflow.
+  - [ ] Define and document the integration requirements for user's workflow:
+    - [ ] Queue message format for `PACKAGING_QUEUE` trigger.
+    - [ ] KV data access patterns for reading consolidated data.
+    - [ ] R2 storage integration specifications for document storage.
+    - [ ] Expected package format for storing in KV.
+    - [ ] Queue message format for triggering `DELIVERY_QUEUE`.
+  - [ ] Provide API specifications for Cloudflare R2 and KV integration.
 
-- [ ] **Task 4.4: Develop N8N Delivery Workflow**
-  - [ ] Create a new N8N workflow triggered by `DELIVERY_QUEUE`.
-  - [ ] The workflow should:
-    - [ ] Read the consolidated package from KV.
-    - [ ] Use N8N's notification nodes to send messages to configured channels.
-    - [ ] Update the `delivery:{traceId}` status in KV.
-  - [ ] Implement failure-handling logic for incomplete aggregate workflows:
-    - [ ] Add timeout detection for stalled aggregate workflows.
-    - [ ] Create fallback delivery mechanisms when LLM analysis or packaging fails.
-    - [ ] Implement partial delivery with disclaimers when some components are unavailable.
-    - [ ] Add orchestration recovery mechanisms to restart failed aggregate workflows.
+- [ ] **Task 5.4: N8N Delivery Workflow Integration (User Provides Workflow)**
+  - [ ] **Note**: User will create and provide the N8N Delivery workflow.
+  - [ ] Define and document the integration requirements for user's workflow:
+    - [ ] Queue message format for `DELIVERY_QUEUE` trigger.
+    - [ ] KV data access patterns for reading consolidated packages.
+    - [ ] Expected delivery status update format for KV storage.
+    - [ ] Notification channel configuration requirements.
+  - [ ] Document failure-handling requirements for user's workflow implementation:
+    - [ ] Timeout detection specifications for stalled workflows.
+    - [ ] Fallback delivery mechanism requirements.
+    - [ ] Partial delivery format with disclaimer specifications.
+    - [ ] Recovery mechanism integration points with Orchestration Worker.
 
 ---
 
@@ -160,16 +164,16 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Add advanced features and complete the Admin Console functionality.
 
-- [ ] **Task 5.1: Implement Chart Generation**
+- [ ] **Task 6.1: Implement Chart Generation**
   - [ ] Create the optional Chart Generation Worker.
   - [ ] Implement its API (`/api/charts/generate`).
   - [ ] Integrate all three chart generation options (external service, N8N node, CF Worker) into the N8N KPI workflow structure, making it a configurable choice.
 
-- [ ] **Task 5.2: Implement Historical Data Import**
+- [ ] **Task 6.2: Implement Historical Data Import**
   - [ ] Build the UI in the Admin Console for CSV file upload.
   - [ ] Implement the `/api/kpis/:id/import` endpoint in the Admin Console Worker, including validation and error logging.
 
-- [ ] **Task 5.3: Complete Admin Console Features**
+- [ ] **Task 6.3: Complete Admin Console Features**
   - [ ] Implement Schedule Management UI and APIs.
   - [ ] Implement N8N Workflow Control (Start/Stop/Pause) via the N8N REST API.
   - [ ] Implement configuration for Retries and Fallbacks.
@@ -181,11 +185,11 @@ This document outlines the implementation tasks based on the `design.md`. The pr
 
 **Goal**: Ensure the system is reliable, secure, and ready for production.
 
-- [ ] **Task 6.1: Implement Full Error Handling**
+- [ ] **Task 7.1: Implement Full Error Handling**
   - [ ] Implement all retry, fallback, and partial data handling logic as specified in the design document across all components.
   - [ ] Ensure robust error logging for easier debugging.
 
-- [ ] **Task 6.2: Security Audit and Hardening**
+- [ ] **Task 7.2: Security Audit and Hardening**
   - [ ] Review all authentication and authorization mechanisms.
   - [ ] Ensure secrets are managed securely via Cloudflare Secrets and N8N credentials manager.
   - [ ] Configure rate limiting and firewall rules for each Cloudflare Worker:
@@ -196,29 +200,29 @@ This document outlines the implementation tasks based on the `design.md`. The pr
     - [ ] Implement CORS policies for Admin Console frontend.
     - [ ] Set up DDoS protection for all public-facing endpoints.
 
-- [ ] **Task 6.3: Write Tests**
+- [ ] **Task 7.3: Write Tests**
   - [ ] Write unit tests for all Cloudflare Workers (using Miniflare) and Admin Console components (using Jest/Vitest).
   - [ ] Create integration tests (e.g., using Playwright) for key user flows in the Admin Console.
   - [ ] Create end-to-end tests for the entire data pipeline.
 
-- [ ] **Task 6.4: Load Testing**
+- [ ] **Task 7.4: Load Testing**
   - [ ] Develop a load testing plan using a tool like Artillery.io.
   - [ ] Test the system against the specified limits (200 concurrent KPIs, 5,000 delivery endpoints).
 
 ---
 
-## Phase 7: Deployment & Documentation
+## Phase 8: Deployment & Documentation
 
 **Goal**: Deploy the application to production and provide necessary documentation.
 
-- [ ] **Task 7.1: Create CI/CD Pipelines**
+- [ ] **Task 8.1: Create CI/CD Pipelines**
   - [ ] Set up GitHub Actions (or similar) to automatically deploy the Admin Console (Pages) and Workers on pushes to the main branch.
 
-- [ ] **Task 7.2: Implement Data Archiving**
+- [ ] **Task 8.2: Implement Data Archiving**
   - [ ] Create the scheduled Cleanup Worker to archive old time series data from KV to R2.
   - [ ] Implement logic to prune archived data from KV.
 
-- [ ] **Task 7.2.1: Implement Comprehensive Monitoring and Health Checks**
+- [ ] **Task 8.3: Implement Comprehensive Monitoring and Health Checks**
   - [ ] Create health check endpoints for all Cloudflare Workers (`/health`).
   - [ ] Implement monitoring dashboard in Admin Console for key metrics:
     - [ ] Queue depth monitoring for all Cloudflare Queues.
@@ -231,7 +235,7 @@ This document outlines the implementation tasks based on the `design.md`. The pr
   - [ ] Create automated health checks that validate end-to-end system functionality.
   - [ ] Implement log aggregation and analysis for troubleshooting.
 
-- [ ] **Task 7.3: Finalize Documentation**
+- [ ] **Task 8.4: Finalize Documentation**
   - [ ] Write user documentation for the Admin Console.
   - [ ] Create a runbook for operating and maintaining the system.
   - [ ] Ensure all code is well-commented where necessary.
@@ -242,12 +246,12 @@ This document outlines the implementation tasks based on the `design.md`. The pr
     - [ ] Create OpenAPI/Swagger specifications for all API endpoints.
     - [ ] Include authentication and authorization details for each endpoint.
     - [ ] Provide code examples and integration guides for future developers.
-  - [ ] Create N8N workflow documentation:
-    - [ ] Document the structure and configuration of each N8N workflow type.
-    - [ ] Provide troubleshooting guides for common N8N workflow issues.
-    - [ ] Document the data flow and dependencies between workflows.
+  - [ ] Create N8N integration documentation:
+    - [ ] Document the integration specifications and requirements for each N8N workflow type.
+    - [ ] Provide API endpoint documentation and authentication details for N8N workflows.
+    - [ ] Document the data flow and dependencies between Cloudflare components and user-provided N8N workflows.
 
-- [ ] **Task 7.4: Go-Live**
+- [ ] **Task 8.5: Go-Live**
   - [ ] Execute a final production deployment.
   - [ ] Perform a go-live checklist, including importing initial historical data.
   - [ ] Monitor the system closely during its initial run.
