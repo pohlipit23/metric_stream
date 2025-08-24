@@ -1,0 +1,175 @@
+{
+  "summary": {
+    "passed": 26,
+    "failed": 1,
+    "duration": 148,
+    "timestamp": "2025-08-20T02:23:33.133Z"
+  },
+  "details": [
+    {
+      "test": "Parser handles null payload",
+      "passed": true,
+      "details": "Correctly threw error: Payload parsing failed: Invalid request data: must be an object",
+      "timestamp": "2025-08-20T02:23:33.022Z"
+    },
+    {
+      "test": "Parser handles undefined payload",
+      "passed": true,
+      "details": "Correctly threw error: Payload parsing failed: Invalid request data: must be an object",
+      "timestamp": "2025-08-20T02:23:33.109Z"
+    },
+    {
+      "test": "Parser handles empty string payload",
+      "passed": true,
+      "details": "Correctly threw error: Payload parsing failed: Invalid request data: must be an object",
+      "timestamp": "2025-08-20T02:23:33.109Z"
+    },
+    {
+      "test": "Parser handles empty object payload",
+      "passed": true,
+      "details": "Correctly threw error: Payload parsing failed: Missing required field: traceId",
+      "timestamp": "2025-08-20T02:23:33.109Z"
+    },
+    {
+      "test": "Parser handles missing required fields",
+      "passed": true,
+      "details": "Correctly threw error: Payload parsing failed: Missing required field: timestamp",
+      "timestamp": "2025-08-20T02:23:33.110Z"
+    },
+    {
+      "test": "Idempotency KV Failure Handling",
+      "passed": false,
+      "details": "Expected error but operation succeeded",
+      "timestamp": "2025-08-20T02:23:33.112Z"
+    },
+    {
+      "test": "Trace ID Uniqueness",
+      "passed": true,
+      "details": "Generated 100 IDs, 100 unique",
+      "timestamp": "2025-08-20T02:23:33.114Z"
+    },
+    {
+      "test": "Trace ID Format Validation",
+      "passed": true,
+      "details": "All IDs are valid strings with appropriate length",
+      "timestamp": "2025-08-20T02:23:33.114Z"
+    },
+    {
+      "test": "URL Validation - Valid HTTPS URL",
+      "passed": true,
+      "details": "Expected valid=true, got valid=true, error=null",
+      "timestamp": "2025-08-20T02:23:33.118Z"
+    },
+    {
+      "test": "URL Validation - Valid HTTP URL",
+      "passed": true,
+      "details": "Expected valid=true, got valid=true, error=null",
+      "timestamp": "2025-08-20T02:23:33.118Z"
+    },
+    {
+      "test": "URL Validation - Invalid protocol",
+      "passed": true,
+      "details": "Expected valid=false, got valid=false, error=URL must use HTTP or HTTPS protocol",
+      "timestamp": "2025-08-20T02:23:33.118Z"
+    },
+    {
+      "test": "URL Validation - Invalid URL format",
+      "passed": true,
+      "details": "Expected valid=false, got valid=false, error=Invalid URL format",
+      "timestamp": "2025-08-20T02:23:33.118Z"
+    },
+    {
+      "test": "URL Validation - Empty URL",
+      "passed": true,
+      "details": "Expected valid=false, got valid=false, error=Invalid URL format",
+      "timestamp": "2025-08-20T02:23:33.118Z"
+    },
+    {
+      "test": "Config Manager - Load Configuration",
+      "passed": true,
+      "details": "Loaded config: {\"pollingFrequencyMinutes\":5,\"jobTimeoutMinutes\":30,\"enablePartialData\":true,\"maxJobsPerRun\":50,\"retryFailedJobs\":false,\"partialDataThreshold\":0.5}",
+      "timestamp": "2025-08-20T02:23:33.123Z"
+    },
+    {
+      "test": "Config Manager - Partial Data Decision (60%)",
+      "passed": true,
+      "details": "60% completion should be processed with 60% threshold",
+      "timestamp": "2025-08-20T02:23:33.123Z"
+    },
+    {
+      "test": "Config Manager - Partial Data Decision (40%)",
+      "passed": true,
+      "details": "40% completion should not be processed with 60% threshold",
+      "timestamp": "2025-08-20T02:23:33.123Z"
+    },
+    {
+      "test": "Error Message Extraction - string",
+      "passed": true,
+      "details": "Expected: \"Simple string error\", Got: \"Simple string error\"",
+      "timestamp": "2025-08-20T02:23:33.129Z"
+    },
+    {
+      "test": "Error Message Extraction - object",
+      "passed": true,
+      "details": "Expected: \"Object with message\", Got: \"Object with message\"",
+      "timestamp": "2025-08-20T02:23:33.129Z"
+    },
+    {
+      "test": "Error Message Extraction - object",
+      "passed": true,
+      "details": "Expected: \"Object with error field\", Got: \"Object with error field\"",
+      "timestamp": "2025-08-20T02:23:33.129Z"
+    },
+    {
+      "test": "Error Message Extraction - object",
+      "passed": true,
+      "details": "Expected: \"Object with description\", Got: \"Object with description\"",
+      "timestamp": "2025-08-20T02:23:33.129Z"
+    },
+    {
+      "test": "Error Message Extraction - number",
+      "passed": true,
+      "details": "Expected: \"123\", Got: \"123\"",
+      "timestamp": "2025-08-20T02:23:33.129Z"
+    },
+    {
+      "test": "File System - Non-existent File Handling",
+      "passed": true,
+      "details": "Correctly handled missing file: ENOENT",
+      "timestamp": "2025-08-20T02:23:33.131Z"
+    },
+    {
+      "test": "File System - Invalid Path Handling",
+      "passed": true,
+      "details": "Correctly handled invalid path: ENOENT",
+      "timestamp": "2025-08-20T02:23:33.132Z"
+    },
+    {
+      "test": "JSON Parsing - Invalid JSON syntax",
+      "passed": true,
+      "details": "Correctly caught parsing error: SyntaxError",
+      "timestamp": "2025-08-20T02:23:33.133Z"
+    },
+    {
+      "test": "JSON Parsing - Incomplete JSON",
+      "passed": true,
+      "details": "Correctly caught parsing error: SyntaxError",
+      "timestamp": "2025-08-20T02:23:33.133Z"
+    },
+    {
+      "test": "JSON Parsing - Invalid JSON value",
+      "passed": true,
+      "details": "Correctly caught parsing error: SyntaxError",
+      "timestamp": "2025-08-20T02:23:33.133Z"
+    },
+    {
+      "test": "JSON Parsing - Empty string",
+      "passed": true,
+      "details": "Correctly caught parsing error: SyntaxError",
+      "timestamp": "2025-08-20T02:23:33.133Z"
+    }
+  ],
+  "errors": [
+    "Idempotency KV Failure Handling: Expected error but operation succeeded"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "timestamp": "2025-08-17T10:02:40.993Z",
+  "testDuration": 30981,
+  "traceId": "verification-test-1755424930051",
+  "results": {
+    "kpiRegistry": {
+      "success": true,
+      "registry": {
+        "kpis": [
+          {
+            "id": "kpi-cmc",
+            "name": "Bitcoin Price",
+            "description": "Real-time Bitcoin price data from CoinMarketCap API",
+            "type": "price",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 50000,
+                "low": 30000
+              }
+            },
+            "metadata": {
+              "source": "coinmarketcap",
+              "category": "price",
+              "created": "2025-08-15T05:12:00.000Z"
+            }
+          },
+          {
+            "id": "kpi-cbbi",
+            "name": "CBBI Confidence",
+            "description": "CBBI Confidence indicatorI",
+            "type": "index",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 80,
+                "low": 20
+              }
+            },
+            "metadata": {
+              "source": "colintalkscrypto",
+              "category": "sentiment",
+              "created": "2025-08-15T05:12:00.000Z"
+            }
+          }
+        ],
+        "metadata": {
+          "lastUpdated": "2025-08-15T05:12:00.000Z",
+          "version": "1.0.0-production",
+          "totalKPIs": 2,
+          "activeKPIs": 2,
+          "environment": "production"
+        }
+      },
+      "activeKPIs": [
+        {
+          "id": "kpi-cmc",
+          "name": "Bitcoin Price",
+          "description": "Real-time Bitcoin price data from CoinMarketCap API",
+          "type": "price",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "analysisConfig": {
+            "chartType": "line",
+            "alertThresholds": {
+              "high": 50000,
+              "low": 30000
+            }
+          },
+          "metadata": {
+            "source": "coinmarketcap",
+            "category": "price",
+            "created": "2025-08-15T05:12:00.000Z"
+          }
+        },
+        {
+          "id": "kpi-cbbi",
+          "name": "CBBI Confidence",
+          "description": "CBBI Confidence indicatorI",
+          "type": "index",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "analysisConfig": {
+            "chartType": "line",
+            "alertThresholds": {
+              "high": 80,
+              "low": 20
+            }
+          },
+          "metadata": {
+            "source": "colintalkscrypto",
+            "category": "sentiment",
+            "created": "2025-08-15T05:12:00.000Z"
+          }
+        }
+      ]
+    },
+    "n8nConnectivity": {
+      "baseUrl": {
+        "success": true,
+        "status": 200,
+        "statusText": "OK"
+      },
+      "webhooks": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "success": true,
+          "status": 404,
+          "statusText": "Not Found"
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "success": true,
+          "status": 404,
+          "statusText": "Not Found"
+        }
+      ]
+    },
+    "workersHealth": [
+      {
+        "name": "Ingestion Worker",
+        "url": "https://ingestion-worker.pohlipit.workers.dev/api/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-17T10:02:09.120Z",
+          "service": "ingestion-worker",
+          "version": "1.0.0",
+          "environment": "development",
+          "kv_timeseries": "connected",
+          "kv_jobs": "connected",
+          "kv_packages": "connected"
+        }
+      },
+      {
+        "name": "Scheduler Worker",
+        "url": "https://scheduler-worker.pohlipit.workers.dev/api/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-17T10:02:09.780Z",
+          "worker": "scheduler-worker",
+          "version": "1.0.0",
+          "kvStores": {
+            "jobs": "connected",
+            "config": "connected"
+          },
+          "responseTime": 368
+        }
+      },
+      {
+        "name": "Orchestration Worker",
+        "url": "https://orchestration-worker.pohlipit.workers.dev/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-17T10:02:10.364Z",
+          "worker": "orchestration-worker",
+          "version": "1.0.0",
+          "kvStore": "connected",
+          "queue": "connected"
+        }
+      }
+    ],
+    "workflowTriggers": {
+      "traceId": "verification-test-1755424930051",
+      "timestamp": "2025-08-17T10:02:10.051Z",
+      "results": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "success": true,
+          "status": 200,
+          "responseTime": 175,
+          "response": {
+            "traceId": "verification-test-1755424930051",
+            "timestamp": "2025-08-15T09:42:59.999Z",
+            "kpiType": "cmc-multi",
+            "kpiIds": [
+              "cmc-btc-dominance",
+              "cmc-eth-dominance",
+              "cmc-totalmarketcap-usd",
+              "cmc-stablecoinmarketcap-usd"
+            ],
+            "data": {
+              "cmc-btc-dominance": 58.686428806496,
+              "cmc-eth-dominance": 13.85830101,
+              "cmc-totalmarketcap-usd": 4030692217471.232,
+              "cmc-stablecoinmarketcap-usd": 257190662849.79022
+            }
+          },
+          "error": null
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "success": true,
+          "status": 200,
+          "responseTime": 527,
+          "response": {
+            "myField": "value"
+          },
+          "error": null
+        }
+      ],
+      "successCount": 2
+    },
+    "dataMonitoring": {
+      "success": true,
+      "reason": "timeout",
+      "elapsed": 30045,
+      "receivedData": [],
+      "note": "Monitoring completed - check KV stores manually for data"
+    }
+  },
+  "summary": {
+    "kpiRegistryReady": true,
+    "n8nConnectivity": true,
+    "workersHealthy": 3,
+    "totalWorkers": 3,
+    "workflowsTriggered": 2,
+    "totalWorkflows": 2,
+    "monitoringCompleted": true,
+    "overallSuccess": true
+  },
+  "recommendations": [],
+  "nextSteps": [
+    "Check Cloudflare KV browser for data with trace ID: verification-test-1755424930051",
+    "Review N8N execution logs for workflow details",
+    "Check Ingestion Worker logs in Cloudflare dashboard",
+    "Verify job completion in Orchestration Worker",
+    "Test Scheduler Worker cron trigger functionality"
+  ]
+}

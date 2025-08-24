@@ -1,0 +1,21 @@
+{
+  "name": "chart-generation-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for generating charts from KPI time series data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20240129.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "wrangler": "^3.0.0"
+  }
+}

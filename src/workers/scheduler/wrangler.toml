@@ -1,0 +1,26 @@
+name = "scheduler-worker"
+main = "index.js"
+compatibility_date = "2024-08-14"
+
+# Cron triggers for scheduled job initiation
+[triggers]
+crons = ["0 22 * * *"]  # Daily at 6:00 AM GMT+8 (22:00 UTC)
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "JOBS_KV"
+id = "ba267159e4614fbb84edfc7cd902692c"
+preview_id = "f8687ea189594eb886cde37edda4264f"
+
+[[kv_namespaces]]
+binding = "CONFIG_KV"
+id = "ec1a3533310145cf8033cd84e1abd69c"
+preview_id = "2969e90d5c9c4bc0ab14caa50f7b9756"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+
+# Secrets (set via wrangler secret put)
+# N8N_API_KEY - API key for N8N webhook authentication
+# SCHEDULER_API_KEY - API key for scheduler authentication

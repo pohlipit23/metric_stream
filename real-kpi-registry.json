@@ -1,0 +1,51 @@
+{
+  "kpis": [
+    {
+      "id": "kpi-cmc",
+      "name": "Bitcoin Price",
+      "description": "Real-time Bitcoin price data from CoinMarketCap API",
+      "type": "price",
+      "active": true,
+      "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+      "analysisConfig": {
+        "chartType": "line",
+        "alertThresholds": {
+          "high": 50000,
+          "low": 30000
+        }
+      },
+      "metadata": {
+        "source": "coinmarketcap",
+        "category": "price",
+        "created": "2025-08-15T05:12:00.000Z"
+      }
+    },
+    {
+      "id": "kpi-cbbi",
+      "name": "CBBI Confidence",
+      "description": "CBBI Confidence indicatorI",
+      "type": "index",
+      "active": true,
+      "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+      "analysisConfig": {
+        "chartType": "line",
+        "alertThresholds": {
+          "high": 80,
+          "low": 20
+        }
+      },
+      "metadata": {
+        "source": "colintalkscrypto",
+        "category": "sentiment",
+        "created": "2025-08-15T05:12:00.000Z"
+      }
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-08-15T05:12:00.000Z",
+    "version": "1.0.0-production",
+    "totalKPIs": 2,
+    "activeKPIs": 2,
+    "environment": "production"
+  }
+}

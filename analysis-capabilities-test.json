@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-08-17T07:53:38.687Z",
+  "tests": {
+    "dataStructure": {
+      "name": "Data Structure Validation",
+      "passed": true,
+      "details": "All KPIs have required fields"
+    },
+    "timeContinuity": {
+      "name": "Time Series Continuity",
+      "passed": true,
+      "details": "Chronological order: OK, Gaps found: 0"
+    },
+    "statisticalAnalysis": {
+      "name": "Statistical Analysis",
+      "passed": true,
+      "details": "Successfully calculated statistics for 8 KPIs"
+    },
+    "trendDetection": {
+      "name": "Trend Detection",
+      "passed": true,
+      "details": "Trends detected in 7 KPIs"
+    },
+    "correlationAnalysis": {
+      "name": "Correlation Analysis",
+      "passed": true,
+      "details": "Successfully calculated 28 correlations"
+    }
+  },
+  "overall": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5
+  }
+}

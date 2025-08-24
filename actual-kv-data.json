@@ -1,0 +1,3570 @@
+{
+  "timeseries:cmc-btc-dominance": {
+    "kpiId": "cmc-btc-dominance",
+    "kpiType": "cmc-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 59.24058289223904,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 59.24058289223904,
+            "baseValue": 58.695449475291,
+            "variation": 0.009287490287940004,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 60.776818917134825,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.776818917134825,
+            "baseValue": 58.695449475291,
+            "variation": 0.035460490727139284,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 58.39265262110214,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 58.39265262110214,
+            "baseValue": 58.695449475291,
+            "variation": -0.005158779034758543,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 56.61496803791827,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.61496803791827,
+            "baseValue": 58.695449475291,
+            "variation": -0.035445361709829815,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 59.38123859283084,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 59.38123859283084,
+            "baseValue": 58.695449475291,
+            "variation": 0.01168385494396007,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 61.14381994296487,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 61.14381994296487,
+            "baseValue": 58.695449475291,
+            "variation": 0.04171312238957395,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 56.234084596867035,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.234084596867035,
+            "baseValue": 58.695449475291,
+            "variation": -0.041934509411332255,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 59.02830121051888,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 59.02830121051888,
+            "baseValue": 58.695449475291,
+            "variation": 0.005670826924462125,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 60.002870814408126,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.002870814408126,
+            "baseValue": 58.695449475291,
+            "variation": 0.022274662700513172,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 55.868752065681385,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 55.868752065681385,
+            "baseValue": 58.695449475291,
+            "variation": -0.04815871477054745,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 59.632560681492265,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 59.632560681492265,
+            "baseValue": 58.695449475291,
+            "variation": 0.01596565346340442,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 56.94119191415703,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.94119191415703,
+            "baseValue": 58.695449475291,
+            "variation": -0.02988745425439603,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 57.4476492092736,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 57.4476492092736,
+            "baseValue": 58.695449475291,
+            "variation": -0.02125889276208184,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 56.735460447601106,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.735460447601106,
+            "baseValue": 58.695449475291,
+            "variation": -0.033392520974134254,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 61.28839441531248,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 61.28839441531248,
+            "baseValue": 58.695449475291,
+            "variation": 0.04417625153570102,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 57.61889114140967,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 57.61889114140967,
+            "baseValue": 58.695449475291,
+            "variation": -0.018341427546858302,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 58.804637729763655,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 58.804637729763655,
+            "baseValue": 58.695449475291,
+            "variation": 0.0018602507596201967,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 58.7299724152993,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 58.7299724152993,
+            "baseValue": 58.695449475291,
+            "variation": 0.0005881706387279363,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 61.51486240279781,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 61.51486240279781,
+            "baseValue": 58.695449475291,
+            "variation": 0.048034608350579044,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 57.823979779975865,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 57.823979779975865,
+            "baseValue": 58.695449475291,
+            "variation": -0.014847312749210629,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 59.967569993449345,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 59.967569993449345,
+            "baseValue": 58.695449475291,
+            "variation": 0.021673239229454567,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 56.54517410832467,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.54517410832467,
+            "baseValue": 58.695449475291,
+            "variation": -0.03663444757964627,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 57.32143165050725,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 57.32143165050725,
+            "baseValue": 58.695449475291,
+            "variation": -0.023409273411598465,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 56.487550434647595,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 56.487550434647595,
+            "baseValue": 58.695449475291,
+            "variation": -0.03761618763261809,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 60.79509654959966,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.79509654959966,
+            "baseValue": 58.695449475291,
+            "variation": 0.03577188850376807,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 60.19660135639165,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.19660135639165,
+            "baseValue": 58.695449475291,
+            "variation": 0.025575268517751118,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 60.341420441381764,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.341420441381764,
+            "baseValue": 58.695449475291,
+            "variation": 0.028042565152919918,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 60.43199151924173,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.43199151924173,
+            "baseValue": 58.695449475291,
+            "variation": 0.029585633289711134,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 58.71116032055729,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 58.71116032055729,
+            "baseValue": 58.695449475291,
+            "variation": 0.00026766717704247435,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 55.78422925017596,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 55.78422925017596,
+            "baseValue": 58.695449475291,
+            "variation": -0.04959873808174129,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 60.283540487018094,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 60.283540487018094,
+            "baseValue": 58.695449475291,
+            "variation": 0.02705645882132033,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.547Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cmc-eth-dominance": {
+    "kpiId": "cmc-eth-dominance",
+    "kpiType": "cmc-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 14.044283560920128,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.044283560920128,
+            "baseValue": 13.7254016,
+            "variation": 0.023232978546881312,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 13.955267551708404,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.955267551708404,
+            "baseValue": 13.7254016,
+            "variation": 0.016747484584232742,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 13.165372832471952,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.165372832471952,
+            "baseValue": 13.7254016,
+            "variation": -0.04080235929330085,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 13.825312465130066,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.825312465130066,
+            "baseValue": 13.7254016,
+            "variation": 0.007279267160391578,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 13.521383721934798,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.521383721934798,
+            "baseValue": 13.7254016,
+            "variation": -0.014864255634254177,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 13.177432377512886,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.177432377512886,
+            "baseValue": 13.7254016,
+            "variation": -0.03992372962603244,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 13.76418855662288,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.76418855662288,
+            "baseValue": 13.7254016,
+            "variation": 0.002825925080609815,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 14.02578009825965,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.02578009825965,
+            "baseValue": 13.7254016,
+            "variation": 0.021884860422565013,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 13.54159425624938,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.54159425624938,
+            "baseValue": 13.7254016,
+            "variation": -0.01339176434375653,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 14.095854742452834,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.095854742452834,
+            "baseValue": 13.7254016,
+            "variation": 0.026990331740299214,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 14.144801070659119,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.144801070659119,
+            "baseValue": 13.7254016,
+            "variation": 0.030556444385504936,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 14.311161163547519,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.311161163547519,
+            "baseValue": 13.7254016,
+            "variation": 0.0426770436755394,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 14.104932316692157,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.104932316692157,
+            "baseValue": 13.7254016,
+            "variation": 0.027651702132501413,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 13.438351964022315,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.438351964022315,
+            "baseValue": 13.7254016,
+            "variation": -0.02091375133079425,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 14.123167612418452,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.123167612418452,
+            "baseValue": 13.7254016,
+            "variation": 0.028980282254069168,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 13.411292791948622,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.411292791948622,
+            "baseValue": 13.7254016,
+            "variation": -0.022885218021699096,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 13.83297197331693,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.83297197331693,
+            "baseValue": 13.7254016,
+            "variation": 0.007837320644732793,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 13.086791412397222,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.086791412397222,
+            "baseValue": 13.7254016,
+            "variation": -0.04652761399730383,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 13.360970761988476,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.360970761988476,
+            "baseValue": 13.7254016,
+            "variation": -0.026551561013087113,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 13.220859335837273,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.220859335837273,
+            "baseValue": 13.7254016,
+            "variation": -0.036759745096473305,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 13.945483410182849,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.945483410182849,
+            "baseValue": 13.7254016,
+            "variation": 0.016034635386031205,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 14.225057925831845,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.225057925831845,
+            "baseValue": 13.7254016,
+            "variation": 0.03640376729172323,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 13.663653386593666,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.663653386593666,
+            "baseValue": 13.7254016,
+            "variation": -0.004498827444607012,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 13.791633012593977,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.791633012593977,
+            "baseValue": 13.7254016,
+            "variation": 0.004825462636661615,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 13.839381821168102,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.839381821168102,
+            "baseValue": 13.7254016,
+            "variation": 0.008304326859776712,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 13.556569221908365,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.556569221908365,
+            "baseValue": 13.7254016,
+            "variation": -0.012300724088950133,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 13.167186204768736,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.167186204768736,
+            "baseValue": 13.7254016,
+            "variation": -0.04067024131601822,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 13.18586722647749,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.18586722647749,
+            "baseValue": 13.7254016,
+            "variation": -0.03930918666325287,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 14.206476390737873,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 14.206476390737873,
+            "baseValue": 13.7254016,
+            "variation": 0.0350499609962504,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 13.364377707657802,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.364377707657802,
+            "baseValue": 13.7254016,
+            "variation": -0.02630333908351348,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 13.598240840024221,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 13.598240840024221,
+            "baseValue": 13.7254016,
+            "variation": -0.009264629457237716,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.668Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cmc-totalmarketcap-usd": {
+    "kpiId": "cmc-totalmarketcap-usd",
+    "kpiType": "cmc-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 4179201451766.2837,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4179201451766.2837,
+            "baseValue": 4030693114242.873,
+            "variation": 0.036844367287264104,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 4070156985433.447,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4070156985433.447,
+            "baseValue": 4030693114242.873,
+            "variation": 0.009790839955322928,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 4008228848715.7046,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4008228848715.7046,
+            "baseValue": 4030693114242.873,
+            "variation": -0.005573300891548661,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 4001659670078.6846,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4001659670078.6846,
+            "baseValue": 4030693114242.873,
+            "variation": -0.007203089727073353,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 4194953862321.9175,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4194953862321.9175,
+            "baseValue": 4030693114242.873,
+            "variation": 0.04075248187429901,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 3912508510068.5947,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3912508510068.5947,
+            "baseValue": 4030693114242.873,
+            "variation": -0.029321161602866908,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 3959651317600.885,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3959651317600.885,
+            "baseValue": 4030693114242.873,
+            "variation": -0.017625206044825047,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 3870068013404.226,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3870068013404.226,
+            "baseValue": 4030693114242.873,
+            "variation": -0.039850491289218165,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 3866434159224.2896,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3866434159224.2896,
+            "baseValue": 4030693114242.873,
+            "variation": -0.0407520370226544,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 4205680500915.2104,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4205680500915.2104,
+            "baseValue": 4030693114242.873,
+            "variation": 0.043413721092782014,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 3990594161847.4404,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3990594161847.4404,
+            "baseValue": 4030693114242.873,
+            "variation": -0.00994840124487253,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 4228331449189.7217,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4228331449189.7217,
+            "baseValue": 4030693114242.873,
+            "variation": 0.04903333728099344,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 4065289794547.26,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4065289794547.26,
+            "baseValue": 4030693114242.873,
+            "variation": 0.008583307963123189,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 3887296238140.285,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3887296238140.285,
+            "baseValue": 4030693114242.873,
+            "variation": -0.035576232682136014,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 4027086885551.5464,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4027086885551.5464,
+            "baseValue": 4030693114242.873,
+            "variation": -0.0008946919522560437,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 4019440431293.79,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4019440431293.79,
+            "baseValue": 4030693114242.873,
+            "variation": -0.0027917488705157204,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 4077708913830.491,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4077708913830.491,
+            "baseValue": 4030693114242.873,
+            "variation": 0.011664445358413112,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 4032588978313.467,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4032588978313.467,
+            "baseValue": 4030693114242.873,
+            "variation": 0.00047035683860279236,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 4136385808991.12,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4136385808991.12,
+            "baseValue": 4030693114242.873,
+            "variation": 0.026221965243340195,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 4014257516612.2524,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4014257516612.2524,
+            "baseValue": 4030693114242.873,
+            "variation": -0.004077610764397744,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 4052875081468.4575,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4052875081468.4575,
+            "baseValue": 4030693114242.873,
+            "variation": 0.005503263730796637,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 4102362241359.3594,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4102362241359.3594,
+            "baseValue": 4030693114242.873,
+            "variation": 0.017780844406942255,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 3900911082327.4424,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3900911082327.4424,
+            "baseValue": 4030693114242.873,
+            "variation": -0.03219844037662716,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 3832849557641.9756,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3832849557641.9756,
+            "baseValue": 4030693114242.873,
+            "variation": -0.04908425201159497,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 4204629938363.226,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4204629938363.226,
+            "baseValue": 4030693114242.873,
+            "variation": 0.04315308042324764,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 4034253706884.0464,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4034253706884.0464,
+            "baseValue": 4030693114242.873,
+            "variation": 0.0008833698176107685,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 4158057279999.3354,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4158057279999.3354,
+            "baseValue": 4030693114242.873,
+            "variation": 0.0315985767575328,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 3959741864460.9844,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3959741864460.9844,
+            "baseValue": 4030693114242.873,
+            "variation": -0.017602741704937763,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 3915650906966.16,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3915650906966.16,
+            "baseValue": 4030693114242.873,
+            "variation": -0.02854154459693277,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 4061648254664.4927,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 4061648254664.4927,
+            "baseValue": 4030693114242.873,
+            "variation": 0.007679855435343464,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 3961618198791.286,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 3961618198791.286,
+            "baseValue": 4030693114242.873,
+            "variation": -0.017137230122408288,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.669Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cmc-stablecoinmarketcap-usd": {
+    "kpiId": "cmc-stablecoinmarketcap-usd",
+    "kpiType": "cmc-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 244492967434.54825,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 244492967434.54825,
+            "baseValue": 256381088524.21338,
+            "variation": -0.04636894693791885,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 260094096516.4117,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 260094096516.4117,
+            "baseValue": 256381088524.21338,
+            "variation": 0.014482378609012315,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 258005892070.5999,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 258005892070.5999,
+            "baseValue": 256381088524.21338,
+            "variation": 0.006337454746523053,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 246358030263.75543,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 246358030263.75543,
+            "baseValue": 256381088524.21338,
+            "variation": -0.03909437438678838,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 250636877647.33194,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 250636877647.33194,
+            "baseValue": 256381088524.21338,
+            "variation": -0.02240497109184765,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 257100639071.28403,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 257100639071.28403,
+            "baseValue": 256381088524.21338,
+            "variation": 0.0028065663938496854,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 251756412104.63013,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 251756412104.63013,
+            "baseValue": 256381088524.21338,
+            "variation": -0.01803828997764192,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 262018577153.98096,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 262018577153.98096,
+            "baseValue": 256381088524.21338,
+            "variation": 0.021988706976080952,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 262708915741.1844,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 262708915741.1844,
+            "baseValue": 256381088524.21338,
+            "variation": 0.024681333765276526,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 258004511708.28516,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 258004511708.28516,
+            "baseValue": 256381088524.21338,
+            "variation": 0.00633207072103712,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 250696697412.24707,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 250696697412.24707,
+            "baseValue": 256381088524.21338,
+            "variation": -0.022171647467006773,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 268035659170.45047,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 268035659170.45047,
+            "baseValue": 256381088524.21338,
+            "variation": 0.04545799658361471,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 260217831194.6909,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 260217831194.6909,
+            "baseValue": 256381088524.21338,
+            "variation": 0.014964998754637682,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 261608471920.9174,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 261608471920.9174,
+            "baseValue": 256381088524.21338,
+            "variation": 0.020389114605893967,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 252604922849.39923,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 252604922849.39923,
+            "baseValue": 256381088524.21338,
+            "variation": -0.014728721593899952,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 251103629303.39398,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 251103629303.39398,
+            "baseValue": 256381088524.21338,
+            "variation": -0.020584432538287546,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 268826751408.80453,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 268826751408.80453,
+            "baseValue": 256381088524.21338,
+            "variation": 0.04854360731609018,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 245924486194.03894,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 245924486194.03894,
+            "baseValue": 256381088524.21338,
+            "variation": -0.040785388619593445,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 266394037197.39856,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 266394037197.39856,
+            "baseValue": 256381088524.21338,
+            "variation": 0.03905494251086124,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 268331872398.58612,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 268331872398.58612,
+            "baseValue": 256381088524.21338,
+            "variation": 0.046613359601381424,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 248721874024.6928,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 248721874024.6928,
+            "baseValue": 256381088524.21338,
+            "variation": -0.02987433489579403,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 244864170382.1756,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 244864170382.1756,
+            "baseValue": 256381088524.21338,
+            "variation": -0.04492109074164452,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 244430907426.12326,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 244430907426.12326,
+            "baseValue": 256381088524.21338,
+            "variation": -0.04661100850643085,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 254991276922.8684,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 254991276922.8684,
+            "baseValue": 256381088524.21338,
+            "variation": -0.005420881896340469,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 249706211083.0554,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 249706211083.0554,
+            "baseValue": 256381088524.21338,
+            "variation": -0.02603498362371448,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 245876901785.06277,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 245876901785.06277,
+            "baseValue": 256381088524.21338,
+            "variation": -0.04097098892751812,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 260922930304.93976,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 260922930304.93976,
+            "baseValue": 256381088524.21338,
+            "variation": 0.01771519813286635,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 267998024341.47342,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 267998024341.47342,
+            "baseValue": 256381088524.21338,
+            "variation": 0.045311204052255596,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 244806799139.92847,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 244806799139.92847,
+            "baseValue": 256381088524.21338,
+            "variation": -0.04514486404168543,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 253713132371.83008,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 253713132371.83008,
+            "baseValue": 256381088524.21338,
+            "variation": -0.010406212750482681,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 254225803618.28815,
+        "metadata": {
+          "kpiType": "cmc-multi",
+          "originalData": {
+            "value": 254225803618.28815,
+            "baseValue": 256381088524.21338,
+            "variation": -0.008406567420130484,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.670Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cbbi-btc-price-usd": {
+    "kpiId": "cbbi-btc-price-usd",
+    "kpiType": "cbbi-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 114067.60766481735,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 114067.60766481735,
+            "baseValue": 118137.7888,
+            "variation": -0.034452829839850874,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 119848.15284002727,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 119848.15284002727,
+            "baseValue": 118137.7888,
+            "variation": 0.014477704868192599,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 117498.30513597603,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 117498.30513597603,
+            "baseValue": 118137.7888,
+            "variation": -0.005413032277983287,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 121223.23615014428,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 121223.23615014428,
+            "baseValue": 118137.7888,
+            "variation": 0.026117361612106718,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 113869.69187490403,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 113869.69187490403,
+            "baseValue": 118137.7888,
+            "variation": -0.03612812605051879,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 112260.6512288901,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 112260.6512288901,
+            "baseValue": 118137.7888,
+            "variation": -0.04974815959235131,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 112455.29863553394,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 112455.29863553394,
+            "baseValue": 118137.7888,
+            "variation": -0.04810052923951509,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 117844.30849902713,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 117844.30849902713,
+            "baseValue": 118137.7888,
+            "variation": -0.0024842203663530075,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 115491.6620697622,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 115491.6620697622,
+            "baseValue": 118137.7888,
+            "variation": -0.022398647859556056,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 112407.38092814577,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 112407.38092814577,
+            "baseValue": 118137.7888,
+            "variation": -0.04850613787562468,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 120747.52365301631,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 120747.52365301631,
+            "baseValue": 118137.7888,
+            "variation": 0.02209060182626621,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 118091.86481986006,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 118091.86481986006,
+            "baseValue": 118137.7888,
+            "variation": -0.00038873234894969415,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 123717.09954088303,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 123717.09954088303,
+            "baseValue": 118137.7888,
+            "variation": 0.04722714719443802,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 115329.5604569693,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 115329.5604569693,
+            "baseValue": 118137.7888,
+            "variation": -0.023770788090378626,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 117400.29344472391,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 117400.29344472391,
+            "baseValue": 118137.7888,
+            "variation": -0.006242671060354921,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 117025.43951850884,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 117025.43951850884,
+            "baseValue": 118137.7888,
+            "variation": -0.009415694104231976,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 118381.79095971788,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 118381.79095971788,
+            "baseValue": 118137.7888,
+            "variation": 0.0020654031381183826,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 122012.36572713386,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 122012.36572713386,
+            "baseValue": 118137.7888,
+            "variation": 0.0327971004577823,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 122064.1174278811,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 122064.1174278811,
+            "baseValue": 118137.7888,
+            "variation": 0.03323516266694437,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 114935.11962982913,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 114935.11962982913,
+            "baseValue": 118137.7888,
+            "variation": -0.027109608218524997,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 122103.67933132836,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 122103.67933132836,
+            "baseValue": 118137.7888,
+            "variation": 0.033570041995981195,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 120857.42318457356,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 120857.42318457356,
+            "baseValue": 118137.7888,
+            "variation": 0.023020867515793332,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 120117.49235505002,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 120117.49235505002,
+            "baseValue": 118137.7888,
+            "variation": 0.016757580915972126,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 115320.6311318236,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 115320.6311318236,
+            "baseValue": 118137.7888,
+            "variation": -0.02384637207782585,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 118332.70965995012,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 118332.70965995012,
+            "baseValue": 118137.7888,
+            "variation": 0.0016499450508603575,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 121926.08532422282,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 121926.08532422282,
+            "baseValue": 118137.7888,
+            "variation": 0.03206676341840269,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 123188.12126551077,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 123188.12126551077,
+            "baseValue": 118137.7888,
+            "variation": 0.04274950899970423,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 116766.63685079287,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 116766.63685079287,
+            "baseValue": 118137.7888,
+            "variation": -0.01160637898452961,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 118931.76861852955,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 118931.76861852955,
+            "baseValue": 118137.7888,
+            "variation": 0.00672079464661155,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 115473.18709004403,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 115473.18709004403,
+            "baseValue": 118137.7888,
+            "variation": -0.022555032873240722,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 117186.44256104605,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 117186.44256104605,
+            "baseValue": 118137.7888,
+            "variation": -0.008052852932303622,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.670Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cbbi-rhodl": {
+    "kpiId": "cbbi-rhodl",
+    "kpiType": "cbbi-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 0.7386556144671601,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7386556144671601,
+            "baseValue": 0.7583,
+            "variation": -0.025905822936621293,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 0.7279185668264841,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7279185668264841,
+            "baseValue": 0.7583,
+            "variation": -0.04006518946790958,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 0.7396199662609004,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7396199662609004,
+            "baseValue": 0.7583,
+            "variation": -0.024634094341421033,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 0.757497091396878,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.757497091396878,
+            "baseValue": 0.7583,
+            "variation": -0.0010588271173966879,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 0.7675093021432359,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7675093021432359,
+            "baseValue": 0.7583,
+            "variation": 0.012144668525960634,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 0.7695393129004195,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7695393129004195,
+            "baseValue": 0.7583,
+            "variation": 0.014821723460925208,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 0.7752508852746628,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7752508852746628,
+            "baseValue": 0.7583,
+            "variation": 0.02235379833135025,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 0.7734419643813125,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7734419643813125,
+            "baseValue": 0.7583,
+            "variation": 0.01996830328539161,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 0.7232527085349645,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7232527085349645,
+            "baseValue": 0.7583,
+            "variation": -0.04621824009631484,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 0.7754971837271432,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7754971837271432,
+            "baseValue": 0.7583,
+            "variation": 0.022678601776530628,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 0.7614967443093176,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7614967443093176,
+            "baseValue": 0.7583,
+            "variation": 0.0042156723055750914,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 0.7247168069340213,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7247168069340213,
+            "baseValue": 0.7583,
+            "variation": -0.04428747602001673,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 0.7769173946364039,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7769173946364039,
+            "baseValue": 0.7583,
+            "variation": 0.024551489695903907,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 0.7300930184634618,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7300930184634618,
+            "baseValue": 0.7583,
+            "variation": -0.03719765467036558,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 0.7288254072668386,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7288254072668386,
+            "baseValue": 0.7583,
+            "variation": -0.038869303353766815,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 0.7381439252939239,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7381439252939239,
+            "baseValue": 0.7583,
+            "variation": -0.02658060755120144,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 0.7802369467526816,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7802369467526816,
+            "baseValue": 0.7583,
+            "variation": 0.02892911348105194,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 0.7382478158480315,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7382478158480315,
+            "baseValue": 0.7583,
+            "variation": -0.026443602996134175,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 0.7907010372492093,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7907010372492093,
+            "baseValue": 0.7583,
+            "variation": 0.042728520703164,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 0.7588674753195367,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7588674753195367,
+            "baseValue": 0.7583,
+            "variation": 0.000748351997279162,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 0.7275270251455884,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7275270251455884,
+            "baseValue": 0.7583,
+            "variation": -0.040581530864316956,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 0.7489692648441573,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7489692648441573,
+            "baseValue": 0.7583,
+            "variation": -0.012304807010210618,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 0.7626200619200172,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7626200619200172,
+            "baseValue": 0.7583,
+            "variation": 0.005697035368610304,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 0.735606876416408,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.735606876416408,
+            "baseValue": 0.7583,
+            "variation": -0.02992631357456408,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 0.7248495220101224,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7248495220101224,
+            "baseValue": 0.7583,
+            "variation": -0.04411245943541804,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 0.7350608476866,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7350608476866,
+            "baseValue": 0.7583,
+            "variation": -0.030646383111433573,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 0.723073517579053,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.723073517579053,
+            "baseValue": 0.7583,
+            "variation": -0.04645454624943546,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 0.786758278210457,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.786758278210457,
+            "baseValue": 0.7583,
+            "variation": 0.037529049466513364,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 0.7879181562549425,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7879181562549425,
+            "baseValue": 0.7583,
+            "variation": 0.03905862620986755,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 0.743658976238115,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.743658976238115,
+            "baseValue": 0.7583,
+            "variation": -0.01930769321097832,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 0.7389667544864803,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7389667544864803,
+            "baseValue": 0.7583,
+            "variation": -0.02549551036993234,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.670Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cbbi-mvrv": {
+    "kpiId": "cbbi-mvrv",
+    "kpiType": "cbbi-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 0.8571348243046841,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8571348243046841,
+            "baseValue": 0.8415,
+            "variation": 0.018579708026956677,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 0.8423029490484418,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8423029490484418,
+            "baseValue": 0.8415,
+            "variation": 0.0009541878175184593,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 0.8727275084634287,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8727275084634287,
+            "baseValue": 0.8415,
+            "variation": 0.03710933863746722,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 0.8217557873684777,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8217557873684777,
+            "baseValue": 0.8415,
+            "variation": -0.02346311661499987,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 0.8647689621319533,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8647689621319533,
+            "baseValue": 0.8415,
+            "variation": 0.027651767239397843,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 0.8065769664027026,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8065769664027026,
+            "baseValue": 0.8415,
+            "variation": -0.04150093119108431,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 0.8051068072795194,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8051068072795194,
+            "baseValue": 0.8415,
+            "variation": -0.043248000856186034,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 0.8259753288011368,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8259753288011368,
+            "baseValue": 0.8415,
+            "variation": -0.018448807128773993,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 0.8408131481828585,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8408131481828585,
+            "baseValue": 0.8415,
+            "variation": -0.0008162231932757447,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 0.8224642221984,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8224642221984,
+            "baseValue": 0.8415,
+            "variation": -0.02262124515935833,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 0.8379577535146002,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8379577535146002,
+            "baseValue": 0.8415,
+            "variation": -0.004209443238740218,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 0.8126319821689217,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8126319821689217,
+            "baseValue": 0.8415,
+            "variation": -0.03430542820092488,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 0.8524951841018945,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8524951841018945,
+            "baseValue": 0.8415,
+            "variation": 0.013066172432435375,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 0.8624086580519655,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8624086580519655,
+            "baseValue": 0.8415,
+            "variation": 0.02484689013899635,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 0.8291266561129362,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8291266561129362,
+            "baseValue": 0.8415,
+            "variation": -0.014703914304294408,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 0.8300461243844537,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8300461243844537,
+            "baseValue": 0.8415,
+            "variation": -0.013611260386864377,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 0.8071303770334683,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8071303770334683,
+            "baseValue": 0.8415,
+            "variation": -0.04084328338268759,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 0.8129390881704738,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8129390881704738,
+            "baseValue": 0.8415,
+            "variation": -0.03394047751577694,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 0.8522441029772235,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8522441029772235,
+            "baseValue": 0.8415,
+            "variation": 0.0127677991410855,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 0.8334092743519275,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8334092743519275,
+            "baseValue": 0.8415,
+            "variation": -0.009614647234786267,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 0.8530829816975016,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8530829816975016,
+            "baseValue": 0.8415,
+            "variation": 0.013764684132503514,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 0.8481296657917101,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8481296657917101,
+            "baseValue": 0.8415,
+            "variation": 0.00787839072098655,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 0.8789812202070734,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8789812202070734,
+            "baseValue": 0.8415,
+            "variation": 0.04454096281292144,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 0.8299024989978993,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8299024989978993,
+            "baseValue": 0.8415,
+            "variation": -0.013781938208081757,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 0.807213464219821,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.807213464219821,
+            "baseValue": 0.8415,
+            "variation": -0.04074454638167442,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 0.8499307897495654,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8499307897495654,
+            "baseValue": 0.8415,
+            "variation": 0.01001876381410023,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 0.8202629009278217,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8202629009278217,
+            "baseValue": 0.8415,
+            "variation": -0.025237194381673624,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 0.8331001430204382,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8331001430204382,
+            "baseValue": 0.8415,
+            "variation": -0.009982004729128736,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 0.8033641175102063,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8033641175102063,
+            "baseValue": 0.8415,
+            "variation": -0.04531893344004004,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 0.8193795667653476,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8193795667653476,
+            "baseValue": 0.8415,
+            "variation": -0.02628690818140509,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 0.8012463743673277,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8012463743673277,
+            "baseValue": 0.8415,
+            "variation": -0.047835562249164965,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.670Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  },
+  "timeseries:cbbi-confidence": {
+    "kpiId": "cbbi-confidence",
+    "kpiType": "cbbi-multi",
+    "dataPoints": [
+      {
+        "timestamp": "2025-07-16T05:28:10.519Z",
+        "value": 0.8025984453239885,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8025984453239885,
+            "baseValue": 0.7893,
+            "variation": 0.016848404059278344,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-17T05:28:10.519Z",
+        "value": 0.7823574653025679,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7823574653025679,
+            "baseValue": 0.7893,
+            "variation": -0.008795812362133627,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-18T05:28:10.519Z",
+        "value": 0.8120451252238038,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8120451252238038,
+            "baseValue": 0.7893,
+            "variation": 0.02881683165311524,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-19T05:28:10.519Z",
+        "value": 0.7947866506014939,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7947866506014939,
+            "baseValue": 0.7893,
+            "variation": 0.006951286711635563,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-20T05:28:10.519Z",
+        "value": 0.760621510861813,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.760621510861813,
+            "baseValue": 0.7893,
+            "variation": -0.036334079739246315,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-21T05:28:10.519Z",
+        "value": 0.8040854316387981,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8040854316387981,
+            "baseValue": 0.7893,
+            "variation": 0.018732334522739237,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T05:28:10.519Z",
+        "value": 0.8093231715394326,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8093231715394326,
+            "baseValue": 0.7893,
+            "variation": 0.02536826496824103,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-23T05:28:10.519Z",
+        "value": 0.795781595050205,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.795781595050205,
+            "baseValue": 0.7893,
+            "variation": 0.008211826998866112,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-24T05:28:10.519Z",
+        "value": 0.8012513352714395,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8012513352714395,
+            "baseValue": 0.7893,
+            "variation": 0.015141689182110209,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-25T05:28:10.519Z",
+        "value": 0.7935057075786603,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7935057075786603,
+            "baseValue": 0.7893,
+            "variation": 0.005328401848043019,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-26T05:28:10.519Z",
+        "value": 0.813229138612292,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.813229138612292,
+            "baseValue": 0.7893,
+            "variation": 0.030316911962868256,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-27T05:28:10.519Z",
+        "value": 0.7637770983669059,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7637770983669059,
+            "baseValue": 0.7893,
+            "variation": -0.0323361226822426,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:28:10.519Z",
+        "value": 0.8285360755985649,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8285360755985649,
+            "baseValue": 0.7893,
+            "variation": 0.049709965283878034,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-29T05:28:10.519Z",
+        "value": 0.7993014924681837,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7993014924681837,
+            "baseValue": 0.7893,
+            "variation": 0.012671344822226871,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-30T05:28:10.519Z",
+        "value": 0.7588346472801614,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7588346472801614,
+            "baseValue": 0.7893,
+            "variation": -0.038597938324893805,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-31T05:28:10.519Z",
+        "value": 0.7540956285083547,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7540956285083547,
+            "baseValue": 0.7893,
+            "variation": -0.04460201633301067,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-01T05:28:10.519Z",
+        "value": 0.8181887307186513,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8181887307186513,
+            "baseValue": 0.7893,
+            "variation": 0.03660044434138004,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-02T05:28:10.519Z",
+        "value": 0.8014760691948738,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8014760691948738,
+            "baseValue": 0.7893,
+            "variation": 0.015426414791427635,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T05:28:10.519Z",
+        "value": 0.7965454325788577,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7965454325788577,
+            "baseValue": 0.7893,
+            "variation": 0.009179567438056235,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-04T05:28:10.519Z",
+        "value": 0.8136259250012148,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8136259250012148,
+            "baseValue": 0.7893,
+            "variation": 0.030819618650975336,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-05T05:28:10.519Z",
+        "value": 0.8032332681245812,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8032332681245812,
+            "baseValue": 0.7893,
+            "variation": 0.0176526898829104,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-06T05:28:10.519Z",
+        "value": 0.7555332091725105,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7555332091725105,
+            "baseValue": 0.7893,
+            "variation": -0.042780680131115516,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-07T05:28:10.519Z",
+        "value": 0.7922943353539892,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7922943353539892,
+            "baseValue": 0.7893,
+            "variation": 0.003793659386784576,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-08T05:28:10.519Z",
+        "value": 0.8221587277300124,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8221587277300124,
+            "baseValue": 0.7893,
+            "variation": 0.041630213771712235,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T05:28:10.519Z",
+        "value": 0.8170438293047271,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8170438293047271,
+            "baseValue": 0.7893,
+            "variation": 0.035149916767676585,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-10T05:28:10.519Z",
+        "value": 0.8226387791946621,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8226387791946621,
+            "baseValue": 0.7893,
+            "variation": 0.042238412764046745,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-11T05:28:10.519Z",
+        "value": 0.8044341211972367,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8044341211972367,
+            "baseValue": 0.7893,
+            "variation": 0.019174105152966848,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-12T05:28:10.519Z",
+        "value": 0.7657605084673084,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7657605084673084,
+            "baseValue": 0.7893,
+            "variation": -0.02982325038982847,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-13T05:28:10.519Z",
+        "value": 0.7923866472076185,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.7923866472076185,
+            "baseValue": 0.7893,
+            "variation": 0.003910613464612256,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-14T05:28:10.519Z",
+        "value": 0.8093365435916337,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.8093365435916337,
+            "baseValue": 0.7893,
+            "variation": 0.025385206628194212,
+            "historical": true
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-15T05:28:10.519Z",
+        "value": 0.752862427920621,
+        "metadata": {
+          "kpiType": "cbbi-multi",
+          "originalData": {
+            "value": 0.752862427920621,
+            "baseValue": 0.7893,
+            "variation": -0.0461644141383238,
+            "historical": false
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-17T07:53:38.671Z",
+    "metadata": {
+      "created": "2025-08-15T05:28:10.519Z",
+      "totalPoints": 31,
+      "source": "real-webhook-data"
+    }
+  }
+}

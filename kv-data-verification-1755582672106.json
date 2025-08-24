@@ -1,0 +1,289 @@
+{
+  "timestamp": "2025-08-19T05:51:12.106Z",
+  "testDuration": 12949,
+  "summary": {
+    "kvBindingsWorking": false,
+    "timeSeriesDataValid": true,
+    "packageCreationWorking": true,
+    "jobStatusTrackingWorking": true,
+    "idempotencyWorking": true,
+    "overallSuccess": false
+  },
+  "details": {
+    "kvBindings": {
+      "success": false,
+      "bindings": {
+        "TIMESERIES_KV": true,
+        "JOBS_KV": true,
+        "PACKAGES_KV": true
+      },
+      "tests": {
+        "TIMESERIES_KV": {
+          "put": "success",
+          "get": "success",
+          "data_matches": true
+        },
+        "JOBS_KV": {
+          "put": "success",
+          "get": "success",
+          "data_matches": true
+        },
+        "PACKAGES_KV": {
+          "put": "success",
+          "get": "success",
+          "data_matches": true
+        }
+      },
+      "details": {
+        "bindings": {
+          "TIMESERIES_KV": true,
+          "JOBS_KV": true,
+          "PACKAGES_KV": true
+        },
+        "tests": {
+          "TIMESERIES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "JOBS_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "PACKAGES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          }
+        }
+      }
+    },
+    "timeSeriesData": {
+      "success": true,
+      "analysis": {
+        "totalTimeSeries": 8,
+        "kpis": [
+          {
+            "kpiId": "cmc-btc-dominance",
+            "key": "timeseries:cmc-btc-dominance",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cmc-eth-dominance",
+            "key": "timeseries:cmc-eth-dominance",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cmc-totalmarketcap-usd",
+            "key": "timeseries:cmc-totalmarketcap-usd",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cmc-stablecoinmarketcap-usd",
+            "key": "timeseries:cmc-stablecoinmarketcap-usd",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cbbi-btc-price-usd",
+            "key": "timeseries:cbbi-btc-price-usd",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cbbi-rhodl",
+            "key": "timeseries:cbbi-rhodl",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cbbi-mvrv",
+            "key": "timeseries:cbbi-mvrv",
+            "valid": true,
+            "issues": []
+          },
+          {
+            "kpiId": "cbbi-confidence",
+            "key": "timeseries:cbbi-confidence",
+            "valid": true,
+            "issues": []
+          }
+        ],
+        "dataQuality": {
+          "validStructure": 8,
+          "hasDataPoints": 8,
+          "hasMetadata": 8,
+          "chronologicalOrder": 8
+        }
+      }
+    },
+    "packageTest": {
+      "success": true,
+      "traceId": "kv-verification-1755582659157",
+      "kpiId": "test-kpi-package",
+      "response": {
+        "success": true,
+        "processed": 1,
+        "skipped": 0,
+        "errors": 0,
+        "results": [
+          {
+            "kpi_id": "test-kpi-package",
+            "status": "processed",
+            "timestamp": "2025-08-19T05:50:59.157Z"
+          }
+        ]
+      },
+      "expectedKeys": {
+        "timeSeries": "timeseries:test-kpi-package",
+        "package": "package:kv-verification-1755582659157:test-kpi-package",
+        "job": "job:kv-verification-1755582659157",
+        "idempotency": "idempotency:test-kpi-package:2025-08-19T05:50:59.157Z"
+      }
+    },
+    "jobStatusTest": {
+      "success": true,
+      "traceId": "job-status-test-1755582661557",
+      "kpis": [
+        "test-kpi-1",
+        "test-kpi-2",
+        "test-kpi-3"
+      ],
+      "results": [
+        {
+          "kpiId": "test-kpi-1",
+          "success": true,
+          "response": {
+            "success": true,
+            "processed": 1,
+            "skipped": 0,
+            "errors": 0,
+            "results": [
+              {
+                "kpi_id": "test-kpi-1",
+                "status": "processed",
+                "timestamp": "2025-08-19T05:51:01.557Z"
+              }
+            ]
+          }
+        },
+        {
+          "kpiId": "test-kpi-2",
+          "success": true,
+          "response": {
+            "success": true,
+            "processed": 1,
+            "skipped": 0,
+            "errors": 0,
+            "results": [
+              {
+                "kpi_id": "test-kpi-2",
+                "status": "processed",
+                "timestamp": "2025-08-19T05:51:05.165Z"
+              }
+            ]
+          }
+        },
+        {
+          "kpiId": "test-kpi-3",
+          "success": true,
+          "response": {
+            "success": true,
+            "processed": 1,
+            "skipped": 0,
+            "errors": 0,
+            "results": [
+              {
+                "kpi_id": "test-kpi-3",
+                "status": "processed",
+                "timestamp": "2025-08-19T05:51:08.593Z"
+              }
+            ]
+          }
+        }
+      ],
+      "successfulKpis": 3,
+      "expectedJobKey": "job:job-status-test-1755582661557"
+    },
+    "idempotencyTest": {
+      "success": true,
+      "traceId": "idempotency-test-1755582668994",
+      "kpiId": "test-idempotency-kpi",
+      "timestamp": "2025-08-19T05:51:08.994Z",
+      "firstResponse": {
+        "success": true,
+        "processed": 1,
+        "skipped": 0,
+        "errors": 0,
+        "results": [
+          {
+            "kpi_id": "test-idempotency-kpi",
+            "status": "processed",
+            "timestamp": "2025-08-19T05:51:08.994Z"
+          }
+        ]
+      },
+      "secondResponse": {
+        "success": true,
+        "processed": 0,
+        "skipped": 1,
+        "errors": 0,
+        "results": [
+          {
+            "kpi_id": "test-idempotency-kpi",
+            "status": "skipped",
+            "reason": "duplicate_timestamp"
+          }
+        ]
+      },
+      "idempotencyWorking": true
+    }
+  },
+  "kvStoreStatus": {
+    "expectedStores": [
+      "TIMESERIES_KV",
+      "JOBS_KV",
+      "PACKAGES_KV"
+    ],
+    "boundStores": {
+      "TIMESERIES_KV": true,
+      "JOBS_KV": true,
+      "PACKAGES_KV": true
+    },
+    "keyPatterns": {
+      "timeseries": "timeseries:{kpiId}",
+      "job": "job:{traceId}",
+      "package": "package:{traceId}:{kpiId}",
+      "consolidated": "consolidated:{traceId}",
+      "idempotency": "idempotency:{kpiId}:{timestamp}"
+    }
+  },
+  "testTraceIds": {
+    "packageTest": "kv-verification-1755582659157",
+    "jobStatusTest": "job-status-test-1755582661557",
+    "idempotencyTest": "idempotency-test-1755582668994"
+  },
+  "recommendations": [
+    "Check Cloudflare KV namespace bindings in wrangler.toml",
+    "Verify KV namespaces exist in Cloudflare dashboard"
+  ],
+  "verificationSteps": [
+    "Open Cloudflare Dashboard > Workers & Pages > KV",
+    "Check the following KV namespaces exist and have data:",
+    "  - TIMESERIES_KV (time series data)",
+    "  - JOBS_KV (job status records)",
+    "  - PACKAGES_KV (KPI packages)",
+    "Look for keys matching these patterns:",
+    "  - timeseries:* (time series data)",
+    "  - job:* (job status records)",
+    "  - package:*:* (KPI packages)",
+    "  - idempotency:*:* (duplicate prevention)",
+    "Verify data structure matches expected schema",
+    "Check Ingestion Worker logs for any errors",
+    "Search for trace ID: kv-verification-1755582659157"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-08-15T05:28:40.520Z",
+  "traceId": "real-test-1755235689123",
+  "testDuration": 31397,
+  "results": {
+    "webhookTests": {
+      "timestamp": "2025-08-15T05:28:10.519Z",
+      "traceId": "real-test-1755235689123",
+      "webhookTests": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "success": true,
+          "status": 200,
+          "responseTime": 434,
+          "response": {
+            "traceId": "real-test-1755235689123",
+            "timestamp": "2025-08-15T05:25:59.999Z",
+            "kpiType": "cmc-multi",
+            "kpiIds": [
+              "cmc-btc-dominance",
+              "cmc-eth-dominance",
+              "cmc-totalmarketcap-usd",
+              "cmc-stablecoinmarketcap-usd"
+            ],
+            "data": {
+              "cmc-btc-dominance": 58.695449475291,
+              "cmc-eth-dominance": 13.7254016,
+              "cmc-totalmarketcap-usd": 4030693114242.873,
+              "cmc-stablecoinmarketcap-usd": 256381088524.21338
+            }
+          },
+          "error": null
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "success": true,
+          "status": 200,
+          "responseTime": 957,
+          "response": {
+            "traceId": "real-test-1755235689123",
+            "timestamp": "2025-08-14T00:00:00Z",
+            "kpiType": "cbbi-multi",
+            "kpiIds": [
+              "cbbi-btc-price-usd",
+              "cbbi-rhodl",
+              "cbbi-mvrv",
+              "cbbi-confidence"
+            ],
+            "data": {
+              "cbbi-btc-price-usd": 118137.7888,
+              "cbbi-rhodl": 0.7583,
+              "cbbi-mvrv": 0.8415,
+              "cbbi-confidence": 0.7893
+            }
+          },
+          "error": null
+        }
+      ]
+    },
+    "dataMonitoring": {
+      "success": true,
+      "reason": "completed",
+      "elapsed": 30000,
+      "receivedData": []
+    },
+    "kvVerification": {
+      "traceId": "real-test-1755235689123",
+      "timestamp": "2025-08-15T05:28:40.520Z",
+      "kvStoreChecks": []
+    }
+  },
+  "summary": {
+    "webhooksTriggered": 2,
+    "webhooksFailed": 0,
+    "dataFlowCompleted": true,
+    "overallSuccess": true
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "timestamp": "2025-08-17T07:53:38.676Z",
+  "kpis": {
+    "cmc-btc-dominance": {
+      "current": {
+        "value": 60.283540487018094,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": 8.065561355457715,
+          "direction": "up"
+        },
+        "weekly": {
+          "value": 6.720047201838238,
+          "direction": "up"
+        },
+        "monthly": {
+          "value": 1.76054580130691,
+          "direction": "up"
+        }
+      },
+      "volatility": {
+        "value": 4.626100726498969,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -0.8414429643420601,
+        "direction": "neutral",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 55.78422925017596,
+        "max": 61.51486240279781,
+        "average": 58.71249857871109,
+        "dataPoints": 31
+      }
+    },
+    "cmc-eth-dominance": {
+      "current": {
+        "value": 13.598240840024221,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": 1.7498991534219788,
+          "direction": "up"
+        },
+        "weekly": {
+          "value": -1.4022427394432337,
+          "direction": "down"
+        },
+        "monthly": {
+          "value": -3.1759734767608445,
+          "direction": "down"
+        }
+      },
+      "volatility": {
+        "value": 3.669369044244945,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -1.742425957025349,
+        "direction": "bearish",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 13.086791412397222,
+        "max": 14.311161163547519,
+        "average": 13.699861216581805,
+        "dataPoints": 31
+      }
+    },
+    "cmc-totalmarketcap-usd": {
+      "current": {
+        "value": 3961618198791.286,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": -2.4627946489046577,
+          "direction": "down"
+        },
+        "weekly": {
+          "value": 3.3596059332036727,
+          "direction": "up"
+        },
+        "monthly": {
+          "value": -5.2063355999036345,
+          "direction": "down"
+        }
+      },
+      "volatility": {
+        "value": 4.008966273317626,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -5.779622538352074,
+        "direction": "bearish",
+        "strength": "strong"
+      },
+      "statistics": {
+        "min": 3832849557641.9756,
+        "max": 4228331449189.7217,
+        "average": 4030068439057.2046,
+        "dataPoints": 31
+      }
+    },
+    "cmc-stablecoinmarketcap-usd": {
+      "current": {
+        "value": 254225803618.28815,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": 0.20206728822642178,
+          "direction": "up"
+        },
+        "weekly": {
+          "value": -0.3001958787836523,
+          "direction": "down"
+        },
+        "monthly": {
+          "value": 3.980824596251595,
+          "direction": "up"
+        }
+      },
+      "volatility": {
+        "value": 4.392400148788625,
+        "level": "medium"
+      },
+      "trend": {
+        "value": 1.8099640035503504,
+        "direction": "bullish",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 244430907426.12326,
+        "max": 268826751408.80453,
+        "average": 255328364843.94763,
+        "dataPoints": 31
+      }
+    },
+    "cbbi-btc-price-usd": {
+      "current": {
+        "value": 117186.44256104605,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": 1.4836825016928405,
+          "direction": "up"
+        },
+        "weekly": {
+          "value": 1.6179337651123595,
+          "direction": "up"
+        },
+        "monthly": {
+          "value": 2.7341985687937433,
+          "direction": "up"
+        }
+      },
+      "volatility": {
+        "value": 3.669051197880655,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -0.9686815270250113,
+        "direction": "neutral",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 112260.6512288901,
+        "max": 123717.09954088303,
+        "average": 117963.73056705236,
+        "dataPoints": 31
+      }
+    },
+    "cbbi-rhodl": {
+      "current": {
+        "value": 0.7389667544864803,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": -0.6309641786845493,
+          "direction": "down"
+        },
+        "weekly": {
+          "value": 0.4567491384039727,
+          "direction": "up"
+        },
+        "monthly": {
+          "value": 0.04212247402257207,
+          "direction": "up"
+        }
+      },
+      "volatility": {
+        "value": 4.1223715760316155,
+        "level": "medium"
+      },
+      "trend": {
+        "value": 1.9476087170766918,
+        "direction": "bullish",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 0.723073517579053,
+        "max": 0.7907010372492093,
+        "average": 0.7513367241541462,
+        "dataPoints": 31
+      }
+    },
+    "cbbi-mvrv": {
+      "current": {
+        "value": 0.8012463743673277,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": -2.2130393694834307,
+          "direction": "down"
+        },
+        "weekly": {
+          "value": -3.4529507580918954,
+          "direction": "down"
+        },
+        "monthly": {
+          "value": -6.520380266044337,
+          "direction": "down"
+        }
+      },
+      "volatility": {
+        "value": 3.410875247018593,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -0.7392208030450191,
+        "direction": "neutral",
+        "strength": "weak"
+      },
+      "statistics": {
+        "min": 0.8012463743673277,
+        "max": 0.8789812202070734,
+        "average": 0.8333744976872316,
+        "dataPoints": 31
+      }
+    },
+    "cbbi-confidence": {
+      "current": {
+        "value": 0.752862427920621,
+        "timestamp": "2025-08-15T05:28:10.519Z"
+      },
+      "changes": {
+        "daily": {
+          "value": -6.977828459393994,
+          "direction": "down"
+        },
+        "weekly": {
+          "value": -8.428579235632412,
+          "direction": "down"
+        },
+        "monthly": {
+          "value": -6.196874376362686,
+          "direction": "down"
+        }
+      },
+      "volatility": {
+        "value": 4.020550558735921,
+        "level": "medium"
+      },
+      "trend": {
+        "value": -7.855319272005519,
+        "direction": "bearish",
+        "strength": "strong"
+      },
+      "statistics": {
+        "min": 0.752862427920621,
+        "max": 0.8285360755985649,
+        "average": 0.7948919056124247,
+        "dataPoints": 31
+      }
+    }
+  },
+  "marketInsights": {
+    "marketCap": "Total market cap is declining, suggesting market contraction",
+    "mvrv": "MVRV is low, potentially indicating undervaluation"
+  },
+  "recommendations": [
+    "2 KPIs showing strong trends - consider trend-following strategies",
+    "Majority of KPIs are bearish - overall negative market sentiment"
+  ]
+}

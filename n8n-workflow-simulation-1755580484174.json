@@ -1,0 +1,231 @@
+{
+  "timestamp": "2025-08-19T05:14:44.174Z",
+  "testType": "n8n-workflow-simulation",
+  "testDuration": 13435,
+  "traceId": "workflow-simulation-1755580470739",
+  "configuration": {
+    "ingestionWorkerUrl": "https://ingestion-worker.pohlipit.workers.dev",
+    "apiKeyConfigured": true,
+    "workflowsSimulated": 2
+  },
+  "results": {
+    "simulationResults": {
+      "traceId": "workflow-simulation-1755580470739",
+      "timestamp": "2025-08-19T05:14:30.739Z",
+      "triggerResults": [
+        {
+          "kpiId": "kpi-cmc",
+          "schedulerPayload": {
+            "traceId": "workflow-simulation-1755580470739",
+            "kpiId": "kpi-cmc",
+            "timestamp": "2025-08-19T05:14:30.739Z",
+            "kpiType": "price",
+            "metadata": {
+              "schedulerWorker": "workflow-simulation-test",
+              "environment": "test",
+              "source": "simulation"
+            }
+          },
+          "workflowResponse": {
+            "traceId": "workflow-simulation-1755580470739",
+            "timestamp": "2025-08-19T05:14:30.739Z",
+            "kpiType": "cmc-multi",
+            "kpiIds": [
+              "cmc-btc-dominance",
+              "cmc-eth-dominance",
+              "cmc-totalmarketcap-usd",
+              "cmc-stablecoinmarketcap-usd"
+            ],
+            "data": {
+              "cmc-btc-dominance": 58.686428806496,
+              "cmc-eth-dominance": 13.85830101,
+              "cmc-totalmarketcap-usd": 4030692217471.232,
+              "cmc-stablecoinmarketcap-usd": 257190662849.79022
+            }
+          },
+          "success": true
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "schedulerPayload": {
+            "traceId": "workflow-simulation-1755580470739",
+            "kpiId": "kpi-cbbi",
+            "timestamp": "2025-08-19T05:14:30.739Z",
+            "kpiType": "index",
+            "metadata": {
+              "schedulerWorker": "workflow-simulation-test",
+              "environment": "test",
+              "source": "simulation"
+            }
+          },
+          "workflowResponse": {
+            "traceId": "workflow-simulation-1755580470739",
+            "timestamp": "2025-08-19T05:14:30.739Z",
+            "kpiType": "index",
+            "data": {
+              "value": 75.5,
+              "confidence": "high",
+              "source": "colintalkscrypto"
+            },
+            "chart": {
+              "url": "https://example.com/charts/kpi-cbbi-1755580470778.png",
+              "type": "line",
+              "generated": true
+            }
+          },
+          "success": true
+        }
+      ]
+    },
+    "ingestionResults": [
+      {
+        "originalKpiId": "kpi-cmc",
+        "targetKpiId": "cmc-btc-dominance",
+        "success": true,
+        "status": 200,
+        "responseTime": 2252,
+        "responseData": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-btc-dominance",
+              "status": "processed",
+              "timestamp": "2025-08-19T05:14:30.739Z"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "originalKpiId": "kpi-cmc",
+        "targetKpiId": "cmc-eth-dominance",
+        "success": true,
+        "status": 200,
+        "responseTime": 2099,
+        "responseData": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-eth-dominance",
+              "status": "processed",
+              "timestamp": "2025-08-19T05:14:30.739Z"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "originalKpiId": "kpi-cmc",
+        "targetKpiId": "cmc-totalmarketcap-usd",
+        "success": true,
+        "status": 200,
+        "responseTime": 2451,
+        "responseData": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-totalmarketcap-usd",
+              "status": "processed",
+              "timestamp": "2025-08-19T05:14:30.739Z"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "originalKpiId": "kpi-cmc",
+        "targetKpiId": "cmc-stablecoinmarketcap-usd",
+        "success": true,
+        "status": 200,
+        "responseTime": 2141,
+        "responseData": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-stablecoinmarketcap-usd",
+              "status": "processed",
+              "timestamp": "2025-08-19T05:14:30.739Z"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "originalKpiId": "kpi-cbbi",
+        "targetKpiId": "kpi-cbbi",
+        "success": true,
+        "status": 200,
+        "responseTime": 1906,
+        "responseData": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "kpi-cbbi",
+              "status": "processed",
+              "timestamp": "2025-08-19T05:14:30.739Z"
+            }
+          ]
+        },
+        "error": null
+      }
+    ],
+    "kvVerification": {
+      "success": true,
+      "kvData": {
+        "bindings": {
+          "TIMESERIES_KV": true,
+          "JOBS_KV": true,
+          "PACKAGES_KV": true
+        },
+        "tests": {
+          "TIMESERIES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "JOBS_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "PACKAGES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "workflowsSimulated": 2,
+    "ingestionSuccessful": 5,
+    "totalIngestionAttempts": 5,
+    "kvStorageWorking": true,
+    "uniqueKPIsProcessed": 5,
+    "overallSuccess": true
+  },
+  "insights": [
+    "Multi-KPI workflow detected: 5 KPIs processed from 2 workflows",
+    "All simulated N8N workflow data was successfully ingested"
+  ],
+  "recommendations": [
+    "Simulation successful - N8N workflows should use the same authentication and payload format",
+    "Fix N8N workflow header configuration to resolve the \"x-api-key\" token error"
+  ]
+}

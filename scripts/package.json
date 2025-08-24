@@ -1,0 +1,10 @@
+{
+  "name": "metric-stream-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utility scripts for Daily Index Tracker",
+  "scripts": {
+    "init-config": "node initialize-config.js",
+    "start-dev": "./start-dev-with-data.sh"
+  }
+}

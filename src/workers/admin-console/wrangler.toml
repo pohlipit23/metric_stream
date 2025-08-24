@@ -1,0 +1,28 @@
+name = "admin-console-worker"
+main = "index.js"
+compatibility_date = "2024-08-17"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+N8N_BASE_URL = "http://localhost:5678"
+
+# Secrets (set via wrangler secret put)
+# CLOUDFLARE_ACCESS_JWT_SECRET
+# N8N_API_KEY
+# ADMIN_API_KEY
+
+# Routes for custom domain (optional)
+# routes = [
+#   { pattern = "admin.yourdomain.com/api/*", zone_name = "yourdomain.com" }
+# ]
+
+# Cron triggers (if needed for maintenance tasks)
+# [[triggers]]
+# cron = "0 2 * * *"  # Daily at 2 AM for cleanup tasks

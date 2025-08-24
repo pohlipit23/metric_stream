@@ -1,0 +1,27 @@
+name = "ingestion-worker"
+main = "index.js"
+compatibility_date = "2024-08-14"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "TIMESERIES_KV"
+id = "134812605b5b435eab23b4a72d8b7ced"
+preview_id = "695488b5895646f190511fe25cf90e7b"
+
+[[kv_namespaces]]
+binding = "JOBS_KV"
+id = "ba267159e4614fbb84edfc7cd902692c"
+preview_id = "f8687ea189594eb886cde37edda4264f"
+
+[[kv_namespaces]]
+binding = "PACKAGES_KV"
+id = "935d01fc21f0462fad041b2adfc0d17a"
+preview_id = "825902cc80ad425eacf4aefc25c723dc"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+
+# Secrets (set via wrangler secret put)
+# INGESTION_API_KEY - API key for authentication
+# N8N_WEBHOOK_SECRET - Shared secret for N8N webhook validation

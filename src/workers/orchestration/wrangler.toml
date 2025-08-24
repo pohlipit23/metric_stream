@@ -1,0 +1,27 @@
+name = "orchestration-worker"
+main = "index.js"
+compatibility_date = "2024-08-15"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "ba267159e4614fbb84edfc7cd902692c"
+preview_id = "f8687ea189594eb886cde37edda4264f"
+
+# Queues
+[[queues.producers]]
+queue = "llm-analysis-queue"
+binding = "LLM_ANALYSIS_QUEUE"
+
+# Cron triggers for periodic job monitoring
+[triggers]
+crons = ["*/5 * * * *"]  # Run every 5 minutes - configurable
+
+# Environment variables
+[vars]
+POLLING_FREQUENCY_MINUTES = "5"
+JOB_TIMEOUT_MINUTES = "30"
+ENABLE_PARTIAL_DATA = "true"
+
+# Secrets (set via wrangler secret put)
+# ORCHESTRATION_API_KEY - for internal authentication

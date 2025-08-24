@@ -1,0 +1,169 @@
+{
+  "timestamp": "2025-08-17T10:42:35.176Z",
+  "testDuration": 4606,
+  "traceId": "complete-test-1755427350570",
+  "configuration": {
+    "n8nWebhooks": {
+      "kpi-cmc": "http://localhost:5678/webhook/kpi-cmc",
+      "kpi-cbbi": "http://localhost:5678/webhook/kpi-cbbi"
+    },
+    "ingestionWorkerUrl": "https://ingestion-worker.pohlipit.workers.dev",
+    "apiKeyConfigured": true
+  },
+  "results": {
+    "workflowResults": {
+      "traceId": "complete-test-1755427350570",
+      "timestamp": "2025-08-17T10:42:30.570Z",
+      "workflowResponses": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "triggerPayload": {
+            "traceId": "complete-test-1755427350570",
+            "kpiId": "kpi-cmc",
+            "timestamp": "2025-08-17T10:42:30.570Z",
+            "kpiType": "price",
+            "metadata": {
+              "schedulerWorker": "complete-test",
+              "environment": "test",
+              "source": "complete-flow-test"
+            }
+          },
+          "success": true,
+          "status": 200,
+          "responseTime": 380,
+          "responseData": {
+            "traceId": "complete-test-1755427350570",
+            "timestamp": "2025-08-15T09:42:59.999Z",
+            "kpiType": "cmc-multi",
+            "kpiIds": [
+              "cmc-btc-dominance",
+              "cmc-eth-dominance",
+              "cmc-totalmarketcap-usd",
+              "cmc-stablecoinmarketcap-usd"
+            ],
+            "data": {
+              "cmc-btc-dominance": 58.686428806496,
+              "cmc-eth-dominance": 13.85830101,
+              "cmc-totalmarketcap-usd": 4030692217471.232,
+              "cmc-stablecoinmarketcap-usd": 257190662849.79022
+            }
+          },
+          "error": null
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "triggerPayload": {
+            "traceId": "complete-test-1755427350570",
+            "kpiId": "kpi-cbbi",
+            "timestamp": "2025-08-17T10:42:30.570Z",
+            "kpiType": "index",
+            "metadata": {
+              "schedulerWorker": "complete-test",
+              "environment": "test",
+              "source": "complete-flow-test"
+            }
+          },
+          "success": true,
+          "status": 200,
+          "responseTime": 533,
+          "responseData": {
+            "myField": "value"
+          },
+          "error": null
+        }
+      ]
+    },
+    "ingestionResults": [
+      {
+        "kpiId": "kpi-cmc",
+        "success": false,
+        "status": 401,
+        "responseTime": 103,
+        "responseData": {
+          "error": "Invalid API key"
+        },
+        "error": "HTTP 401: Unauthorized"
+      },
+      {
+        "kpiId": "kpi-cbbi",
+        "success": false,
+        "status": 401,
+        "responseTime": 60,
+        "responseData": {
+          "error": "Invalid API key"
+        },
+        "error": "HTTP 401: Unauthorized"
+      }
+    ],
+    "kvVerification": {
+      "kvBindings": {
+        "bindings": {
+          "TIMESERIES_KV": true,
+          "JOBS_KV": true,
+          "PACKAGES_KV": true
+        },
+        "tests": {
+          "TIMESERIES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "JOBS_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          },
+          "PACKAGES_KV": {
+            "put": "success",
+            "get": "success",
+            "data_matches": true
+          }
+        }
+      },
+      "debugKPI": {
+        "step1_parsing": {
+          "success": true,
+          "kpiCount": 1
+        },
+        "step2_idempotency": {
+          "success": true,
+          "isDuplicate": false
+        },
+        "step3_timeseries": {
+          "success": true,
+          "key": "timeseries:debug-test-kpi",
+          "stored": true,
+          "dataPoints": 1
+        },
+        "step4_package": {
+          "success": true,
+          "key": "package:complete-test-1755427350570:debug-test-kpi",
+          "stored": true
+        },
+        "step5_job": {
+          "success": true,
+          "key": "job:complete-test-1755427350570",
+          "stored": true
+        },
+        "errors": []
+      }
+    }
+  },
+  "summary": {
+    "workflowsTriggered": 2,
+    "totalWorkflows": 2,
+    "ingestionSuccessful": 0,
+    "totalIngestionAttempts": 2,
+    "kvOperationsWorking": 3,
+    "overallSuccess": false
+  },
+  "issues": [
+    "No data successfully ingested"
+  ],
+  "recommendations": [
+    "Check Ingestion Worker API key configuration",
+    "Verify Ingestion Worker endpoints are accessible"
+  ]
+}

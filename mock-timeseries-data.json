@@ -1,0 +1,5278 @@
+{
+  "timeseries:cmc-btc-dominance": {
+    "kpiId": "cmc-btc-dominance",
+    "kpiType": "percentage",
+    "dataPoints": [
+      {
+        "timestamp": "2024-01-01T00:00:00.000Z",
+        "value": 60.5322970203497,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.5322970203497,
+            "generated": true,
+            "iteration": 0
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-06T22:04:48.000Z",
+        "value": 57.1552360770299,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.1552360770299,
+            "generated": true,
+            "iteration": 1
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-12T20:09:36.000Z",
+        "value": 60.407155784069786,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.407155784069786,
+            "generated": true,
+            "iteration": 2
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-18T18:14:24.000Z",
+        "value": 58.8607541203499,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 58.8607541203499,
+            "generated": true,
+            "iteration": 3
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-24T16:19:12.000Z",
+        "value": 61.489441961029605,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.489441961029605,
+            "generated": true,
+            "iteration": 4
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-30T14:24:00.000Z",
+        "value": 56.455345510070316,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 56.455345510070316,
+            "generated": true,
+            "iteration": 5
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-05T12:28:48.000Z",
+        "value": 57.45105104829405,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.45105104829405,
+            "generated": true,
+            "iteration": 6
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-11T10:33:36.000Z",
+        "value": 57.88583582485904,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.88583582485904,
+            "generated": true,
+            "iteration": 7
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-17T08:38:24.000Z",
+        "value": 60.8782709276214,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.8782709276214,
+            "generated": true,
+            "iteration": 8
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-23T06:43:12.000Z",
+        "value": 60.359344112801764,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.359344112801764,
+            "generated": true,
+            "iteration": 9
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-29T04:48:00.000Z",
+        "value": 57.45481534744825,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.45481534744825,
+            "generated": true,
+            "iteration": 10
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-06T02:52:48.000Z",
+        "value": 61.45952867015173,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.45952867015173,
+            "generated": true,
+            "iteration": 11
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-12T00:57:36.000Z",
+        "value": 59.45919189518331,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.45919189518331,
+            "generated": true,
+            "iteration": 12
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-17T23:02:24.000Z",
+        "value": 59.12252741894088,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.12252741894088,
+            "generated": true,
+            "iteration": 13
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-23T21:07:12.000Z",
+        "value": 61.76712470509891,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.76712470509891,
+            "generated": true,
+            "iteration": 14
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-29T19:12:00.000Z",
+        "value": 61.85829902016699,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.85829902016699,
+            "generated": true,
+            "iteration": 15
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-04T17:16:48.000Z",
+        "value": 61.25507561912709,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.25507561912709,
+            "generated": true,
+            "iteration": 16
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-10T15:21:36.000Z",
+        "value": 61.304831662599966,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.304831662599966,
+            "generated": true,
+            "iteration": 17
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-16T13:26:24.000Z",
+        "value": 56.82864776691234,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 56.82864776691234,
+            "generated": true,
+            "iteration": 18
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-22T11:31:12.000Z",
+        "value": 57.750835259425365,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.750835259425365,
+            "generated": true,
+            "iteration": 19
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-28T09:36:00.000Z",
+        "value": 57.671312449254025,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.671312449254025,
+            "generated": true,
+            "iteration": 20
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-04T07:40:48.000Z",
+        "value": 57.28146816965689,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.28146816965689,
+            "generated": true,
+            "iteration": 21
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-10T05:45:36.000Z",
+        "value": 57.21730077654546,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 57.21730077654546,
+            "generated": true,
+            "iteration": 22
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-16T03:50:24.000Z",
+        "value": 61.66367379905364,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.66367379905364,
+            "generated": true,
+            "iteration": 23
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-22T01:55:12.000Z",
+        "value": 58.17191802942035,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 58.17191802942035,
+            "generated": true,
+            "iteration": 24
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-28T00:00:00.000Z",
+        "value": 62.22069937786406,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.22069937786406,
+            "generated": true,
+            "iteration": 25
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-02T22:04:48.000Z",
+        "value": 62.0749355520979,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.0749355520979,
+            "generated": true,
+            "iteration": 26
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-08T20:09:36.000Z",
+        "value": 60.90358312456332,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.90358312456332,
+            "generated": true,
+            "iteration": 27
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-14T18:14:24.000Z",
+        "value": 63.278837340245445,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.278837340245445,
+            "generated": true,
+            "iteration": 28
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-20T16:19:12.000Z",
+        "value": 60.279930632133855,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.279930632133855,
+            "generated": true,
+            "iteration": 29
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-26T14:24:00.000Z",
+        "value": 60.8115813329937,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.8115813329937,
+            "generated": true,
+            "iteration": 30
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-02T12:28:48.000Z",
+        "value": 62.845174291230165,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.845174291230165,
+            "generated": true,
+            "iteration": 31
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-08T10:33:36.000Z",
+        "value": 63.26383970843684,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.26383970843684,
+            "generated": true,
+            "iteration": 32
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-14T08:38:24.000Z",
+        "value": 58.24169049959822,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 58.24169049959822,
+            "generated": true,
+            "iteration": 33
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-20T06:43:12.000Z",
+        "value": 61.32531275312802,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.32531275312802,
+            "generated": true,
+            "iteration": 34
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-26T04:48:00.000Z",
+        "value": 59.88356227978477,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.88356227978477,
+            "generated": true,
+            "iteration": 35
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-01T02:52:48.000Z",
+        "value": 63.10204623283309,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.10204623283309,
+            "generated": true,
+            "iteration": 36
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-07T00:57:36.000Z",
+        "value": 58.37439222765354,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 58.37439222765354,
+            "generated": true,
+            "iteration": 37
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-12T23:02:24.000Z",
+        "value": 59.97333956850093,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.97333956850093,
+            "generated": true,
+            "iteration": 38
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-18T21:07:12.000Z",
+        "value": 63.040430873607285,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.040430873607285,
+            "generated": true,
+            "iteration": 39
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-24T19:12:00.000Z",
+        "value": 59.643675362849976,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.643675362849976,
+            "generated": true,
+            "iteration": 40
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-30T17:16:48.000Z",
+        "value": 63.543364627907216,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.543364627907216,
+            "generated": true,
+            "iteration": 41
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-05T15:21:36.000Z",
+        "value": 60.136933355486725,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.136933355486725,
+            "generated": true,
+            "iteration": 42
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-11T13:26:24.000Z",
+        "value": 62.69682618698232,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.69682618698232,
+            "generated": true,
+            "iteration": 43
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-17T11:31:12.000Z",
+        "value": 62.84791367352041,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.84791367352041,
+            "generated": true,
+            "iteration": 44
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-23T09:36:00.000Z",
+        "value": 63.27169525602456,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.27169525602456,
+            "generated": true,
+            "iteration": 45
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-29T07:40:48.000Z",
+        "value": 60.987192881720716,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.987192881720716,
+            "generated": true,
+            "iteration": 46
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-05T05:45:36.000Z",
+        "value": 60.21346930557386,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.21346930557386,
+            "generated": true,
+            "iteration": 47
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-11T03:50:24.000Z",
+        "value": 60.75868424396332,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.75868424396332,
+            "generated": true,
+            "iteration": 48
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-17T01:55:12.000Z",
+        "value": 61.59271160919967,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.59271160919967,
+            "generated": true,
+            "iteration": 49
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-23T00:00:00.000Z",
+        "value": 59.54835740247903,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.54835740247903,
+            "generated": true,
+            "iteration": 50
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-28T22:04:48.000Z",
+        "value": 60.6374143904526,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.6374143904526,
+            "generated": true,
+            "iteration": 51
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-03T20:09:36.000Z",
+        "value": 63.546463450434096,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.546463450434096,
+            "generated": true,
+            "iteration": 52
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-09T18:14:24.000Z",
+        "value": 61.02017353901285,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.02017353901285,
+            "generated": true,
+            "iteration": 53
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-15T16:19:12.000Z",
+        "value": 62.802456484846346,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.802456484846346,
+            "generated": true,
+            "iteration": 54
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-21T14:24:00.000Z",
+        "value": 60.5412206948193,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.5412206948193,
+            "generated": true,
+            "iteration": 55
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-27T12:28:48.000Z",
+        "value": 61.10257033398469,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.10257033398469,
+            "generated": true,
+            "iteration": 56
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-03T10:33:36.000Z",
+        "value": 60.39990102357672,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.39990102357672,
+            "generated": true,
+            "iteration": 57
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-09T08:38:24.000Z",
+        "value": 61.60860863728409,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.60860863728409,
+            "generated": true,
+            "iteration": 58
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-15T06:43:12.000Z",
+        "value": 63.6220270115603,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.6220270115603,
+            "generated": true,
+            "iteration": 59
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-21T04:48:00.000Z",
+        "value": 61.081284307690076,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.081284307690076,
+            "generated": true,
+            "iteration": 60
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-27T02:52:48.000Z",
+        "value": 60.62989028882574,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.62989028882574,
+            "generated": true,
+            "iteration": 61
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-02T00:57:36.000Z",
+        "value": 62.12792205448979,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.12792205448979,
+            "generated": true,
+            "iteration": 62
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-07T23:02:24.000Z",
+        "value": 62.803762567735376,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.803762567735376,
+            "generated": true,
+            "iteration": 63
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-13T21:07:12.000Z",
+        "value": 59.46134332674505,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 59.46134332674505,
+            "generated": true,
+            "iteration": 64
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-19T19:12:00.000Z",
+        "value": 65.06482558591735,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.06482558591735,
+            "generated": true,
+            "iteration": 65
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-25T17:16:48.000Z",
+        "value": 60.00172570346959,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.00172570346959,
+            "generated": true,
+            "iteration": 66
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-31T15:21:36.000Z",
+        "value": 61.727633200024215,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.727633200024215,
+            "generated": true,
+            "iteration": 67
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-06T13:26:24.000Z",
+        "value": 65.13199129256331,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.13199129256331,
+            "generated": true,
+            "iteration": 68
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-12T11:31:12.000Z",
+        "value": 61.16523282401389,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.16523282401389,
+            "generated": true,
+            "iteration": 69
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-18T09:36:00.000Z",
+        "value": 63.214268465466816,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.214268465466816,
+            "generated": true,
+            "iteration": 70
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-24T07:40:48.000Z",
+        "value": 65.02718119714751,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.02718119714751,
+            "generated": true,
+            "iteration": 71
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-02T05:45:36.000Z",
+        "value": 60.26941537967239,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.26941537967239,
+            "generated": true,
+            "iteration": 72
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-08T03:50:24.000Z",
+        "value": 65.19275791270105,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.19275791270105,
+            "generated": true,
+            "iteration": 73
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-14T01:55:12.000Z",
+        "value": 66.14702640825783,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 66.14702640825783,
+            "generated": true,
+            "iteration": 74
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-20T00:00:00.000Z",
+        "value": 62.738330817962336,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.738330817962336,
+            "generated": true,
+            "iteration": 75
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-25T22:04:48.000Z",
+        "value": 63.29652491852936,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.29652491852936,
+            "generated": true,
+            "iteration": 76
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-31T20:09:36.000Z",
+        "value": 61.27781148163091,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.27781148163091,
+            "generated": true,
+            "iteration": 77
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-06T18:14:24.000Z",
+        "value": 64.09848713792815,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 64.09848713792815,
+            "generated": true,
+            "iteration": 78
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-12T16:19:12.000Z",
+        "value": 65.82363400793663,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.82363400793663,
+            "generated": true,
+            "iteration": 79
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-18T14:24:00.000Z",
+        "value": 63.516120815789805,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.516120815789805,
+            "generated": true,
+            "iteration": 80
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-24T12:28:48.000Z",
+        "value": 65.15907687211009,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.15907687211009,
+            "generated": true,
+            "iteration": 81
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-30T10:33:36.000Z",
+        "value": 63.30044376825901,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.30044376825901,
+            "generated": true,
+            "iteration": 82
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-06T08:38:24.000Z",
+        "value": 60.536102890777926,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 60.536102890777926,
+            "generated": true,
+            "iteration": 83
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-12T06:43:12.000Z",
+        "value": 66.42981994028523,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 66.42981994028523,
+            "generated": true,
+            "iteration": 84
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-18T04:48:00.000Z",
+        "value": 66.55157997671871,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 66.55157997671871,
+            "generated": true,
+            "iteration": 85
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-24T02:52:48.000Z",
+        "value": 65.47788558746878,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.47788558746878,
+            "generated": true,
+            "iteration": 86
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-30T00:57:36.000Z",
+        "value": 65.64471176873546,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 65.64471176873546,
+            "generated": true,
+            "iteration": 87
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-04T23:02:24.000Z",
+        "value": 64.20779758462628,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 64.20779758462628,
+            "generated": true,
+            "iteration": 88
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-10T21:07:12.000Z",
+        "value": 61.26650749953748,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.26650749953748,
+            "generated": true,
+            "iteration": 89
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-16T19:12:00.000Z",
+        "value": 66.97962757770888,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 66.97962757770888,
+            "generated": true,
+            "iteration": 90
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-22T17:16:48.000Z",
+        "value": 67.35078242994308,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 67.35078242994308,
+            "generated": true,
+            "iteration": 91
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-28T15:21:36.000Z",
+        "value": 61.985032314677184,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.985032314677184,
+            "generated": true,
+            "iteration": 92
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-04T13:26:24.000Z",
+        "value": 67.22779005571991,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 67.22779005571991,
+            "generated": true,
+            "iteration": 93
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-10T11:31:12.000Z",
+        "value": 61.79881917817344,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 61.79881917817344,
+            "generated": true,
+            "iteration": 94
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-16T09:36:00.000Z",
+        "value": 66.55708834684062,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 66.55708834684062,
+            "generated": true,
+            "iteration": 95
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T07:40:48.000Z",
+        "value": 67.08911260885554,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 67.08911260885554,
+            "generated": true,
+            "iteration": 96
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:45:36.000Z",
+        "value": 62.28605343627692,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 62.28605343627692,
+            "generated": true,
+            "iteration": 97
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T03:50:24.000Z",
+        "value": 64.65431949893761,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 64.65431949893761,
+            "generated": true,
+            "iteration": 98
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T01:55:12.000Z",
+        "value": 63.820885973400564,
+        "metadata": {
+          "kpiType": "percentage",
+          "originalData": {
+            "value": 63.820885973400564,
+            "generated": true,
+            "iteration": 99
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-15T10:44:21.898Z",
+    "metadata": {
+      "created": "2024-01-01T00:00:00.000Z",
+      "totalPoints": 100,
+      "mockGenerated": true,
+      "config": {
+        "id": "cmc-btc-dominance",
+        "type": "percentage",
+        "baseValue": 58.7,
+        "volatility": 0.05,
+        "trend": 0.001
+      }
+    }
+  },
+  "timeseries:cmc-totalmarketcap-usd": {
+    "kpiId": "cmc-totalmarketcap-usd",
+    "kpiType": "currency",
+    "dataPoints": [
+      {
+        "timestamp": "2024-01-01T00:00:00.000Z",
+        "value": 4262233735331.1626,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4262233735331.1626,
+            "generated": true,
+            "iteration": 0
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-06T22:04:48.000Z",
+        "value": 3680238229898.239,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3680238229898.239,
+            "generated": true,
+            "iteration": 1
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-12T20:09:36.000Z",
+        "value": 4272460144648.5107,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4272460144648.5107,
+            "generated": true,
+            "iteration": 2
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-18T18:14:24.000Z",
+        "value": 4222037023221.895,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4222037023221.895,
+            "generated": true,
+            "iteration": 3
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-24T16:19:12.000Z",
+        "value": 4018099200691.038,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4018099200691.038,
+            "generated": true,
+            "iteration": 4
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-30T14:24:00.000Z",
+        "value": 3886953279494.277,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3886953279494.277,
+            "generated": true,
+            "iteration": 5
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-05T12:28:48.000Z",
+        "value": 4056799389351.5767,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4056799389351.5767,
+            "generated": true,
+            "iteration": 6
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-11T10:33:36.000Z",
+        "value": 3867745959311.9155,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3867745959311.9155,
+            "generated": true,
+            "iteration": 7
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-17T08:38:24.000Z",
+        "value": 4312841724980.7065,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4312841724980.7065,
+            "generated": true,
+            "iteration": 8
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-23T06:43:12.000Z",
+        "value": 4172537780922.009,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4172537780922.009,
+            "generated": true,
+            "iteration": 9
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-29T04:48:00.000Z",
+        "value": 4368581138423.668,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4368581138423.668,
+            "generated": true,
+            "iteration": 10
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-06T02:52:48.000Z",
+        "value": 4326235489940.6714,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4326235489940.6714,
+            "generated": true,
+            "iteration": 11
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-12T00:57:36.000Z",
+        "value": 3758938622701.655,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3758938622701.655,
+            "generated": true,
+            "iteration": 12
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-17T23:02:24.000Z",
+        "value": 3898109120213.102,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3898109120213.102,
+            "generated": true,
+            "iteration": 13
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-23T21:07:12.000Z",
+        "value": 4068770242178.2227,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4068770242178.2227,
+            "generated": true,
+            "iteration": 14
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-29T19:12:00.000Z",
+        "value": 4132563867930.324,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4132563867930.324,
+            "generated": true,
+            "iteration": 15
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-04T17:16:48.000Z",
+        "value": 3797976987383.3086,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3797976987383.3086,
+            "generated": true,
+            "iteration": 16
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-10T15:21:36.000Z",
+        "value": 3927564141220.314,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3927564141220.314,
+            "generated": true,
+            "iteration": 17
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-16T13:26:24.000Z",
+        "value": 3951006339939.4233,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3951006339939.4233,
+            "generated": true,
+            "iteration": 18
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-22T11:31:12.000Z",
+        "value": 4148258960429.8374,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4148258960429.8374,
+            "generated": true,
+            "iteration": 19
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-28T09:36:00.000Z",
+        "value": 3911789691242.5586,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3911789691242.5586,
+            "generated": true,
+            "iteration": 20
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-04T07:40:48.000Z",
+        "value": 4434916159493.354,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4434916159493.354,
+            "generated": true,
+            "iteration": 21
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-10T05:45:36.000Z",
+        "value": 4458976388486.448,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4458976388486.448,
+            "generated": true,
+            "iteration": 22
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-16T03:50:24.000Z",
+        "value": 4153580417976.96,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4153580417976.96,
+            "generated": true,
+            "iteration": 23
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-22T01:55:12.000Z",
+        "value": 4491933902462.328,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4491933902462.328,
+            "generated": true,
+            "iteration": 24
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-28T00:00:00.000Z",
+        "value": 4247480398639.264,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4247480398639.264,
+            "generated": true,
+            "iteration": 25
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-02T22:04:48.000Z",
+        "value": 3989701513186.239,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3989701513186.239,
+            "generated": true,
+            "iteration": 26
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-08T20:09:36.000Z",
+        "value": 4247856870687.171,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4247856870687.171,
+            "generated": true,
+            "iteration": 27
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-14T18:14:24.000Z",
+        "value": 4314953953204.434,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4314953953204.434,
+            "generated": true,
+            "iteration": 28
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-20T16:19:12.000Z",
+        "value": 4024707184861.304,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4024707184861.304,
+            "generated": true,
+            "iteration": 29
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-26T14:24:00.000Z",
+        "value": 4557558464009.889,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4557558464009.889,
+            "generated": true,
+            "iteration": 30
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-02T12:28:48.000Z",
+        "value": 4609133638555.552,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4609133638555.552,
+            "generated": true,
+            "iteration": 31
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-08T10:33:36.000Z",
+        "value": 3953735987183.3164,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 3953735987183.3164,
+            "generated": true,
+            "iteration": 32
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-14T08:38:24.000Z",
+        "value": 4013341348493.1553,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4013341348493.1553,
+            "generated": true,
+            "iteration": 33
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-20T06:43:12.000Z",
+        "value": 4456755773300.535,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4456755773300.535,
+            "generated": true,
+            "iteration": 34
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-26T04:48:00.000Z",
+        "value": 4175899136720.3784,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4175899136720.3784,
+            "generated": true,
+            "iteration": 35
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-01T02:52:48.000Z",
+        "value": 4021142750357.991,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4021142750357.991,
+            "generated": true,
+            "iteration": 36
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-07T00:57:36.000Z",
+        "value": 4098475340104.967,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4098475340104.967,
+            "generated": true,
+            "iteration": 37
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-12T23:02:24.000Z",
+        "value": 4459663123032.134,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4459663123032.134,
+            "generated": true,
+            "iteration": 38
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-18T21:07:12.000Z",
+        "value": 4066303485619.2153,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4066303485619.2153,
+            "generated": true,
+            "iteration": 39
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-24T19:12:00.000Z",
+        "value": 4277325789915.6694,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4277325789915.6694,
+            "generated": true,
+            "iteration": 40
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-30T17:16:48.000Z",
+        "value": 4424227014991.771,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4424227014991.771,
+            "generated": true,
+            "iteration": 41
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-05T15:21:36.000Z",
+        "value": 4202674180543.752,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4202674180543.752,
+            "generated": true,
+            "iteration": 42
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-11T13:26:24.000Z",
+        "value": 4051236121059.272,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4051236121059.272,
+            "generated": true,
+            "iteration": 43
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-17T11:31:12.000Z",
+        "value": 4628016323130.627,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4628016323130.627,
+            "generated": true,
+            "iteration": 44
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-23T09:36:00.000Z",
+        "value": 4566587021755.165,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4566587021755.165,
+            "generated": true,
+            "iteration": 45
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-29T07:40:48.000Z",
+        "value": 4245456102906.8154,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4245456102906.8154,
+            "generated": true,
+            "iteration": 46
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-05T05:45:36.000Z",
+        "value": 4384125345061.851,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4384125345061.851,
+            "generated": true,
+            "iteration": 47
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-11T03:50:24.000Z",
+        "value": 4115095344090.7617,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4115095344090.7617,
+            "generated": true,
+            "iteration": 48
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-17T01:55:12.000Z",
+        "value": 4098444809060.8667,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4098444809060.8667,
+            "generated": true,
+            "iteration": 49
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-23T00:00:00.000Z",
+        "value": 4680717374993.68,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4680717374993.68,
+            "generated": true,
+            "iteration": 50
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-28T22:04:48.000Z",
+        "value": 4353765157834.7773,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4353765157834.7773,
+            "generated": true,
+            "iteration": 51
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-03T20:09:36.000Z",
+        "value": 4477539723119.91,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4477539723119.91,
+            "generated": true,
+            "iteration": 52
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-09T18:14:24.000Z",
+        "value": 4728029009877.725,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4728029009877.725,
+            "generated": true,
+            "iteration": 53
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-15T16:19:12.000Z",
+        "value": 4096034914299.6816,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4096034914299.6816,
+            "generated": true,
+            "iteration": 54
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-21T14:24:00.000Z",
+        "value": 4459630041974.271,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4459630041974.271,
+            "generated": true,
+            "iteration": 55
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-27T12:28:48.000Z",
+        "value": 4325445648508.2754,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4325445648508.2754,
+            "generated": true,
+            "iteration": 56
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-03T10:33:36.000Z",
+        "value": 4340566824756.1016,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4340566824756.1016,
+            "generated": true,
+            "iteration": 57
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-09T08:38:24.000Z",
+        "value": 4592079347243.388,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4592079347243.388,
+            "generated": true,
+            "iteration": 58
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-15T06:43:12.000Z",
+        "value": 4620552418743.362,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4620552418743.362,
+            "generated": true,
+            "iteration": 59
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-21T04:48:00.000Z",
+        "value": 4626950385656.891,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4626950385656.891,
+            "generated": true,
+            "iteration": 60
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-27T02:52:48.000Z",
+        "value": 4170535671330.6953,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4170535671330.6953,
+            "generated": true,
+            "iteration": 61
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-02T00:57:36.000Z",
+        "value": 4788765125420.374,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4788765125420.374,
+            "generated": true,
+            "iteration": 62
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-07T23:02:24.000Z",
+        "value": 4221609178583.759,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4221609178583.759,
+            "generated": true,
+            "iteration": 63
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-13T21:07:12.000Z",
+        "value": 4558474776899.371,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4558474776899.371,
+            "generated": true,
+            "iteration": 64
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-19T19:12:00.000Z",
+        "value": 4506830966109.803,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4506830966109.803,
+            "generated": true,
+            "iteration": 65
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-25T17:16:48.000Z",
+        "value": 4793515773309.743,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4793515773309.743,
+            "generated": true,
+            "iteration": 66
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-31T15:21:36.000Z",
+        "value": 4257179457412.502,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4257179457412.502,
+            "generated": true,
+            "iteration": 67
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-06T13:26:24.000Z",
+        "value": 4442036687280.722,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4442036687280.722,
+            "generated": true,
+            "iteration": 68
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-12T11:31:12.000Z",
+        "value": 4596857287535.773,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4596857287535.773,
+            "generated": true,
+            "iteration": 69
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-18T09:36:00.000Z",
+        "value": 4194837639050.906,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4194837639050.906,
+            "generated": true,
+            "iteration": 70
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-24T07:40:48.000Z",
+        "value": 4306600950482.822,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4306600950482.822,
+            "generated": true,
+            "iteration": 71
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-02T05:45:36.000Z",
+        "value": 4690714088888.541,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4690714088888.541,
+            "generated": true,
+            "iteration": 72
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-08T03:50:24.000Z",
+        "value": 4377091163732.6714,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4377091163732.6714,
+            "generated": true,
+            "iteration": 73
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-14T01:55:12.000Z",
+        "value": 4687868354199.946,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4687868354199.946,
+            "generated": true,
+            "iteration": 74
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-20T00:00:00.000Z",
+        "value": 4276512650886.0576,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4276512650886.0576,
+            "generated": true,
+            "iteration": 75
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-25T22:04:48.000Z",
+        "value": 4332623694145.659,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4332623694145.659,
+            "generated": true,
+            "iteration": 76
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-31T20:09:36.000Z",
+        "value": 4935678093309.269,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4935678093309.269,
+            "generated": true,
+            "iteration": 77
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-06T18:14:24.000Z",
+        "value": 4990380023221.189,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4990380023221.189,
+            "generated": true,
+            "iteration": 78
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-12T16:19:12.000Z",
+        "value": 4793868741525.742,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4793868741525.742,
+            "generated": true,
+            "iteration": 79
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-18T14:24:00.000Z",
+        "value": 4999687526240.872,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4999687526240.872,
+            "generated": true,
+            "iteration": 80
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-24T12:28:48.000Z",
+        "value": 4402594450426.784,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4402594450426.784,
+            "generated": true,
+            "iteration": 81
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-30T10:33:36.000Z",
+        "value": 4813075152874.127,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4813075152874.127,
+            "generated": true,
+            "iteration": 82
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-06T08:38:24.000Z",
+        "value": 4876604381599.544,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4876604381599.544,
+            "generated": true,
+            "iteration": 83
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-12T06:43:12.000Z",
+        "value": 4529652555747.418,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4529652555747.418,
+            "generated": true,
+            "iteration": 84
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-18T04:48:00.000Z",
+        "value": 4406198874571.251,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4406198874571.251,
+            "generated": true,
+            "iteration": 85
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-24T02:52:48.000Z",
+        "value": 4532342485879.685,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4532342485879.685,
+            "generated": true,
+            "iteration": 86
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-30T00:57:36.000Z",
+        "value": 5026634878306.407,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 5026634878306.407,
+            "generated": true,
+            "iteration": 87
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-04T23:02:24.000Z",
+        "value": 4957562131798.449,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4957562131798.449,
+            "generated": true,
+            "iteration": 88
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-10T21:07:12.000Z",
+        "value": 4893591404208.82,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4893591404208.82,
+            "generated": true,
+            "iteration": 89
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-16T19:12:00.000Z",
+        "value": 4991376406831.8125,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4991376406831.8125,
+            "generated": true,
+            "iteration": 90
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-22T17:16:48.000Z",
+        "value": 4662339385730.516,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4662339385730.516,
+            "generated": true,
+            "iteration": 91
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-28T15:21:36.000Z",
+        "value": 4685948849791.251,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4685948849791.251,
+            "generated": true,
+            "iteration": 92
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-04T13:26:24.000Z",
+        "value": 4659407550805.575,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4659407550805.575,
+            "generated": true,
+            "iteration": 93
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-10T11:31:12.000Z",
+        "value": 4869891898797.744,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4869891898797.744,
+            "generated": true,
+            "iteration": 94
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-16T09:36:00.000Z",
+        "value": 4471968970266.357,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4471968970266.357,
+            "generated": true,
+            "iteration": 95
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T07:40:48.000Z",
+        "value": 4910350920618.027,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4910350920618.027,
+            "generated": true,
+            "iteration": 96
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:45:36.000Z",
+        "value": 4900280448479.97,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4900280448479.97,
+            "generated": true,
+            "iteration": 97
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T03:50:24.000Z",
+        "value": 4527282443079.532,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4527282443079.532,
+            "generated": true,
+            "iteration": 98
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T01:55:12.000Z",
+        "value": 4989660015774.239,
+        "metadata": {
+          "kpiType": "currency",
+          "originalData": {
+            "value": 4989660015774.239,
+            "generated": true,
+            "iteration": 99
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-15T10:44:21.899Z",
+    "metadata": {
+      "created": "2024-01-01T00:00:00.000Z",
+      "totalPoints": 100,
+      "mockGenerated": true,
+      "config": {
+        "id": "cmc-totalmarketcap-usd",
+        "type": "currency",
+        "baseValue": 4000000000000,
+        "volatility": 0.08,
+        "trend": 0.002
+      }
+    }
+  },
+  "timeseries:cbbi-mvrv": {
+    "kpiId": "cbbi-mvrv",
+    "kpiType": "ratio",
+    "dataPoints": [
+      {
+        "timestamp": "2024-01-01T00:00:00.000Z",
+        "value": 0.75168117719282,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.75168117719282,
+            "generated": true,
+            "iteration": 0
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-06T22:04:48.000Z",
+        "value": 0.849348477458964,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.849348477458964,
+            "generated": true,
+            "iteration": 1
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-12T20:09:36.000Z",
+        "value": 0.9550902487452267,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9550902487452267,
+            "generated": true,
+            "iteration": 2
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-18T18:14:24.000Z",
+        "value": 0.702409882997495,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.702409882997495,
+            "generated": true,
+            "iteration": 3
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-24T16:19:12.000Z",
+        "value": 0.9011985517580731,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9011985517580731,
+            "generated": true,
+            "iteration": 4
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-30T14:24:00.000Z",
+        "value": 0.8148467071109358,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8148467071109358,
+            "generated": true,
+            "iteration": 5
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-05T12:28:48.000Z",
+        "value": 0.8181268193297893,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8181268193297893,
+            "generated": true,
+            "iteration": 6
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-11T10:33:36.000Z",
+        "value": 0.8217424406874749,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8217424406874749,
+            "generated": true,
+            "iteration": 7
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-17T08:38:24.000Z",
+        "value": 0.7486169582746882,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7486169582746882,
+            "generated": true,
+            "iteration": 8
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-23T06:43:12.000Z",
+        "value": 0.7924323232517643,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7924323232517643,
+            "generated": true,
+            "iteration": 9
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-29T04:48:00.000Z",
+        "value": 0.7917995190421467,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7917995190421467,
+            "generated": true,
+            "iteration": 10
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-06T02:52:48.000Z",
+        "value": 0.8608936220240188,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8608936220240188,
+            "generated": true,
+            "iteration": 11
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-12T00:57:36.000Z",
+        "value": 0.8139008274630719,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8139008274630719,
+            "generated": true,
+            "iteration": 12
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-17T23:02:24.000Z",
+        "value": 0.7553884521507306,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7553884521507306,
+            "generated": true,
+            "iteration": 13
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-23T21:07:12.000Z",
+        "value": 0.8861245637228596,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8861245637228596,
+            "generated": true,
+            "iteration": 14
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-29T19:12:00.000Z",
+        "value": 0.7032288790476854,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7032288790476854,
+            "generated": true,
+            "iteration": 15
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-04T17:16:48.000Z",
+        "value": 0.826533435033337,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.826533435033337,
+            "generated": true,
+            "iteration": 16
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-10T15:21:36.000Z",
+        "value": 0.8887598806489645,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8887598806489645,
+            "generated": true,
+            "iteration": 17
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-16T13:26:24.000Z",
+        "value": 0.7028358811427592,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7028358811427592,
+            "generated": true,
+            "iteration": 18
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-22T11:31:12.000Z",
+        "value": 0.9037685929584086,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9037685929584086,
+            "generated": true,
+            "iteration": 19
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-28T09:36:00.000Z",
+        "value": 0.7137256130425781,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7137256130425781,
+            "generated": true,
+            "iteration": 20
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-04T07:40:48.000Z",
+        "value": 0.768283831780407,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.768283831780407,
+            "generated": true,
+            "iteration": 21
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-10T05:45:36.000Z",
+        "value": 0.7860104260400409,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7860104260400409,
+            "generated": true,
+            "iteration": 22
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-16T03:50:24.000Z",
+        "value": 0.8404522937298057,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8404522937298057,
+            "generated": true,
+            "iteration": 23
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-22T01:55:12.000Z",
+        "value": 0.8333090527496017,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8333090527496017,
+            "generated": true,
+            "iteration": 24
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-28T00:00:00.000Z",
+        "value": 0.7544069917422123,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7544069917422123,
+            "generated": true,
+            "iteration": 25
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-02T22:04:48.000Z",
+        "value": 0.7966954079191918,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7966954079191918,
+            "generated": true,
+            "iteration": 26
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-08T20:09:36.000Z",
+        "value": 0.8393785950080399,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8393785950080399,
+            "generated": true,
+            "iteration": 27
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-14T18:14:24.000Z",
+        "value": 0.8029497086995924,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8029497086995924,
+            "generated": true,
+            "iteration": 28
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-20T16:19:12.000Z",
+        "value": 0.9268512162305038,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9268512162305038,
+            "generated": true,
+            "iteration": 29
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-26T14:24:00.000Z",
+        "value": 0.8913895940550066,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8913895940550066,
+            "generated": true,
+            "iteration": 30
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-02T12:28:48.000Z",
+        "value": 0.8227415824896951,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8227415824896951,
+            "generated": true,
+            "iteration": 31
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-08T10:33:36.000Z",
+        "value": 0.8956877444818758,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8956877444818758,
+            "generated": true,
+            "iteration": 32
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-14T08:38:24.000Z",
+        "value": 0.7917086454139124,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7917086454139124,
+            "generated": true,
+            "iteration": 33
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-20T06:43:12.000Z",
+        "value": 0.8099145927703819,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8099145927703819,
+            "generated": true,
+            "iteration": 34
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-26T04:48:00.000Z",
+        "value": 0.7391759574207672,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7391759574207672,
+            "generated": true,
+            "iteration": 35
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-01T02:52:48.000Z",
+        "value": 0.771353236854488,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.771353236854488,
+            "generated": true,
+            "iteration": 36
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-07T00:57:36.000Z",
+        "value": 0.7035016801998051,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7035016801998051,
+            "generated": true,
+            "iteration": 37
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-12T23:02:24.000Z",
+        "value": 0.7837476312752397,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7837476312752397,
+            "generated": true,
+            "iteration": 38
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-18T21:07:12.000Z",
+        "value": 0.7149637532568133,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7149637532568133,
+            "generated": true,
+            "iteration": 39
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-24T19:12:00.000Z",
+        "value": 0.8271026550005744,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8271026550005744,
+            "generated": true,
+            "iteration": 40
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-30T17:16:48.000Z",
+        "value": 0.7392064086069238,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7392064086069238,
+            "generated": true,
+            "iteration": 41
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-05T15:21:36.000Z",
+        "value": 0.7116678416613811,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7116678416613811,
+            "generated": true,
+            "iteration": 42
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-11T13:26:24.000Z",
+        "value": 0.8587393000764969,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8587393000764969,
+            "generated": true,
+            "iteration": 43
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-17T11:31:12.000Z",
+        "value": 0.8988387250341485,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8988387250341485,
+            "generated": true,
+            "iteration": 44
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-23T09:36:00.000Z",
+        "value": 0.8126664558736684,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8126664558736684,
+            "generated": true,
+            "iteration": 45
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-29T07:40:48.000Z",
+        "value": 0.7666168143975232,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7666168143975232,
+            "generated": true,
+            "iteration": 46
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-05T05:45:36.000Z",
+        "value": 0.7785888008098552,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7785888008098552,
+            "generated": true,
+            "iteration": 47
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-11T03:50:24.000Z",
+        "value": 0.8328106341830368,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8328106341830368,
+            "generated": true,
+            "iteration": 48
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-17T01:55:12.000Z",
+        "value": 0.8840004227466081,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8840004227466081,
+            "generated": true,
+            "iteration": 49
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-23T00:00:00.000Z",
+        "value": 0.7669204398333215,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7669204398333215,
+            "generated": true,
+            "iteration": 50
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-28T22:04:48.000Z",
+        "value": 0.8286311101587553,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8286311101587553,
+            "generated": true,
+            "iteration": 51
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-03T20:09:36.000Z",
+        "value": 0.8684000816467196,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8684000816467196,
+            "generated": true,
+            "iteration": 52
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-09T18:14:24.000Z",
+        "value": 0.8502300500044545,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8502300500044545,
+            "generated": true,
+            "iteration": 53
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-15T16:19:12.000Z",
+        "value": 0.902666109097773,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.902666109097773,
+            "generated": true,
+            "iteration": 54
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-21T14:24:00.000Z",
+        "value": 0.7661491455618419,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7661491455618419,
+            "generated": true,
+            "iteration": 55
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-27T12:28:48.000Z",
+        "value": 0.7819031467392439,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7819031467392439,
+            "generated": true,
+            "iteration": 56
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-03T10:33:36.000Z",
+        "value": 0.689149865938431,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.689149865938431,
+            "generated": true,
+            "iteration": 57
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-09T08:38:24.000Z",
+        "value": 0.856858989056865,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.856858989056865,
+            "generated": true,
+            "iteration": 58
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-15T06:43:12.000Z",
+        "value": 0.7887866709445046,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7887866709445046,
+            "generated": true,
+            "iteration": 59
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-21T04:48:00.000Z",
+        "value": 0.6887416027574428,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6887416027574428,
+            "generated": true,
+            "iteration": 60
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-27T02:52:48.000Z",
+        "value": 0.816169012757684,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.816169012757684,
+            "generated": true,
+            "iteration": 61
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-02T00:57:36.000Z",
+        "value": 0.795038871549598,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.795038871549598,
+            "generated": true,
+            "iteration": 62
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-07T23:02:24.000Z",
+        "value": 0.8164010103543293,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8164010103543293,
+            "generated": true,
+            "iteration": 63
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-13T21:07:12.000Z",
+        "value": 0.7140687589197545,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7140687589197545,
+            "generated": true,
+            "iteration": 64
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-19T19:12:00.000Z",
+        "value": 0.7484860096134217,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7484860096134217,
+            "generated": true,
+            "iteration": 65
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-25T17:16:48.000Z",
+        "value": 0.6809197190581437,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6809197190581437,
+            "generated": true,
+            "iteration": 66
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-31T15:21:36.000Z",
+        "value": 0.7328233110211204,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7328233110211204,
+            "generated": true,
+            "iteration": 67
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-06T13:26:24.000Z",
+        "value": 0.7588872581968521,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7588872581968521,
+            "generated": true,
+            "iteration": 68
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-12T11:31:12.000Z",
+        "value": 0.7962014401990886,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7962014401990886,
+            "generated": true,
+            "iteration": 69
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-18T09:36:00.000Z",
+        "value": 0.844988743895841,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.844988743895841,
+            "generated": true,
+            "iteration": 70
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-24T07:40:48.000Z",
+        "value": 0.6932709833240208,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6932709833240208,
+            "generated": true,
+            "iteration": 71
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-02T05:45:36.000Z",
+        "value": 0.6782682421856104,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6782682421856104,
+            "generated": true,
+            "iteration": 72
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-08T03:50:24.000Z",
+        "value": 0.7474202482799683,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7474202482799683,
+            "generated": true,
+            "iteration": 73
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-14T01:55:12.000Z",
+        "value": 0.7325279671183653,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7325279671183653,
+            "generated": true,
+            "iteration": 74
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-20T00:00:00.000Z",
+        "value": 0.6978125818860406,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6978125818860406,
+            "generated": true,
+            "iteration": 75
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-25T22:04:48.000Z",
+        "value": 0.751780007215805,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.751780007215805,
+            "generated": true,
+            "iteration": 76
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-31T20:09:36.000Z",
+        "value": 0.6908740799072925,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6908740799072925,
+            "generated": true,
+            "iteration": 77
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-06T18:14:24.000Z",
+        "value": 0.8211842732797592,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8211842732797592,
+            "generated": true,
+            "iteration": 78
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-12T16:19:12.000Z",
+        "value": 0.8069306538987041,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8069306538987041,
+            "generated": true,
+            "iteration": 79
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-18T14:24:00.000Z",
+        "value": 0.7471241646202271,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7471241646202271,
+            "generated": true,
+            "iteration": 80
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-24T12:28:48.000Z",
+        "value": 0.8109844798031606,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8109844798031606,
+            "generated": true,
+            "iteration": 81
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-30T10:33:36.000Z",
+        "value": 0.8562112246240658,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8562112246240658,
+            "generated": true,
+            "iteration": 82
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-06T08:38:24.000Z",
+        "value": 0.77200087071981,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.77200087071981,
+            "generated": true,
+            "iteration": 83
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-12T06:43:12.000Z",
+        "value": 0.6865442005327578,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6865442005327578,
+            "generated": true,
+            "iteration": 84
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-18T04:48:00.000Z",
+        "value": 0.7971954158276041,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7971954158276041,
+            "generated": true,
+            "iteration": 85
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-24T02:52:48.000Z",
+        "value": 0.6636089670022731,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6636089670022731,
+            "generated": true,
+            "iteration": 86
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-30T00:57:36.000Z",
+        "value": 0.6811026561632347,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.6811026561632347,
+            "generated": true,
+            "iteration": 87
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-04T23:02:24.000Z",
+        "value": 0.8233022576284303,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8233022576284303,
+            "generated": true,
+            "iteration": 88
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-10T21:07:12.000Z",
+        "value": 0.8034402945157055,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8034402945157055,
+            "generated": true,
+            "iteration": 89
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-16T19:12:00.000Z",
+        "value": 0.7974745085608368,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7974745085608368,
+            "generated": true,
+            "iteration": 90
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-22T17:16:48.000Z",
+        "value": 0.7304420903963336,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7304420903963336,
+            "generated": true,
+            "iteration": 91
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-28T15:21:36.000Z",
+        "value": 0.7723013016808806,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7723013016808806,
+            "generated": true,
+            "iteration": 92
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-04T13:26:24.000Z",
+        "value": 0.8577510324305102,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8577510324305102,
+            "generated": true,
+            "iteration": 93
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-10T11:31:12.000Z",
+        "value": 0.8406058473214757,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8406058473214757,
+            "generated": true,
+            "iteration": 94
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-16T09:36:00.000Z",
+        "value": 0.766347270226209,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.766347270226209,
+            "generated": true,
+            "iteration": 95
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T07:40:48.000Z",
+        "value": 0.7347284124335214,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7347284124335214,
+            "generated": true,
+            "iteration": 96
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:45:36.000Z",
+        "value": 0.7712412951491681,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7712412951491681,
+            "generated": true,
+            "iteration": 97
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T03:50:24.000Z",
+        "value": 0.7791025288623673,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7791025288623673,
+            "generated": true,
+            "iteration": 98
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T01:55:12.000Z",
+        "value": 0.8043139040780711,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8043139040780711,
+            "generated": true,
+            "iteration": 99
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-15T10:44:21.899Z",
+    "metadata": {
+      "created": "2024-01-01T00:00:00.000Z",
+      "totalPoints": 100,
+      "mockGenerated": true,
+      "config": {
+        "id": "cbbi-mvrv",
+        "type": "ratio",
+        "baseValue": 0.84,
+        "volatility": 0.15,
+        "trend": -0.001
+      }
+    }
+  },
+  "timeseries:cbbi-confidence": {
+    "kpiId": "cbbi-confidence",
+    "kpiType": "ratio",
+    "dataPoints": [
+      {
+        "timestamp": "2024-01-01T00:00:00.000Z",
+        "value": 0.7192003368244313,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7192003368244313,
+            "generated": true,
+            "iteration": 0
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-06T22:04:48.000Z",
+        "value": 0.8523373707792604,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8523373707792604,
+            "generated": true,
+            "iteration": 1
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-12T20:09:36.000Z",
+        "value": 0.8189041295354541,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8189041295354541,
+            "generated": true,
+            "iteration": 2
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-18T18:14:24.000Z",
+        "value": 0.709366719457518,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.709366719457518,
+            "generated": true,
+            "iteration": 3
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-24T16:19:12.000Z",
+        "value": 0.7507396533618054,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7507396533618054,
+            "generated": true,
+            "iteration": 4
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-01-30T14:24:00.000Z",
+        "value": 0.7200634415137002,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7200634415137002,
+            "generated": true,
+            "iteration": 5
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-05T12:28:48.000Z",
+        "value": 0.8633301824979803,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8633301824979803,
+            "generated": true,
+            "iteration": 6
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-11T10:33:36.000Z",
+        "value": 0.8149763055231728,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8149763055231728,
+            "generated": true,
+            "iteration": 7
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-17T08:38:24.000Z",
+        "value": 0.7252029052378332,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7252029052378332,
+            "generated": true,
+            "iteration": 8
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-23T06:43:12.000Z",
+        "value": 0.806246296700174,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.806246296700174,
+            "generated": true,
+            "iteration": 9
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-02-29T04:48:00.000Z",
+        "value": 0.8284313835870954,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8284313835870954,
+            "generated": true,
+            "iteration": 10
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-06T02:52:48.000Z",
+        "value": 0.7416043628743664,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7416043628743664,
+            "generated": true,
+            "iteration": 11
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-12T00:57:36.000Z",
+        "value": 0.8201644543499266,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8201644543499266,
+            "generated": true,
+            "iteration": 12
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-17T23:02:24.000Z",
+        "value": 0.7142546848493487,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7142546848493487,
+            "generated": true,
+            "iteration": 13
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-23T21:07:12.000Z",
+        "value": 0.7620172899919471,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7620172899919471,
+            "generated": true,
+            "iteration": 14
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-03-29T19:12:00.000Z",
+        "value": 0.79491256383439,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.79491256383439,
+            "generated": true,
+            "iteration": 15
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-04T17:16:48.000Z",
+        "value": 0.7515043140557256,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7515043140557256,
+            "generated": true,
+            "iteration": 16
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-10T15:21:36.000Z",
+        "value": 0.7365842863760325,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7365842863760325,
+            "generated": true,
+            "iteration": 17
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-16T13:26:24.000Z",
+        "value": 0.78489646378154,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.78489646378154,
+            "generated": true,
+            "iteration": 18
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-22T11:31:12.000Z",
+        "value": 0.7587707318609119,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7587707318609119,
+            "generated": true,
+            "iteration": 19
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-04-28T09:36:00.000Z",
+        "value": 0.7799899441178305,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7799899441178305,
+            "generated": true,
+            "iteration": 20
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-04T07:40:48.000Z",
+        "value": 0.7209921194110305,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7209921194110305,
+            "generated": true,
+            "iteration": 21
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-10T05:45:36.000Z",
+        "value": 0.8733397979021853,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8733397979021853,
+            "generated": true,
+            "iteration": 22
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-16T03:50:24.000Z",
+        "value": 0.7600354895701043,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7600354895701043,
+            "generated": true,
+            "iteration": 23
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-22T01:55:12.000Z",
+        "value": 0.7482030137690112,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7482030137690112,
+            "generated": true,
+            "iteration": 24
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-05-28T00:00:00.000Z",
+        "value": 0.8692280186066523,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8692280186066523,
+            "generated": true,
+            "iteration": 25
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-02T22:04:48.000Z",
+        "value": 0.765124884889279,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.765124884889279,
+            "generated": true,
+            "iteration": 26
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-08T20:09:36.000Z",
+        "value": 0.7663717402240382,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7663717402240382,
+            "generated": true,
+            "iteration": 27
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-14T18:14:24.000Z",
+        "value": 0.7423786230126103,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7423786230126103,
+            "generated": true,
+            "iteration": 28
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-20T16:19:12.000Z",
+        "value": 0.8244865858085733,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8244865858085733,
+            "generated": true,
+            "iteration": 29
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-06-26T14:24:00.000Z",
+        "value": 0.7893681513493245,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7893681513493245,
+            "generated": true,
+            "iteration": 30
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-02T12:28:48.000Z",
+        "value": 0.8420708404031723,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8420708404031723,
+            "generated": true,
+            "iteration": 31
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-08T10:33:36.000Z",
+        "value": 0.846220269664013,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.846220269664013,
+            "generated": true,
+            "iteration": 32
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-14T08:38:24.000Z",
+        "value": 0.717239109710679,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.717239109710679,
+            "generated": true,
+            "iteration": 33
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-20T06:43:12.000Z",
+        "value": 0.8849782055860438,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8849782055860438,
+            "generated": true,
+            "iteration": 34
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-07-26T04:48:00.000Z",
+        "value": 0.8918059919810972,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8918059919810972,
+            "generated": true,
+            "iteration": 35
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-01T02:52:48.000Z",
+        "value": 0.8170313153243582,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8170313153243582,
+            "generated": true,
+            "iteration": 36
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-07T00:57:36.000Z",
+        "value": 0.843156490631754,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.843156490631754,
+            "generated": true,
+            "iteration": 37
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-12T23:02:24.000Z",
+        "value": 0.7985711947682047,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7985711947682047,
+            "generated": true,
+            "iteration": 38
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-18T21:07:12.000Z",
+        "value": 0.7976583170502862,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7976583170502862,
+            "generated": true,
+            "iteration": 39
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-24T19:12:00.000Z",
+        "value": 0.8326687449060721,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8326687449060721,
+            "generated": true,
+            "iteration": 40
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-08-30T17:16:48.000Z",
+        "value": 0.8751511043771395,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8751511043771395,
+            "generated": true,
+            "iteration": 41
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-05T15:21:36.000Z",
+        "value": 0.8667704102802064,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8667704102802064,
+            "generated": true,
+            "iteration": 42
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-11T13:26:24.000Z",
+        "value": 0.7341039239061204,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7341039239061204,
+            "generated": true,
+            "iteration": 43
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-17T11:31:12.000Z",
+        "value": 0.726724710416062,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.726724710416062,
+            "generated": true,
+            "iteration": 44
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-23T09:36:00.000Z",
+        "value": 0.8280174152336103,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8280174152336103,
+            "generated": true,
+            "iteration": 45
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-09-29T07:40:48.000Z",
+        "value": 0.8942003523345025,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8942003523345025,
+            "generated": true,
+            "iteration": 46
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-05T05:45:36.000Z",
+        "value": 0.7748409228674985,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7748409228674985,
+            "generated": true,
+            "iteration": 47
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-11T03:50:24.000Z",
+        "value": 0.8903993729792832,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8903993729792832,
+            "generated": true,
+            "iteration": 48
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-17T01:55:12.000Z",
+        "value": 0.708085223757499,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.708085223757499,
+            "generated": true,
+            "iteration": 49
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-23T00:00:00.000Z",
+        "value": 0.888623822010289,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.888623822010289,
+            "generated": true,
+            "iteration": 50
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-10-28T22:04:48.000Z",
+        "value": 0.8102651637131068,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8102651637131068,
+            "generated": true,
+            "iteration": 51
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-03T20:09:36.000Z",
+        "value": 0.8564457122988834,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8564457122988834,
+            "generated": true,
+            "iteration": 52
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-09T18:14:24.000Z",
+        "value": 0.8197734847592026,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8197734847592026,
+            "generated": true,
+            "iteration": 53
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-15T16:19:12.000Z",
+        "value": 0.8963164266021133,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8963164266021133,
+            "generated": true,
+            "iteration": 54
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-21T14:24:00.000Z",
+        "value": 0.8069385075061499,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8069385075061499,
+            "generated": true,
+            "iteration": 55
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-11-27T12:28:48.000Z",
+        "value": 0.8384823566019901,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8384823566019901,
+            "generated": true,
+            "iteration": 56
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-03T10:33:36.000Z",
+        "value": 0.8281191962098112,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8281191962098112,
+            "generated": true,
+            "iteration": 57
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-09T08:38:24.000Z",
+        "value": 0.877024569854043,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.877024569854043,
+            "generated": true,
+            "iteration": 58
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-15T06:43:12.000Z",
+        "value": 0.7430236745667542,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7430236745667542,
+            "generated": true,
+            "iteration": 59
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-21T04:48:00.000Z",
+        "value": 0.8046644356257944,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8046644356257944,
+            "generated": true,
+            "iteration": 60
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2024-12-27T02:52:48.000Z",
+        "value": 0.7282123872308396,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7282123872308396,
+            "generated": true,
+            "iteration": 61
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-02T00:57:36.000Z",
+        "value": 0.7543378568935559,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7543378568935559,
+            "generated": true,
+            "iteration": 62
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-07T23:02:24.000Z",
+        "value": 0.7913872652219092,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7913872652219092,
+            "generated": true,
+            "iteration": 63
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-13T21:07:12.000Z",
+        "value": 0.8418024543567167,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8418024543567167,
+            "generated": true,
+            "iteration": 64
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-19T19:12:00.000Z",
+        "value": 0.7410177570568439,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7410177570568439,
+            "generated": true,
+            "iteration": 65
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-25T17:16:48.000Z",
+        "value": 0.8070994576781687,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8070994576781687,
+            "generated": true,
+            "iteration": 66
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-01-31T15:21:36.000Z",
+        "value": 0.7445051512070954,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7445051512070954,
+            "generated": true,
+            "iteration": 67
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-06T13:26:24.000Z",
+        "value": 0.7976032356378541,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7976032356378541,
+            "generated": true,
+            "iteration": 68
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-12T11:31:12.000Z",
+        "value": 0.7739089654043879,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7739089654043879,
+            "generated": true,
+            "iteration": 69
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-18T09:36:00.000Z",
+        "value": 0.7753087874112347,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7753087874112347,
+            "generated": true,
+            "iteration": 70
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-02-24T07:40:48.000Z",
+        "value": 0.7683908858669873,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7683908858669873,
+            "generated": true,
+            "iteration": 71
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-02T05:45:36.000Z",
+        "value": 0.8057369474729374,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8057369474729374,
+            "generated": true,
+            "iteration": 72
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-08T03:50:24.000Z",
+        "value": 0.8668781516194042,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8668781516194042,
+            "generated": true,
+            "iteration": 73
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-14T01:55:12.000Z",
+        "value": 0.8143067780905885,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8143067780905885,
+            "generated": true,
+            "iteration": 74
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-20T00:00:00.000Z",
+        "value": 0.8563999574255584,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8563999574255584,
+            "generated": true,
+            "iteration": 75
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-25T22:04:48.000Z",
+        "value": 0.919503680507523,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.919503680507523,
+            "generated": true,
+            "iteration": 76
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-03-31T20:09:36.000Z",
+        "value": 0.8702577460353299,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8702577460353299,
+            "generated": true,
+            "iteration": 77
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-06T18:14:24.000Z",
+        "value": 0.8518705938978337,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8518705938978337,
+            "generated": true,
+            "iteration": 78
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-12T16:19:12.000Z",
+        "value": 0.9144430687287783,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9144430687287783,
+            "generated": true,
+            "iteration": 79
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-18T14:24:00.000Z",
+        "value": 0.8114813193967584,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8114813193967584,
+            "generated": true,
+            "iteration": 80
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-24T12:28:48.000Z",
+        "value": 0.8071491703513227,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8071491703513227,
+            "generated": true,
+            "iteration": 81
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-04-30T10:33:36.000Z",
+        "value": 0.793828117909445,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.793828117909445,
+            "generated": true,
+            "iteration": 82
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-06T08:38:24.000Z",
+        "value": 0.8382117810183046,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8382117810183046,
+            "generated": true,
+            "iteration": 83
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-12T06:43:12.000Z",
+        "value": 0.8474431050314049,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8474431050314049,
+            "generated": true,
+            "iteration": 84
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-18T04:48:00.000Z",
+        "value": 0.900689608621497,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.900689608621497,
+            "generated": true,
+            "iteration": 85
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-24T02:52:48.000Z",
+        "value": 0.9307311031030127,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9307311031030127,
+            "generated": true,
+            "iteration": 86
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-05-30T00:57:36.000Z",
+        "value": 0.9159739096739677,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.9159739096739677,
+            "generated": true,
+            "iteration": 87
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-04T23:02:24.000Z",
+        "value": 0.8875264708016046,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8875264708016046,
+            "generated": true,
+            "iteration": 88
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-10T21:07:12.000Z",
+        "value": 0.8357275987483735,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8357275987483735,
+            "generated": true,
+            "iteration": 89
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-16T19:12:00.000Z",
+        "value": 0.8076990566152176,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8076990566152176,
+            "generated": true,
+            "iteration": 90
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-22T17:16:48.000Z",
+        "value": 0.7367002825349628,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7367002825349628,
+            "generated": true,
+            "iteration": 91
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-06-28T15:21:36.000Z",
+        "value": 0.7968556653976772,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.7968556653976772,
+            "generated": true,
+            "iteration": 92
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-04T13:26:24.000Z",
+        "value": 0.8290762147810956,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8290762147810956,
+            "generated": true,
+            "iteration": 93
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-10T11:31:12.000Z",
+        "value": 0.829467382703557,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.829467382703557,
+            "generated": true,
+            "iteration": 94
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-16T09:36:00.000Z",
+        "value": 0.8421588902758468,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8421588902758468,
+            "generated": true,
+            "iteration": 95
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-22T07:40:48.000Z",
+        "value": 0.8533646237497944,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8533646237497944,
+            "generated": true,
+            "iteration": 96
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-07-28T05:45:36.000Z",
+        "value": 0.8797840978730241,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8797840978730241,
+            "generated": true,
+            "iteration": 97
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-03T03:50:24.000Z",
+        "value": 0.8223225531566423,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8223225531566423,
+            "generated": true,
+            "iteration": 98
+          },
+          "chart": null
+        }
+      },
+      {
+        "timestamp": "2025-08-09T01:55:12.000Z",
+        "value": 0.8908522048241454,
+        "metadata": {
+          "kpiType": "ratio",
+          "originalData": {
+            "value": 0.8908522048241454,
+            "generated": true,
+            "iteration": 99
+          },
+          "chart": null
+        }
+      }
+    ],
+    "lastUpdated": "2025-08-15T10:44:21.899Z",
+    "metadata": {
+      "created": "2024-01-01T00:00:00.000Z",
+      "totalPoints": 100,
+      "mockGenerated": true,
+      "config": {
+        "id": "cbbi-confidence",
+        "type": "ratio",
+        "baseValue": 0.79,
+        "volatility": 0.12,
+        "trend": 0.0005
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "timestamp": "2025-08-20T04:12:23.080Z",
+  "summary": {
+    "passed": 27,
+    "failed": 2,
+    "total": 29
+  },
+  "requirements": {
+    "1.1": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "Cron triggers configured in scheduler wrangler.toml"
+        },
+        {
+          "status": "pass",
+          "message": "Scheduler handles scheduled events"
+        },
+        {
+          "status": "pass",
+          "message": "Scheduled event handler properly implemented"
+        }
+      ],
+      "passed": 3,
+      "failed": 0
+    },
+    "1.2": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "TraceId generation implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Job record creation in KV implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Job manager utility properly implemented"
+        }
+      ],
+      "passed": 3,
+      "failed": 0
+    },
+    "1.3": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "N8N workflow triggering implemented"
+        },
+        {
+          "status": "pass",
+          "message": "N8N trigger utility properly implemented"
+        },
+        {
+          "status": "pass",
+          "message": "KPI registry reading implemented"
+        }
+      ],
+      "passed": 3,
+      "failed": 0
+    },
+    "1.4": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "KPI data endpoint routing implemented"
+        },
+        {
+          "status": "pass",
+          "message": "KPI data handler comprehensively implemented"
+        },
+        {
+          "status": "fail",
+          "message": "Data validation and parsing not found"
+        },
+        {
+          "status": "pass",
+          "message": "Parser utility properly implemented"
+        }
+      ],
+      "passed": 3,
+      "failed": 1
+    },
+    "1.5": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "Time series storage implemented"
+        },
+        {
+          "status": "pass",
+          "message": "KPI package creation implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Job status updates implemented"
+        },
+        {
+          "status": "pass",
+          "message": "All required KV namespaces configured"
+        }
+      ],
+      "passed": 4,
+      "failed": 0
+    },
+    "1.6": {
+      "checks": [
+        {
+          "status": "fail",
+          "message": "Orchestration scheduled handler missing or incomplete"
+        },
+        {
+          "status": "pass",
+          "message": "Job monitoring logic implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Orchestration cron triggers configured"
+        },
+        {
+          "status": "pass",
+          "message": "Job monitor utility implemented"
+        }
+      ],
+      "passed": 3,
+      "failed": 1
+    },
+    "1.7": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "Queue message sending implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Job completion detection implemented"
+        },
+        {
+          "status": "pass",
+          "message": "Queue producer configuration found"
+        },
+        {
+          "status": "pass",
+          "message": "Queue manager utility implemented"
+        }
+      ],
+      "passed": 4,
+      "failed": 0
+    },
+    "1.8": {
+      "checks": [
+        {
+          "status": "pass",
+          "message": "Complete queue sequence documented in design"
+        },
+        {
+          "status": "pass",
+          "message": "Queue trigger schemas defined"
+        },
+        {
+          "status": "pass",
+          "message": "N8N aggregate workflow integration documented"
+        },
+        {
+          "status": "pass",
+          "message": "Sequential processing workflow described"
+        }
+      ],
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "status": "FAILED",
+  "successRate": "93.1"
+}

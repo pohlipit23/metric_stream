@@ -1,0 +1,539 @@
+{
+  "timestamp": "2025-08-15T05:41:20.430Z",
+  "traceId": "ingestion-test-1755236456995",
+  "summary": {
+    "n8nWorkflowsTriggered": 2,
+    "payloadsGenerated": 8,
+    "ingestionSuccessful": 8,
+    "ingestionFailed": 0,
+    "overallSuccess": true
+  },
+  "results": {
+    "n8nData": [
+      {
+        "originalKpiId": "kpi-cmc",
+        "n8nResponse": {
+          "traceId": "ingestion-test-1755236456995",
+          "timestamp": "2025-08-15T05:38:59.999Z",
+          "kpiType": "cmc-multi",
+          "kpiIds": [
+            "cmc-btc-dominance",
+            "cmc-eth-dominance",
+            "cmc-totalmarketcap-usd",
+            "cmc-stablecoinmarketcap-usd"
+          ],
+          "data": {
+            "cmc-btc-dominance": 58.700845686667,
+            "cmc-eth-dominance": 13.73161102,
+            "cmc-totalmarketcap-usd": 4033668076797.5215,
+            "cmc-stablecoinmarketcap-usd": 256380781397.11932
+          }
+        }
+      },
+      {
+        "originalKpiId": "kpi-cbbi",
+        "n8nResponse": {
+          "traceId": "ingestion-test-1755236456995",
+          "timestamp": "2025-08-14T00:00:00Z",
+          "kpiType": "cbbi-multi",
+          "kpiIds": [
+            "cbbi-btc-price-usd",
+            "cbbi-rhodl",
+            "cbbi-mvrv",
+            "cbbi-confidence"
+          ],
+          "data": {
+            "cbbi-btc-price-usd": 118137.7888,
+            "cbbi-rhodl": 0.7583,
+            "cbbi-mvrv": 0.8415,
+            "cbbi-confidence": 0.7893
+          }
+        }
+      }
+    ],
+    "ingestionPayloads": [
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cmc-btc-dominance",
+        "timestamp": "2025-08-15T05:38:59.999Z",
+        "kpiType": "cmc-multi",
+        "data": {
+          "value": 58.700845686667,
+          "originalData": {
+            "cmc-btc-dominance": 58.700845686667,
+            "cmc-eth-dominance": 13.73161102,
+            "cmc-totalmarketcap-usd": 4033668076797.5215,
+            "cmc-stablecoinmarketcap-usd": 256380781397.11932
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cmc",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.078Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cmc-eth-dominance",
+        "timestamp": "2025-08-15T05:38:59.999Z",
+        "kpiType": "cmc-multi",
+        "data": {
+          "value": 13.73161102,
+          "originalData": {
+            "cmc-btc-dominance": 58.700845686667,
+            "cmc-eth-dominance": 13.73161102,
+            "cmc-totalmarketcap-usd": 4033668076797.5215,
+            "cmc-stablecoinmarketcap-usd": 256380781397.11932
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cmc",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.078Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cmc-totalmarketcap-usd",
+        "timestamp": "2025-08-15T05:38:59.999Z",
+        "kpiType": "cmc-multi",
+        "data": {
+          "value": 4033668076797.5215,
+          "originalData": {
+            "cmc-btc-dominance": 58.700845686667,
+            "cmc-eth-dominance": 13.73161102,
+            "cmc-totalmarketcap-usd": 4033668076797.5215,
+            "cmc-stablecoinmarketcap-usd": 256380781397.11932
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cmc",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.078Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cmc-stablecoinmarketcap-usd",
+        "timestamp": "2025-08-15T05:38:59.999Z",
+        "kpiType": "cmc-multi",
+        "data": {
+          "value": 256380781397.11932,
+          "originalData": {
+            "cmc-btc-dominance": 58.700845686667,
+            "cmc-eth-dominance": 13.73161102,
+            "cmc-totalmarketcap-usd": 4033668076797.5215,
+            "cmc-stablecoinmarketcap-usd": 256380781397.11932
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cmc",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.079Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cbbi-btc-price-usd",
+        "timestamp": "2025-08-14T00:00:00Z",
+        "kpiType": "cbbi-multi",
+        "data": {
+          "value": 118137.7888,
+          "originalData": {
+            "cbbi-btc-price-usd": 118137.7888,
+            "cbbi-rhodl": 0.7583,
+            "cbbi-mvrv": 0.8415,
+            "cbbi-confidence": 0.7893
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cbbi",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.079Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cbbi-rhodl",
+        "timestamp": "2025-08-14T00:00:00Z",
+        "kpiType": "cbbi-multi",
+        "data": {
+          "value": 0.7583,
+          "originalData": {
+            "cbbi-btc-price-usd": 118137.7888,
+            "cbbi-rhodl": 0.7583,
+            "cbbi-mvrv": 0.8415,
+            "cbbi-confidence": 0.7893
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cbbi",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.079Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cbbi-mvrv",
+        "timestamp": "2025-08-14T00:00:00Z",
+        "kpiType": "cbbi-multi",
+        "data": {
+          "value": 0.8415,
+          "originalData": {
+            "cbbi-btc-price-usd": 118137.7888,
+            "cbbi-rhodl": 0.7583,
+            "cbbi-mvrv": 0.8415,
+            "cbbi-confidence": 0.7893
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cbbi",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.079Z"
+        }
+      },
+      {
+        "traceId": "ingestion-test-1755236456995",
+        "kpiId": "cbbi-confidence",
+        "timestamp": "2025-08-14T00:00:00Z",
+        "kpiType": "cbbi-multi",
+        "data": {
+          "value": 0.7893,
+          "originalData": {
+            "cbbi-btc-price-usd": 118137.7888,
+            "cbbi-rhodl": 0.7583,
+            "cbbi-mvrv": 0.8415,
+            "cbbi-confidence": 0.7893
+          }
+        },
+        "metadata": {
+          "source": "n8n-workflow",
+          "originalKpiId": "kpi-cbbi",
+          "multiKpiResponse": true,
+          "generatedAt": "2025-08-15T05:41:00.079Z"
+        }
+      }
+    ],
+    "ingestionResults": [
+      {
+        "kpiId": "cmc-btc-dominance",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-btc-dominance",
+              "status": "processed",
+              "timestamp": "2025-08-15T05:38:59.999Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cmc-btc-dominance",
+          "timestamp": "2025-08-15T05:38:59.999Z",
+          "kpiType": "cmc-multi",
+          "data": {
+            "value": 58.700845686667,
+            "originalData": {
+              "cmc-btc-dominance": 58.700845686667,
+              "cmc-eth-dominance": 13.73161102,
+              "cmc-totalmarketcap-usd": 4033668076797.5215,
+              "cmc-stablecoinmarketcap-usd": 256380781397.11932
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cmc",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.078Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cmc-eth-dominance",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-eth-dominance",
+              "status": "processed",
+              "timestamp": "2025-08-15T05:38:59.999Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cmc-eth-dominance",
+          "timestamp": "2025-08-15T05:38:59.999Z",
+          "kpiType": "cmc-multi",
+          "data": {
+            "value": 13.73161102,
+            "originalData": {
+              "cmc-btc-dominance": 58.700845686667,
+              "cmc-eth-dominance": 13.73161102,
+              "cmc-totalmarketcap-usd": 4033668076797.5215,
+              "cmc-stablecoinmarketcap-usd": 256380781397.11932
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cmc",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.078Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cmc-totalmarketcap-usd",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-totalmarketcap-usd",
+              "status": "processed",
+              "timestamp": "2025-08-15T05:38:59.999Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cmc-totalmarketcap-usd",
+          "timestamp": "2025-08-15T05:38:59.999Z",
+          "kpiType": "cmc-multi",
+          "data": {
+            "value": 4033668076797.5215,
+            "originalData": {
+              "cmc-btc-dominance": 58.700845686667,
+              "cmc-eth-dominance": 13.73161102,
+              "cmc-totalmarketcap-usd": 4033668076797.5215,
+              "cmc-stablecoinmarketcap-usd": 256380781397.11932
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cmc",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.078Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cmc-stablecoinmarketcap-usd",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cmc-stablecoinmarketcap-usd",
+              "status": "processed",
+              "timestamp": "2025-08-15T05:38:59.999Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cmc-stablecoinmarketcap-usd",
+          "timestamp": "2025-08-15T05:38:59.999Z",
+          "kpiType": "cmc-multi",
+          "data": {
+            "value": 256380781397.11932,
+            "originalData": {
+              "cmc-btc-dominance": 58.700845686667,
+              "cmc-eth-dominance": 13.73161102,
+              "cmc-totalmarketcap-usd": 4033668076797.5215,
+              "cmc-stablecoinmarketcap-usd": 256380781397.11932
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cmc",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.079Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cbbi-btc-price-usd",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cbbi-btc-price-usd",
+              "status": "processed",
+              "timestamp": "2025-08-14T00:00:00Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cbbi-btc-price-usd",
+          "timestamp": "2025-08-14T00:00:00Z",
+          "kpiType": "cbbi-multi",
+          "data": {
+            "value": 118137.7888,
+            "originalData": {
+              "cbbi-btc-price-usd": 118137.7888,
+              "cbbi-rhodl": 0.7583,
+              "cbbi-mvrv": 0.8415,
+              "cbbi-confidence": 0.7893
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cbbi",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.079Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cbbi-rhodl",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cbbi-rhodl",
+              "status": "processed",
+              "timestamp": "2025-08-14T00:00:00Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cbbi-rhodl",
+          "timestamp": "2025-08-14T00:00:00Z",
+          "kpiType": "cbbi-multi",
+          "data": {
+            "value": 0.7583,
+            "originalData": {
+              "cbbi-btc-price-usd": 118137.7888,
+              "cbbi-rhodl": 0.7583,
+              "cbbi-mvrv": 0.8415,
+              "cbbi-confidence": 0.7893
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cbbi",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.079Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cbbi-mvrv",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cbbi-mvrv",
+              "status": "processed",
+              "timestamp": "2025-08-14T00:00:00Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cbbi-mvrv",
+          "timestamp": "2025-08-14T00:00:00Z",
+          "kpiType": "cbbi-multi",
+          "data": {
+            "value": 0.8415,
+            "originalData": {
+              "cbbi-btc-price-usd": 118137.7888,
+              "cbbi-rhodl": 0.7583,
+              "cbbi-mvrv": 0.8415,
+              "cbbi-confidence": 0.7893
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cbbi",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.079Z"
+          }
+        }
+      },
+      {
+        "kpiId": "cbbi-confidence",
+        "success": true,
+        "status": 200,
+        "response": {
+          "success": true,
+          "processed": 1,
+          "skipped": 0,
+          "errors": 0,
+          "results": [
+            {
+              "kpi_id": "cbbi-confidence",
+              "status": "processed",
+              "timestamp": "2025-08-14T00:00:00Z"
+            }
+          ]
+        },
+        "payload": {
+          "traceId": "ingestion-test-1755236456995",
+          "kpiId": "cbbi-confidence",
+          "timestamp": "2025-08-14T00:00:00Z",
+          "kpiType": "cbbi-multi",
+          "data": {
+            "value": 0.7893,
+            "originalData": {
+              "cbbi-btc-price-usd": 118137.7888,
+              "cbbi-rhodl": 0.7583,
+              "cbbi-mvrv": 0.8415,
+              "cbbi-confidence": 0.7893
+            }
+          },
+          "metadata": {
+            "source": "n8n-workflow",
+            "originalKpiId": "kpi-cbbi",
+            "multiKpiResponse": true,
+            "generatedAt": "2025-08-15T05:41:00.079Z"
+          }
+        }
+      }
+    ]
+  }
+}

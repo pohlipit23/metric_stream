@@ -1,0 +1,233 @@
+{
+  "timestamp": "2025-08-19T04:58:20.700Z",
+  "testDuration": 31631,
+  "traceId": "verification-test-1755579469069",
+  "results": {
+    "kpiRegistry": {
+      "success": true,
+      "registry": {
+        "kpis": [
+          {
+            "id": "kpi-cmc",
+            "name": "Bitcoin Price",
+            "description": "Real-time Bitcoin price data from CoinMarketCap API",
+            "type": "price",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 50000,
+                "low": 30000
+              }
+            },
+            "metadata": {
+              "source": "coinmarketcap",
+              "category": "price",
+              "created": "2025-08-15T05:12:00.000Z"
+            }
+          },
+          {
+            "id": "kpi-cbbi",
+            "name": "CBBI Confidence",
+            "description": "CBBI Confidence indicatorI",
+            "type": "index",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 80,
+                "low": 20
+              }
+            },
+            "metadata": {
+              "source": "colintalkscrypto",
+              "category": "sentiment",
+              "created": "2025-08-15T05:12:00.000Z"
+            }
+          }
+        ],
+        "metadata": {
+          "lastUpdated": "2025-08-15T05:12:00.000Z",
+          "version": "1.0.0-production",
+          "totalKPIs": 2,
+          "activeKPIs": 2,
+          "environment": "production"
+        }
+      },
+      "activeKPIs": [
+        {
+          "id": "kpi-cmc",
+          "name": "Bitcoin Price",
+          "description": "Real-time Bitcoin price data from CoinMarketCap API",
+          "type": "price",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "analysisConfig": {
+            "chartType": "line",
+            "alertThresholds": {
+              "high": 50000,
+              "low": 30000
+            }
+          },
+          "metadata": {
+            "source": "coinmarketcap",
+            "category": "price",
+            "created": "2025-08-15T05:12:00.000Z"
+          }
+        },
+        {
+          "id": "kpi-cbbi",
+          "name": "CBBI Confidence",
+          "description": "CBBI Confidence indicatorI",
+          "type": "index",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "analysisConfig": {
+            "chartType": "line",
+            "alertThresholds": {
+              "high": 80,
+              "low": 20
+            }
+          },
+          "metadata": {
+            "source": "colintalkscrypto",
+            "category": "sentiment",
+            "created": "2025-08-15T05:12:00.000Z"
+          }
+        }
+      ]
+    },
+    "n8nConnectivity": {
+      "baseUrl": {
+        "success": true,
+        "status": 200,
+        "statusText": "OK"
+      },
+      "webhooks": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "success": true,
+          "status": 404,
+          "statusText": "Not Found"
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "success": true,
+          "status": 404,
+          "statusText": "Not Found"
+        }
+      ]
+    },
+    "workersHealth": [
+      {
+        "name": "Ingestion Worker",
+        "url": "https://ingestion-worker.pohlipit.workers.dev/api/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-19T04:57:47.539Z",
+          "service": "ingestion-worker",
+          "version": "1.0.0",
+          "environment": "development",
+          "kv_timeseries": "connected",
+          "kv_jobs": "connected",
+          "kv_packages": "connected"
+        }
+      },
+      {
+        "name": "Scheduler Worker",
+        "url": "https://scheduler-worker.pohlipit.workers.dev/api/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-19T04:57:48.298Z",
+          "worker": "scheduler-worker",
+          "version": "1.0.0",
+          "kvStores": {
+            "jobs": "connected",
+            "config": "connected"
+          },
+          "responseTime": 382
+        }
+      },
+      {
+        "name": "Orchestration Worker",
+        "url": "https://orchestration-worker.pohlipit.workers.dev/health",
+        "success": true,
+        "status": 200,
+        "data": {
+          "status": "healthy",
+          "timestamp": "2025-08-19T04:57:48.888Z",
+          "worker": "orchestration-worker",
+          "version": "1.0.0",
+          "kvStore": "connected",
+          "queue": "connected"
+        }
+      }
+    ],
+    "workflowTriggers": {
+      "traceId": "verification-test-1755579469069",
+      "timestamp": "2025-08-19T04:57:49.069Z",
+      "results": [
+        {
+          "kpiId": "kpi-cmc",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+          "success": false,
+          "status": 500,
+          "responseTime": 620,
+          "response": {
+            "code": 0,
+            "message": "Header name must be a valid HTTP token [\" x-api-key\"]"
+          },
+          "error": "HTTP 500: Internal Server Error"
+        },
+        {
+          "kpiId": "kpi-cbbi",
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cbbi",
+          "success": false,
+          "status": 500,
+          "responseTime": 809,
+          "response": {
+            "code": 0,
+            "message": "Header name must be a valid HTTP token [\" x-api-key\"]"
+          },
+          "error": "HTTP 500: Internal Server Error"
+        }
+      ],
+      "successCount": 0
+    },
+    "dataMonitoring": {
+      "success": true,
+      "reason": "timeout",
+      "elapsed": 30078,
+      "receivedData": [],
+      "note": "Monitoring completed - check KV stores manually for data"
+    }
+  },
+  "summary": {
+    "kpiRegistryReady": true,
+    "n8nConnectivity": true,
+    "workersHealthy": 3,
+    "totalWorkers": 3,
+    "workflowsTriggered": 0,
+    "totalWorkflows": 2,
+    "monitoringCompleted": true,
+    "overallSuccess": false
+  },
+  "recommendations": [
+    "Check N8N webhook configurations and ensure workflows are active"
+  ],
+  "nextSteps": [
+    "Check Cloudflare KV browser for data with trace ID: verification-test-1755579469069",
+    "Review N8N execution logs for workflow details",
+    "Check Ingestion Worker logs in Cloudflare dashboard",
+    "Verify job completion in Orchestration Worker",
+    "Test Scheduler Worker cron trigger functionality"
+  ]
+}

@@ -1,0 +1,164 @@
+# Daily Index Tracker - Cloudflare Configuration
+# This file defines all Cloudflare resources for the Daily Index Tracker system
+
+name = "daily-index-tracker"
+compatibility_date = "2024-08-14"
+compatibility_flags = ["nodejs_compat"]
+
+# Main configuration for the project
+main = "src/workers/index.js"
+
+# Environment configurations
+[env.production]
+name = "daily-index-tracker-prod"
+vars = { ENVIRONMENT = "production" }
+
+[env.staging]
+name = "daily-index-tracker-staging"
+vars = { ENVIRONMENT = "staging" }
+
+[env.development]
+name = "daily-index-tracker-dev"
+vars = { ENVIRONMENT = "development" }
+
+# ============================================================================
+# KV NAMESPACES
+# ============================================================================
+# KV Namespaces for storing time series data, job status, packages, and config
+
+[[kv_namespaces]]
+binding = "TIMESERIES_KV"
+id = "timeseries_namespace"
+preview_id = "timeseries_namespace_preview"
+
+[[kv_namespaces]]
+binding = "JOBS_KV"
+id = "jobs_namespace"
+preview_id = "jobs_namespace_preview"
+
+[[kv_namespaces]]
+binding = "PACKAGES_KV"
+id = "packages_namespace"
+preview_id = "packages_namespace_preview"
+
+[[kv_namespaces]]
+binding = "CONFIG_KV"
+id = "config_namespace"
+preview_id = "config_namespace_preview"
+
+# Environment-specific KV namespaces
+[env.production.kv_namespaces]
+TIMESERIES_KV = { binding = "TIMESERIES_KV", id = "timeseries_prod" }
+JOBS_KV = { binding = "JOBS_KV", id = "jobs_prod" }
+PACKAGES_KV = { binding = "PACKAGES_KV", id = "packages_prod" }
+CONFIG_KV = { binding = "CONFIG_KV", id = "config_prod" }
+
+[env.staging.kv_namespaces]
+TIMESERIES_KV = { binding = "TIMESERIES_KV", id = "timeseries_staging" }
+JOBS_KV = { binding = "JOBS_KV", id = "jobs_staging" }
+PACKAGES_KV = { binding = "PACKAGES_KV", id = "packages_staging" }
+CONFIG_KV = { binding = "CONFIG_KV", id = "config_staging" }
+
+[env.development.kv_namespaces]
+TIMESERIES_KV = { binding = "TIMESERIES_KV", id = "timeseries_dev" }
+JOBS_KV = { binding = "JOBS_KV", id = "jobs_dev" }
+PACKAGES_KV = { binding = "PACKAGES_KV", id = "packages_dev" }
+CONFIG_KV = { binding = "CONFIG_KV", id = "config_dev" }
+
+# ============================================================================
+# QUEUES
+# ============================================================================
+# Cloudflare Queues for orchestrating aggregate workflows
+
+[[queues.producers]]
+queue = "LLM_ANALYSIS_QUEUE"
+binding = "LLM_ANALYSIS_QUEUE"
+
+[[queues.producers]]
+queue = "PACKAGING_QUEUE"
+binding = "PACKAGING_QUEUE"
+
+[[queues.producers]]
+queue = "DELIVERY_QUEUE"
+binding = "DELIVERY_QUEUE"
+
+[[queues.consumers]]
+queue = "LLM_ANALYSIS_QUEUE"
+max_batch_size = 1
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "LLM_ANALYSIS_DLQ"
+
+[[queues.consumers]]
+queue = "PACKAGING_QUEUE"
+max_batch_size = 1
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "PACKAGING_DLQ"
+
+[[queues.consumers]]
+queue = "DELIVERY_QUEUE"
+max_batch_size = 1
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "DELIVERY_DLQ"
+
+# Dead Letter Queues for failed messages
+[[queues.producers]]
+queue = "LLM_ANALYSIS_DLQ"
+binding = "LLM_ANALYSIS_DLQ"
+
+[[queues.producers]]
+queue = "PACKAGING_DLQ"
+binding = "PACKAGING_DLQ"
+
+[[queues.producers]]
+queue = "DELIVERY_DLQ"
+binding = "DELIVERY_DLQ"
+
+# ============================================================================
+# R2 BUCKETS
+# ============================================================================
+# R2 bucket for long-term data archiving and document storage
+
+[[r2_buckets]]
+binding = "ARCHIVE_BUCKET"
+bucket_name = "daily-index-tracker-archive"
+preview_bucket_name = "daily-index-tracker-archive-preview"
+
+[[r2_buckets]]
+binding = "DOCUMENTS_BUCKET"
+bucket_name = "daily-index-tracker-documents"
+preview_bucket_name = "daily-index-tracker-documents-preview"
+
+# Environment-specific R2 buckets
+[env.production.r2_buckets]
+ARCHIVE_BUCKET = { binding = "ARCHIVE_BUCKET", bucket_name = "daily-index-tracker-archive-prod" }
+DOCUMENTS_BUCKET = { binding = "DOCUMENTS_BUCKET", bucket_name = "daily-index-tracker-documents-prod" }
+
+[env.staging.r2_buckets]
+ARCHIVE_BUCKET = { binding = "ARCHIVE_BUCKET", bucket_name = "daily-index-tracker-archive-staging" }
+DOCUMENTS_BUCKET = { binding = "DOCUMENTS_BUCKET", bucket_name = "daily-index-tracker-documents-staging" }
+
+[env.development.r2_buckets]
+ARCHIVE_BUCKET = { binding = "ARCHIVE_BUCKET", bucket_name = "daily-index-tracker-archive-dev" }
+DOCUMENTS_BUCKET = { binding = "DOCUMENTS_BUCKET", bucket_name = "daily-index-tracker-documents-dev" }
+
+# ============================================================================
+# CRON TRIGGERS
+# ============================================================================
+# Scheduled triggers for the system
+
+[[triggers]]
+crons = ["0 12 * * *"]  # Daily at 12:00 PM UTC
+# ============================================================================
+# WORKERS CONFIGURATION
+# ============================================================================
+# Note: Individual workers are deployed separately using their own wrangler.toml files
+# This main configuration file is for shared resources only
+
+# ============================================================================
+# FUTURE CONFIGURATIONS
+# ============================================================================
+# Additional configurations for Pages, Durable Objects, etc. will be added
+# as needed during later phases of development
