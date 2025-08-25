@@ -4,9 +4,14 @@ compatibility_date = "2024-08-15"
 
 # KV Namespaces
 [[kv_namespaces]]
-binding = "KV_STORE"
+binding = "JOBS_KV"
 id = "ba267159e4614fbb84edfc7cd902692c"
 preview_id = "f8687ea189594eb886cde37edda4264f"
+
+[[kv_namespaces]]
+binding = "CONFIG_KV"
+id = "ec1a3533310145cf8033cd84e1abd69c"
+preview_id = "2969e90d5c9c4bc0ab14caa50f7b9756"
 
 # Queues
 [[queues.producers]]

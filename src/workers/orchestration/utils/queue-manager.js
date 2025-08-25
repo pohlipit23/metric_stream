@@ -55,7 +55,7 @@ export class QueueManager {
         triggeredBy: 'orchestration-worker'
       };
 
-      await this.env.KV_STORE.put(triggerKey, JSON.stringify(triggerRecord), {
+      await this.env.JOBS_KV.put(triggerKey, JSON.stringify(triggerRecord), {
         expirationTtl: 7 * 24 * 60 * 60 // 7 days TTL
       });
       
@@ -70,7 +70,7 @@ export class QueueManager {
    */
   async getQueueTriggerHistory(traceId) {
     try {
-      const triggerKeys = await this.env.KV_STORE.list({ 
+      const triggerKeys = await this.env.JOBS_KV.list({ 
         prefix: `queue_trigger:${traceId}:` 
       });
       
@@ -78,7 +78,7 @@ export class QueueManager {
       
       for (const key of triggerKeys.keys) {
         try {
-          const triggerData = await this.env.KV_STORE.get(key.name);
+          const triggerData = await this.env.JOBS_KV.get(key.name);
           if (triggerData) {
             triggers.push(JSON.parse(triggerData));
           }

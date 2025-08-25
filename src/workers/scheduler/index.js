@@ -31,6 +31,31 @@ export default {
         return await handleHealth(request, env, ctx);
       }
 
+      // Manual trigger endpoint for testing
+      if (method === 'POST' && url.pathname === '/api/trigger') {
+        console.log('Scheduler Worker: Manual trigger requested');
+        
+        // Simulate a scheduled event
+        const mockEvent = {
+          type: 'scheduled',
+          scheduledTime: Date.now(),
+          cron: '0 */6 * * *' // Every 6 hours
+        };
+        
+        const result = await handleScheduledEvent(mockEvent, env, ctx);
+        
+        return new Response(JSON.stringify({
+          success: true,
+          message: 'Manual trigger executed',
+          job_id: result.traceId,
+          trace_id: result.traceId,
+          result: result
+        }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' }
+        });
+      }
+
       // 404 for unknown routes
       return new Response(JSON.stringify({ error: 'Not Found' }), {
         status: 404,

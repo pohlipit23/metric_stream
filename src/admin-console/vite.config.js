@@ -7,14 +7,14 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8787',
+        target: 'https://admin-console-worker.pohlipit.workers.dev',
         changeOrigin: true,
-        secure: false
+        secure: true
       },
       '/health': {
-        target: 'http://localhost:8787',
+        target: 'https://admin-console-worker.pohlipit.workers.dev',
         changeOrigin: true,
-        secure: false
+        secure: true
       }
     }
   }

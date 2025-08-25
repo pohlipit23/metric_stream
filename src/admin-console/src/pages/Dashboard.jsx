@@ -1,14 +1,45 @@
 import { Activity, BarChart3, Clock, AlertCircle } from 'lucide-react'
+import { useState, useEffect } from 'react'
 import Card from '../components/ui/Card'
 import Badge from '../components/ui/Badge'
+import { kpiAPI } from '../utils/api'
 
 function Dashboard() {
-  const stats = [
-    { name: 'Active KPIs', value: '12', icon: BarChart3, change: '+2', changeType: 'positive' },
+  const [stats, setStats] = useState([
+    { name: 'Active KPIs', value: '0', icon: BarChart3, change: '0', changeType: 'neutral' },
     { name: 'Jobs Today', value: '24', icon: Activity, change: '+4', changeType: 'positive' },
     { name: 'Avg Response Time', value: '1.2s', icon: Clock, change: '-0.3s', changeType: 'positive' },
     { name: 'Failed Jobs', value: '2', icon: AlertCircle, change: '+1', changeType: 'negative' },
-  ]
+  ])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchDashboardData = async () => {
+      try {
+        // Fetch KPI data
+        const kpis = await kpiAPI.list()
+        const activeKPIs = kpis.filter(kpi => kpi.active).length
+
+        setStats(prevStats => prevStats.map(stat => {
+          if (stat.name === 'Active KPIs') {
+            return {
+              ...stat,
+              value: activeKPIs.toString(),
+              change: activeKPIs > 0 ? `+${activeKPIs}` : '0',
+              changeType: activeKPIs > 0 ? 'positive' : 'neutral'
+            }
+          }
+          return stat
+        }))
+      } catch (error) {
+        console.error('Failed to fetch dashboard data:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchDashboardData()
+  }, [])
 
   return (
     <div>
@@ -36,12 +67,12 @@ function Dashboard() {
                     </dt>
                     <dd className="flex items-baseline">
                       <div className="text-2xl font-semibold text-gray-900">
-                        {item.value}
+                        {loading && item.name === 'Active KPIs' ? '...' : item.value}
                       </div>
-                      <div className={`ml-2 flex items-baseline text-sm font-semibold ${
-                        item.changeType === 'positive' ? 'text-green-600' : 'text-red-600'
-                      }`}>
-                        {item.change}
+                      <div className={`ml-2 flex items-baseline text-sm font-semibold ${item.changeType === 'positive' ? 'text-green-600' :
+                          item.changeType === 'negative' ? 'text-red-600' : 'text-gray-500'
+                        }`}>
+                        {loading && item.name === 'Active KPIs' ? '' : item.change}
                       </div>
                     </dd>
                   </dl>
@@ -64,10 +95,9 @@ function Dashboard() {
             ].map((job) => (
               <div key={job.id} className="flex items-center justify-between py-2">
                 <div className="flex items-center">
-                  <div className={`w-2 h-2 rounded-full mr-3 ${
-                    job.status === 'completed' ? 'bg-green-400' :
-                    job.status === 'running' ? 'bg-yellow-400' : 'bg-red-400'
-                  }`} />
+                  <div className={`w-2 h-2 rounded-full mr-3 ${job.status === 'completed' ? 'bg-green-400' :
+                      job.status === 'running' ? 'bg-yellow-400' : 'bg-red-400'
+                    }`} />
                   <span className="text-sm font-medium text-gray-900">{job.id}</span>
                 </div>
                 <span className="text-sm text-gray-500">{job.time}</span>
@@ -88,7 +118,7 @@ function Dashboard() {
                 <span className="text-sm font-medium text-gray-900">{item.component}</span>
                 <Badge variant={
                   item.status === 'healthy' ? 'success' :
-                  item.status === 'warning' ? 'warning' : 'error'
+                    item.status === 'warning' ? 'warning' : 'error'
                 }>
                   {item.status}
                 </Badge>

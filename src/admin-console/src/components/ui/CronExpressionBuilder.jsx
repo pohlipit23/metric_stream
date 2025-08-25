@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Clock, Info, Calendar } from 'lucide-react'
-import { Input } from './Input'
+import Input from './Input'
 import { Button } from './Button'
 
 function CronExpressionBuilder({ value, onChange, className = '' }) {

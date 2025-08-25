@@ -52,7 +52,7 @@ export class ConfigManager {
 
       // Override with KV store configuration (allows runtime updates)
       try {
-        const kvConfig = await this.env.KV_STORE.get('orchestration:config');
+        const kvConfig = await this.env.JOBS_KV.get('orchestration:config');
         if (kvConfig) {
           const parsedKvConfig = JSON.parse(kvConfig);
           config = { ...config, ...parsedKvConfig };
@@ -82,7 +82,7 @@ export class ConfigManager {
       // Validate the updated configuration
       const validatedConfig = this.validateConfig(updatedConfig);
       
-      await this.env.KV_STORE.put('orchestration:config', JSON.stringify(validatedConfig));
+      await this.env.JOBS_KV.put('orchestration:config', JSON.stringify(validatedConfig));
       
       console.log('Configuration updated:', validatedConfig);
       return validatedConfig;
@@ -140,7 +140,7 @@ export class ConfigManager {
    */
   async resetConfig() {
     try {
-      await this.env.KV_STORE.delete('orchestration:config');
+      await this.env.JOBS_KV.delete('orchestration:config');
       console.log('Configuration reset to defaults');
       return this.defaultConfig;
     } catch (error) {

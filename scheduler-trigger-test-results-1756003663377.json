@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-08-24T02:47:41.881Z",
+  "subtask": "Trigger Scheduler Worker via cron or manual execution",
+  "status": "failed",
+  "steps": {
+    "verifyN8N": {
+      "status": "completed",
+      "details": "N8N instance confirmed running",
+      "timestamp": "2025-08-24T02:47:42.257Z"
+    },
+    "verifyWorkerDeployments": {
+      "status": "completed",
+      "details": {
+        "ingestion": {
+          "status": "accessible",
+          "statusCode": 404,
+          "timestamp": "2025-08-24T02:47:42.342Z"
+        },
+        "scheduler": {
+          "status": "accessible",
+          "statusCode": 404,
+          "timestamp": "2025-08-24T02:47:42.406Z"
+        },
+        "orchestration": {
+          "status": "accessible",
+          "statusCode": 200,
+          "timestamp": "2025-08-24T02:47:42.843Z"
+        },
+        "adminConsole": {
+          "status": "accessible",
+          "statusCode": 503,
+          "timestamp": "2025-08-24T02:47:42.911Z"
+        }
+      },
+      "timestamp": "2025-08-24T02:47:42.911Z"
+    },
+    "triggerScheduler": {
+      "status": "completed",
+      "details": "Scheduler worker triggered successfully",
+      "jobId": "trace_20250824_024744_36xj7w73",
+      "responseStatus": 200,
+      "timestamp": "2025-08-24T02:47:43.130Z"
+    },
+    "verifyN8NWorkflows": {
+      "status": "completed",
+      "details": "N8N webhook endpoints tested",
+      "webhookTests": {
+        "http://localhost:5678/webhook/cbbi-multi": {
+          "status": "accessible",
+          "statusCode": 404,
+          "timestamp": "2025-08-24T02:47:43.254Z"
+        },
+        "http://localhost:5678/webhook/kpi-cmc": {
+          "status": "accessible",
+          "statusCode": 500,
+          "timestamp": "2025-08-24T02:47:43.350Z"
+        }
+      },
+      "timestamp": "2025-08-24T02:47:43.350Z"
+    },
+    "testDataIngestion": {
+      "status": "failed",
+      "error": "Data ingestion failed with status: 401",
+      "timestamp": "2025-08-24T02:47:43.377Z"
+    }
+  },
+  "errors": [
+    {
+      "step": "overall",
+      "error": "Data ingestion test failed: Data ingestion failed with status: 401",
+      "timestamp": "2025-08-24T02:47:43.377Z"
+    }
+  ],
+  "jobId": "trace_20250824_024744_36xj7w73"
+}

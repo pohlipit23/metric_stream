@@ -11,11 +11,11 @@ This document outlines the implementation tasks based on the `design.md` and `re
 
 **Phase 1** ✅ **COMPLETE** - N8N workflows are running and tested, data contracts are finalized
 **Phase 2** ✅ **COMPLETE** - Project structure complete, schemas implemented, Cloudflare resources configured
-**Phase 3** ✅ **COMPLETE** - Core Cloudflare Workers implemented and validated (93.1% success rate)
+**Phase 3** 🔄 **IN PROGRESS** - Core Cloudflare Workers implemented (93.1% success rate), N8N Chart Generation and LLM Analysis workflows need development
 **Phase 4** ✅ **COMPLETE** - Admin Console backend and frontend implemented
 **Phase 5+** 🔄 **IN PROGRESS** - Need to complete remaining admin console features and system hardening
 
-**Next Priority**: Complete System Configuration Management UI and implement remaining features for production readiness.
+**Next Priority**: Complete Task 3.7 (Chart Generation N8N Workflow Development) and Task 3.8 (LLM Analysis N8N Workflow Development) before proceeding with remaining features.
 
 ---
 
@@ -135,73 +135,90 @@ This document outlines the implementation tasks based on the `design.md` and `re
   - [x] **COMPLETED**: Comprehensive validation with 93.1% success rate, all core requirements 1.1-1.8 implemented
   - [x] _Requirements: 1.1-1.8_
 
-- [ ] **Task 3.6: Comprehensive End-to-End Development Environment Testing**
-  - [ ] **Setup Docker N8N Instance**: Start local N8N development instance at `http://localhost:5678`
-  - [ ] **Configure Real KPI Registry**: Set up actual KPIs in the system using real data sources (not mocks)
-    - [ ] Configure CBBI Multi KPI with webhook `http://localhost:5678/webhook/cbbi-multi`
-    - [ ] Configure CMC KPI with webhook `http://localhost:5678/webhook/kpi-cmc`
-    - [ ] Verify all KPIs are properly registered in CONFIG_KV with correct webhook URLs
-  - [ ] **Deploy All Workers**: Deploy Ingestion, Scheduler, Orchestration, and Admin Console Workers to development environment
-  - [ ] **Test Complete Data Pipeline**: Execute full end-to-end workflow using real N8N workflows
-    - [ ] Trigger Scheduler Worker via cron or manual execution
-    - [ ] Verify N8N workflows receive triggers and execute with real data sources
-    - [ ] Confirm real data ingestion through Ingestion Worker endpoints
-    - [ ] Validate data storage in KV (TIMESERIES_KV, JOBS_KV, PACKAGES_KV, CONFIG_KV)
-    - [ ] Test Orchestration Worker job completion detection and queue triggering
-    - [ ] **Test LLM Analysis Workflow**: Validate AI-powered analysis pipeline
-      - [ ] Verify `LLM_ANALYSIS_QUEUE` receives messages from Orchestration Worker
-      - [ ] Confirm N8N LLM Analysis workflow triggers and processes real KPI data
-      - [ ] Validate LLM analysis results are stored correctly in KV with proper formatting
-      - [ ] Test analysis quality and accuracy with real market data
-      - [ ] Verify `PACKAGING_QUEUE` receives trigger messages after analysis completion
-    - [ ] **Test Chart Generation Workflow**: Validate visualization pipeline
-      - [ ] Confirm N8N Chart Generation workflow receives data from packaging queue
-      - [ ] Verify chart generation using real time series data (line charts, candlestick, bar charts)
-      - [ ] Validate chart storage in Cloudflare R2 with proper URLs and metadata
-      - [ ] Test multiple chart formats (PNG, SVG, interactive HTML) generation
-      - [ ] Confirm chart quality and accuracy with real KPI data visualization
-      - [ ] Verify `DELIVERY_QUEUE` receives trigger messages after chart generation
-    - [ ] **Test Complete Packaging and Delivery**: Validate final pipeline stages
-      - [ ] Confirm N8N Packaging workflow consolidates analysis and charts correctly
-      - [ ] Verify final package creation with all components (data, analysis, charts)
-      - [ ] Test N8N Delivery workflow with real notification channels
-      - [ ] Validate delivery status updates and completion tracking
-  - [ ] **Validate Data Quality**: Ensure all stored data matches expected schemas and formats
-    - [ ] Verify time series data structure and timestamp consistency
-    - [ ] Validate KPI package creation and metadata accuracy
-    - [ ] Confirm job status tracking throughout the pipeline
-    - [ ] **Validate LLM Analysis Output**: Ensure AI analysis meets quality standards
-      - [ ] Verify analysis results follow expected JSON schema and structure
-      - [ ] Validate analysis content quality and relevance to KPI data
-      - [ ] Confirm analysis metadata (timestamps, trace_ids, confidence scores)
-      - [ ] Test analysis result storage and retrieval from KV store
-    - [ ] **Validate Chart Generation Output**: Ensure visualization quality and accuracy
-      - [ ] Verify generated charts accurately represent the underlying KPI data
-      - [ ] Validate chart metadata (dimensions, formats, timestamps, URLs)
-      - [ ] Confirm chart storage in R2 with proper access permissions
-      - [ ] Test chart rendering quality across different formats (PNG, SVG, HTML)
-      - [ ] Validate chart accessibility and responsive design compliance
-  - [ ] **Test Error Handling**: Simulate real failure scenarios and validate recovery
-    - [ ] Test N8N workflow failures and error propagation
-    - [ ] Validate timeout handling and partial data scenarios
-    - [ ] Confirm dead letter queue functionality
-  - [ ] **Performance Validation**: Measure system performance under realistic load
-    - [ ] Test with multiple concurrent KPI executions
-    - [ ] Validate KV store performance with real data volumes
-    - [ ] Measure end-to-end processing times
-    - [ ] **LLM Analysis Performance**: Validate AI processing efficiency
-      - [ ] Measure LLM analysis processing times for different data volumes
-      - [ ] Test concurrent analysis requests and queue processing capacity
-      - [ ] Validate analysis accuracy vs processing speed trade-offs
-      - [ ] Monitor memory and resource usage during analysis workflows
-    - [ ] **Chart Generation Performance**: Validate visualization processing efficiency
-      - [ ] Measure chart generation times for different chart types and data sizes
-      - [ ] Test concurrent chart generation requests and R2 storage performance
-      - [ ] Validate chart quality vs generation speed optimization
-      - [ ] Monitor R2 storage usage and access patterns during chart workflows
-  - [ ] **Documentation**: Document test results and any configuration adjustments needed
-  - [ ] **REQUIREMENT**: This testing must be completed successfully before proceeding to Phase 4
-  - [ ] _Requirements: 1.1-1.8, 10.1, 10.4, 12.1, 12.2_
+- [x] **Task 3.6: Comprehensive End-to-End Development Environment Testing**
+  - [x] **Confirm Docker N8N Instance Running**: Confirm local N8N development instance at `http://localhost:5678` is running
+  - [x] **Configure Real KPI Registry**: Set up actual KPIs in the system using real data sources (not mocks)
+    - [x] Configure CBBI Multi KPI with webhook `http://localhost:5678/webhook/cbbi-multi`
+    - [x] Configure CMC KPI with webhook `http://localhost:5678/webhook/kpi-cmc`
+    - [x] Verify all KPIs are properly registered in CONFIG_KV with correct webhook URLs
+  - [x] **Deploy All Workers**: Deploy Ingestion, Scheduler, Orchestration, and Admin Console Workers to development environment
+  - [x] **Test Complete Data Pipeline**: Execute full end-to-end workflow using real N8N workflows
+    - [x] Trigger Scheduler Worker via cron or manual execution
+    - [x] Verify N8N workflows receive triggers and execute with real data sources
+    - [x] Confirm real data ingestion through Ingestion Worker endpoints
+    - [x] Validate data storage in KV (TIMESERIES_KV, JOBS_KV, PACKAGES_KV, CONFIG_KV)
+    - [x] Test Orchestration Worker job completion detection and queue triggering
+  - [x] **Test Error Handling**: Simulate real failure scenarios and validate recovery
+    - [x] Test N8N workflow failures and error propagation
+    - [x] Validate timeout handling and partial data scenarios
+    - [x] Confirm dead letter queue functionality
+  - [x] **Performance Validation**: Measure system performance under realistic load
+    - [x] Test with multiple concurrent KPI executions
+    - [x] Validate KV store performance with real data volumes
+    - [x] Measure end-to-end processing times
+  - [x] **Documentation**: Document test results and any configuration adjustments needed
+  - [x] **REQUIREMENT**: This testing must be completed successfully before proceeding to Phase 4
+  - [x] _Requirements: 1.1-1.8, 10.1, 10.4, 12.1, 12.2_
+
+- [ ] **Task 3.7: Chart Generation N8N Workflow Development and Integration**
+  - [ ] **Develop N8N Chart Generation Workflow**: Create the missing N8N workflow for chart generation
+    - [ ] Create N8N workflow at `http://localhost:5678/webhook/chart-generation` webhook endpoint
+    - [ ] Implement workflow to receive chart generation requests from Cloudflare Workers
+    - [ ] Add KV store data access to read time series data for chart generation
+    - [ ] Implement chart generation logic using N8N Python nodes with matplotlib/plotly
+    - [ ] Add chart storage to Cloudflare R2 or external storage with proper URLs
+    - [ ] Configure workflow to trigger LLM Analysis workflow after chart completion
+  - [ ] **Test Chart Generation N8N Integration**: Validate N8N workflow integration with Cloudflare
+    - [ ] Test N8N Chart Generation workflow responds to webhook triggers from Orchestration Worker
+    - [ ] Verify workflow can access and read time series data from Cloudflare KV store
+    - [ ] Validate chart generation using real time series data (CBBI multi-indicators, CMC price data)
+    - [ ] Test chart storage and URL generation for generated visualizations
+    - [ ] Verify workflow triggers LLM Analysis workflow after successful chart generation
+  - [ ] **Validate Chart Generation Output Quality**: Ensure visualization quality and accuracy
+    - [ ] Test multiple chart types generation (line charts, candlestick charts, bar charts, indicator overlays)
+    - [ ] Verify generated charts accurately represent the underlying KPI data
+    - [ ] Validate chart metadata (dimensions, formats, timestamps, URLs, data ranges)
+    - [ ] Test chart accessibility and responsive design compliance
+    - [ ] Confirm chart quality and accuracy with real KPI data visualization
+  - [ ] **Chart Generation Error Handling**: Test failure scenarios and recovery
+    - [ ] Test chart generation failures and error propagation to LLM analysis workflow
+    - [ ] Validate KV store access failures and retry mechanisms
+    - [ ] Test invalid data handling and chart generation error reporting
+    - [ ] Verify workflow error handling and administrator notifications
+  - [ ] _Requirements: 10.2, 10.5, 10.6, 10.7, 11.3, 11.4, 12.1, 12.2_
+
+- [ ] **Task 3.8: LLM Analysis N8N Workflow Development and Integration**
+  - [ ] **Develop N8N LLM Analysis Workflow**: Create the missing N8N workflow for AI-powered analysis
+    - [ ] Create N8N workflow at `http://localhost:5678/webhook/llm-analysis` webhook endpoint
+    - [ ] Implement workflow to receive analysis requests triggered by Chart Generation workflow
+    - [ ] Add KV store data access to read KPI data, charts, and job information
+    - [ ] Implement LLM API integration (OpenRouter, Gemini, Claude) for analysis generation
+    - [ ] Add analysis result formatting and storage back to Cloudflare KV
+    - [ ] Configure workflow to trigger Packaging workflow after analysis completion
+  - [ ] **Test LLM Analysis N8N Integration**: Validate N8N workflow integration with Cloudflare
+    - [ ] Test N8N LLM Analysis workflow responds to triggers from Chart Generation workflow
+    - [ ] Verify workflow can access and read KPI data and chart references from Cloudflare KV store
+    - [ ] Validate LLM analysis workflow processes real KPI data and generated charts
+    - [ ] Test analysis result storage and retrieval from KV store with proper key patterns
+    - [ ] Verify workflow triggers Packaging workflow after successful analysis completion
+  - [ ] **Validate LLM Analysis Output Quality**: Ensure AI analysis meets quality standards
+    - [ ] Test LLM analysis with real market data (CBBI, CMC price data) and generated charts
+    - [ ] Verify analysis results follow expected JSON schema and structure
+    - [ ] Validate analysis content quality and relevance to KPI data patterns and chart insights
+    - [ ] Confirm analysis metadata (timestamps, trace_ids, confidence scores)
+    - [ ] Validate analysis accuracy against known market conditions and trends
+  - [ ] **LLM Analysis Error Handling**: Test failure scenarios and recovery
+    - [ ] Test LLM API failures and error propagation to packaging workflow
+    - [ ] Validate analysis timeout handling and partial result scenarios
+    - [ ] Test invalid data handling and error reporting
+    - [ ] Verify workflow error handling and administrator notifications
+  - [ ] **Complete Packaging and Delivery N8N Workflows**: Develop and test final pipeline stages
+    - [ ] Create N8N Packaging workflow to consolidate analysis and charts
+    - [ ] Implement final package creation with all components (data, analysis, charts)
+    - [ ] Create N8N Delivery workflow with real notification channels
+    - [ ] Test delivery status updates and completion tracking
+    - [ ] Validate end-to-end pipeline from data collection to final delivery
+  - [ ] _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 11.3, 11.4, 11.5, 11.6, 12.1, 12.2_
 
 ---
 
@@ -262,10 +279,11 @@ This document outlines the implementation tasks based on the `design.md` and `re
   - [x] Support multiple output formats (PNG, SVG, interactive HTML)
   - [x] Implement batch chart generation endpoint `/api/charts/batch`
   - [x] Add efficient processing for large time series datasets
-  - [x] **NOTE**: This is optional as N8N workflows already handle chart generation
+  - [x] **NOTE**: Cloudflare Worker is implemented but N8N workflow integration is still needed (see Task 3.7)
+  - [x] **STATUS**: Worker ready for use, but N8N chart generation workflow at `http://localhost:5678/webhook/chart-generation` needs development
   - [x] _Requirements: 10.2, 10.5, 10.6, 10.7_
 
-- [ ] **Task 5.2: Complete Monitoring Dashboard**
+- [ ] **Task 5.5: Complete Monitoring Dashboard**
   - [x] Complete the Monitoring.jsx implementation (basic structure implemented with mock data)
   - [ ] Add real-time system metrics display with live API integration
   - [ ] Implement worker status and health checks visualization with actual worker endpoints
@@ -276,28 +294,28 @@ This document outlines the implementation tasks based on the `design.md` and `re
   - [ ] Connect to Admin Console Worker monitoring endpoints for live data
   - [ ] _Requirements: 8.6, 8.7_
 
-- [x] **Task 5.2: N8N LLM Analysis Workflow Integration** ✅
-  - [x] **Note**: N8N LLM Analysis workflow is already developed and tested.
-  - [x] Queue message format for `LLM_ANALYSIS_QUEUE` trigger documented.
-  - [x] KV data access patterns and authentication methods defined.
-  - [x] Expected analysis result format documented.
-  - [x] Queue message format for triggering `PACKAGING_QUEUE` specified.
+- [ ] **Task 5.2: N8N LLM Analysis Workflow Integration**
+  - [ ] **Note**: N8N LLM Analysis workflow needs to be developed and integrated.
+  - [ ] Define queue message format for `LLM_ANALYSIS_QUEUE` trigger.
+  - [ ] Implement KV data access patterns and authentication methods.
+  - [ ] Define expected analysis result format and storage patterns.
+  - [ ] Specify queue message format for triggering `PACKAGING_QUEUE`.
 
-- [x] **Task 5.3: N8N Packaging Workflow Integration** ✅
-  - [x] **Note**: N8N Packaging workflow is already developed and tested.
-  - [x] Queue message format for `PACKAGING_QUEUE` trigger documented.
-  - [x] KV data access patterns for reading consolidated data defined.
-  - [x] R2 storage integration specifications documented.
-  - [x] Expected package format for storing in KV specified.
-  - [x] Queue message format for triggering `DELIVERY_QUEUE` defined.
+- [ ] **Task 5.3: N8N Packaging Workflow Integration**
+  - [ ] **Note**: N8N Packaging workflow needs to be developed and integrated.
+  - [ ] Define queue message format for `PACKAGING_QUEUE` trigger.
+  - [ ] Implement KV data access patterns for reading consolidated data.
+  - [ ] Integrate R2 storage for document generation and storage.
+  - [ ] Define expected package format for storing in KV.
+  - [ ] Specify queue message format for triggering `DELIVERY_QUEUE`.
 
-- [x] **Task 5.4: N8N Delivery Workflow Integration** ✅
-  - [x] **Note**: N8N Delivery workflow is already developed and tested.
-  - [x] Queue message format for `DELIVERY_QUEUE` trigger documented.
-  - [x] KV data access patterns for reading consolidated packages defined.
-  - [x] Expected delivery status update format documented.
-  - [x] Notification channel configuration requirements specified.
-  - [x] Failure-handling requirements documented including timeout detection, fallback mechanisms, and recovery integration.
+- [ ] **Task 5.4: N8N Delivery Workflow Integration**
+  - [ ] **Note**: N8N Delivery workflow needs to be developed and integrated.
+  - [ ] Define queue message format for `DELIVERY_QUEUE` trigger.
+  - [ ] Implement KV data access patterns for reading consolidated packages.
+  - [ ] Define expected delivery status update format.
+  - [ ] Configure notification channel integrations (Email, Telegram, Discord, Slack, SMS).
+  - [ ] Document failure-handling requirements including timeout detection, fallback mechanisms, and recovery integration.
 
 ---
 

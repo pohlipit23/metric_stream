@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-08-24T03:19:10.634Z",
+  "kvValidation": {
+    "CONFIG_KV": {
+      "kpiRegistry": {
+        "status": "found",
+        "kpiCount": 2,
+        "activeKPIs": 2,
+        "version": "1.0.0-development",
+        "lastUpdated": "2025-08-24T03:08:58.398Z"
+      },
+      "individualKPIs": {
+        "cbbi-multi": {
+          "status": "found",
+          "name": "CBBI Multi KPI",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/cbbi-multi"
+        },
+        "kpi-cmc": {
+          "status": "found",
+          "name": "CoinMarketCap Bitcoin Price",
+          "active": true,
+          "webhookUrl": "http://localhost:5678/webhook/kpi-cmc"
+        }
+      },
+      "metadata": {
+        "status": "found",
+        "data": {
+          "lastUpdated": "2025-08-24T03:08:58.398Z",
+          "version": "1.0.0-development",
+          "totalKPIs": 2,
+          "activeKPIs": 2,
+          "environment": "development",
+          "testingPhase": "comprehensive-end-to-end"
+        }
+      }
+    },
+    "JOBS_KV": {
+      "status": "checked",
+      "jobCount": 0,
+      "recentJobs": []
+    },
+    "TIMESERIES_KV": {
+      "status": "checked",
+      "entryCount": 0,
+      "entries": []
+    },
+    "PACKAGES_KV": {
+      "status": "checked",
+      "entryCount": 0,
+      "entries": []
+    }
+  },
+  "kpiRegistry": {
+    "kpis": [
+      {
+        "id": "cbbi-multi",
+        "name": "CBBI Multi KPI",
+        "description": "CBBI Multi-indicator analysis including price, RHODL, and confidence metrics",
+        "type": "multi-indicator",
+        "active": true,
+        "webhookUrl": "http://localhost:5678/webhook/cbbi-multi",
+        "analysisConfig": {
+          "chartType": "multi-line",
+          "indicators": [
+            "price",
+            "rhodl",
+            "confidence"
+          ],
+          "alertThresholds": {
+            "price": {
+              "high": 150000,
+              "low": 80000
+            },
+            "rhodl": {
+              "high": 0.9,
+              "low": 0.3
+            },
+            "confidence": {
+              "high": 90,
+              "low": 10
+            }
+          }
+        },
+        "metadata": {
+          "source": "colintalkscrypto",
+          "category": "multi-indicator",
+          "created": "2025-08-24T03:08:58.368Z",
+          "dataPoints": [
+            "btc-price-usd",
+            "rhodl",
+            "confidence"
+          ]
+        }
+      },
+      {
+        "id": "kpi-cmc",
+        "name": "CoinMarketCap Bitcoin Price",
+        "description": "Real-time Bitcoin price data from CoinMarketCap API",
+        "type": "price",
+        "active": true,
+        "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+        "analysisConfig": {
+          "chartType": "line",
+          "alertThresholds": {
+            "high": 150000,
+            "low": 80000
+          }
+        },
+        "metadata": {
+          "source": "coinmarketcap",
+          "category": "price",
+          "created": "2025-08-24T03:08:58.398Z"
+        }
+      }
+    ],
+    "metadata": {
+      "lastUpdated": "2025-08-24T03:08:58.398Z",
+      "version": "1.0.0-development",
+      "totalKPIs": 2,
+      "activeKPIs": 2,
+      "environment": "development",
+      "testingPhase": "comprehensive-end-to-end"
+    }
+  },
+  "errors": []
+}

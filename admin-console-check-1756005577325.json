@@ -1,0 +1,231 @@
+{
+  "timestamp": "2025-08-24T03:19:36.743Z",
+  "backendStatus": {
+    "/health": {
+      "status": "accessible",
+      "statusCode": 503,
+      "response": {
+        "status": "degraded",
+        "timestamp": "2025-08-24T03:19:38.169Z",
+        "service": "admin-console-worker",
+        "version": "1.0.0",
+        "kvStore": "error",
+        "kvError": "Cannot read properties of undefined (reading 'get')"
+      }
+    },
+    "/api/kpis": {
+      "status": "accessible",
+      "statusCode": 200,
+      "response": {
+        "success": true,
+        "data": [
+          {
+            "id": "cbbi-multi",
+            "name": "CBBI Multi KPI",
+            "description": "CBBI Multi-indicator analysis including price, RHODL, and confidence metrics",
+            "type": "multi-indicator",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/cbbi-multi",
+            "analysisConfig": {
+              "chartType": "multi-line",
+              "indicators": [
+                "price",
+                "rhodl",
+                "confidence"
+              ],
+              "alertThresholds": {
+                "price": {
+                  "high": 150000,
+                  "low": 80000
+                },
+                "rhodl": {
+                  "high": 0.9,
+                  "low": 0.3
+                },
+                "confidence": {
+                  "high": 90,
+                  "low": 10
+                }
+              }
+            },
+            "metadata": {
+              "source": "colintalkscrypto",
+              "category": "multi-indicator",
+              "created": "2025-08-24T02:51:12.482Z",
+              "dataPoints": [
+                "btc-price-usd",
+                "rhodl",
+                "confidence"
+              ]
+            }
+          },
+          {
+            "id": "kpi-cmc",
+            "name": "CoinMarketCap Bitcoin Price",
+            "description": "Real-time Bitcoin price data from CoinMarketCap API",
+            "type": "price",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 150000,
+                "low": 80000
+              }
+            },
+            "metadata": {
+              "source": "coinmarketcap",
+              "category": "price",
+              "created": "2025-08-24T02:51:12.510Z"
+            }
+          }
+        ],
+        "count": 2,
+        "metadata": {
+          "lastUpdated": "2025-08-24T02:51:12.510Z",
+          "version": "1.0.0-development",
+          "totalKPIs": 2,
+          "activeKPIs": 2,
+          "environment": "development",
+          "testingPhase": "comprehensive-end-to-end"
+        }
+      }
+    },
+    "/api/config": {
+      "status": "accessible",
+      "statusCode": 500,
+      "response": {
+        "success": false,
+        "error": "KV Store operation failed: get-system-config",
+        "error_code": "KV_STORE_ERROR",
+        "timestamp": "2025-08-24T03:19:38.473Z",
+        "context": "get-system-config"
+      }
+    },
+    "/api/jobs": {
+      "status": "accessible",
+      "statusCode": 404,
+      "response": {
+        "error": "Endpoint not found"
+      }
+    }
+  },
+  "frontendStatus": {
+    "Cloudflare Pages": {
+      "status": "failed",
+      "error": "getaddrinfo ENOTFOUND daily-index-tracker-admin.pages.dev",
+      "url": "https://daily-index-tracker-admin.pages.dev"
+    },
+    "Local Development": {
+      "status": "failed",
+      "error": "",
+      "url": "http://localhost:3000"
+    }
+  },
+  "kpiEndpoints": {
+    "/api/kpis": {
+      "status": "tested",
+      "statusCode": 200,
+      "description": "List all KPIs",
+      "response": {
+        "success": true,
+        "data": [
+          {
+            "id": "cbbi-multi",
+            "name": "CBBI Multi KPI",
+            "description": "CBBI Multi-indicator analysis including price, RHODL, and confidence metrics",
+            "type": "multi-indicator",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/cbbi-multi",
+            "analysisConfig": {
+              "chartType": "multi-line",
+              "indicators": [
+                "price",
+                "rhodl",
+                "confidence"
+              ],
+              "alertThresholds": {
+                "price": {
+                  "high": 150000,
+                  "low": 80000
+                },
+                "rhodl": {
+                  "high": 0.9,
+                  "low": 0.3
+                },
+                "confidence": {
+                  "high": 90,
+                  "low": 10
+                }
+              }
+            },
+            "metadata": {
+              "source": "colintalkscrypto",
+              "category": "multi-indicator",
+              "created": "2025-08-24T02:51:12.482Z",
+              "dataPoints": [
+                "btc-price-usd",
+                "rhodl",
+                "confidence"
+              ]
+            }
+          },
+          {
+            "id": "kpi-cmc",
+            "name": "CoinMarketCap Bitcoin Price",
+            "description": "Real-time Bitcoin price data from CoinMarketCap API",
+            "type": "price",
+            "active": true,
+            "webhookUrl": "http://localhost:5678/webhook/kpi-cmc",
+            "analysisConfig": {
+              "chartType": "line",
+              "alertThresholds": {
+                "high": 150000,
+                "low": 80000
+              }
+            },
+            "metadata": {
+              "source": "coinmarketcap",
+              "category": "price",
+              "created": "2025-08-24T02:51:12.510Z"
+            }
+          }
+        ],
+        "count": 2,
+        "metadata": {
+          "lastUpdated": "2025-08-24T02:51:12.510Z",
+          "version": "1.0.0-development",
+          "totalKPIs": 2,
+          "activeKPIs": 2,
+          "environment": "development",
+          "testingPhase": "comprehensive-end-to-end"
+        }
+      }
+    },
+    "/api/kpis/cbbi-multi": {
+      "status": "tested",
+      "statusCode": 500,
+      "description": "Get CBBI Multi KPI",
+      "response": {
+        "error": "Failed to get KPI",
+        "message": "Failed to get KPI from KV store"
+      }
+    },
+    "/api/kpis/kpi-cmc": {
+      "status": "tested",
+      "statusCode": 500,
+      "description": "Get CMC KPI",
+      "response": {
+        "error": "Failed to get KPI",
+        "message": "Failed to get KPI from KV store"
+      }
+    }
+  },
+  "instructions": [
+    "Check backend deployment and configuration",
+    "Configure Cloudflare Access authentication",
+    "Deploy or start the frontend application",
+    "Use Admin Console UI for comprehensive KPI management",
+    "Use CLI tools as backup for KPI management"
+  ]
+}

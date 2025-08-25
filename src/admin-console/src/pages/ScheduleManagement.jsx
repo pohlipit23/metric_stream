@@ -4,9 +4,9 @@ import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { Input } from '../components/ui/Input'
 import { Badge } from '../components/ui/Badge'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import LoadingSpinner from '../components/ui/LoadingSpinner'
 import CronExpressionBuilder from '../components/ui/CronExpressionBuilder'
-import { api } from '../utils/api'
+import { scheduleAPI, apiRequest } from '../utils/api'
 
 function ScheduleManagement() {
   const [scheduleConfig, setScheduleConfig] = useState(null)
@@ -53,7 +53,7 @@ function ScheduleManagement() {
     try {
       setLoading(true)
       setError(null)
-      const response = await api.get('/api/config/schedules')
+      const response = await scheduleAPI.get()
       
       if (response.success) {
         setScheduleConfig(response.data)
@@ -118,7 +118,7 @@ function ScheduleManagement() {
         return
       }
 
-      const response = await api.put('/api/config/schedules', formData)
+      const response = await scheduleAPI.update(formData)
       
       if (response.success) {
         setScheduleConfig(response.data)
@@ -157,7 +157,7 @@ function ScheduleManagement() {
   const loadScheduleStatus = async () => {
     try {
       setStatusLoading(true)
-      const response = await api.get('/api/config/schedules/status')
+      const response = await apiRequest('/config/schedules/status')
       
       if (response.success) {
         setScheduleStatus(response.data)
@@ -174,9 +174,12 @@ function ScheduleManagement() {
       setTesting(true)
       setError(null)
       
-      const response = await api.post('/api/config/schedules/test', {
-        cron_expression: formData.cron_expression,
-        timezone: formData.timezone
+      const response = await apiRequest('/config/schedules/test', {
+        method: 'POST',
+        body: JSON.stringify({
+          cron_expression: formData.cron_expression,
+          timezone: formData.timezone
+        })
       })
       
       if (response.success) {
@@ -195,7 +198,7 @@ function ScheduleManagement() {
   const loadCronTriggers = async () => {
     try {
       setTriggersLoading(true)
-      const response = await api.get('/api/config/schedules/cron-triggers')
+      const response = await apiRequest('/config/schedules/cron-triggers')
       
       if (response.success) {
         setCronTriggers(response.data)
@@ -213,7 +216,7 @@ function ScheduleManagement() {
       setError(null)
       
       const endpoint = enable ? '/api/config/schedules/enable' : '/api/config/schedules/disable'
-      const response = await api.post(endpoint)
+      const response = await apiRequest(endpoint.replace('/api', ''), { method: 'POST' })
       
       if (response.success) {
         setScheduleConfig(response.data)
@@ -239,9 +242,12 @@ function ScheduleManagement() {
       setUpdatingTriggers(true)
       setError(null)
       
-      const response = await api.post('/api/config/schedules/cron-triggers', {
-        cron_expression: scheduleConfig.cron_expression,
-        enabled: scheduleConfig.enabled
+      const response = await apiRequest('/config/schedules/cron-triggers', {
+        method: 'POST',
+        body: JSON.stringify({
+          cron_expression: scheduleConfig.cron_expression,
+          enabled: scheduleConfig.enabled
+        })
       })
       
       if (response.success) {

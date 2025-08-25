@@ -85,7 +85,7 @@ export async function handleScheduled(event, env, ctx) {
     
     // Record failed run
     try {
-      await env.KV_STORE.put('orchestration:last_error', JSON.stringify({
+      await env.JOBS_KV.put('orchestration:last_error', JSON.stringify({
         timestamp: new Date().toISOString(),
         error: error.message,
         stack: error.stack
@@ -114,7 +114,7 @@ async function recordOrchestrationRun(env, startTime, completed, timedOut, parti
       }
     };
     
-    await env.KV_STORE.put('orchestration:last_run', JSON.stringify(runStats));
+    await env.JOBS_KV.put('orchestration:last_run', JSON.stringify(runStats));
   } catch (error) {
     console.error('Failed to record orchestration run stats:', error);
   }

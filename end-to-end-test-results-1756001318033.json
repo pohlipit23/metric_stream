@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-08-24T02:08:32.259Z",
+  "traceId": "test-1756001312250",
+  "tests": {
+    "scheduler": {
+      "success": false,
+      "error": "{\"error\":\"Not Found\"}"
+    },
+    "n8nWebhooks": [
+      {
+        "webhook": "http://localhost:5678/webhook/cbbi-multi",
+        "status": 404,
+        "success": false,
+        "response": "{\"code\":404,\"message\":\"The requested webhook \\\"POST cbbi-multi\\\" is not registered.\",\"hint\":\"The workflow must be active for a production URL to run successfully. You can activate the workflow using the toggle in the top-right of the editor. Note that unlike test URL calls, production URL calls aren't shown on the canvas (only in the executions list)\"}"
+      },
+      {
+        "webhook": "http://localhost:5678/webhook/kpi-cmc",
+        "status": 500,
+        "success": true,
+        "response": "{\"code\":0,\"message\":\"Header name must be a valid HTTP token [\\\" x-api-key\\\"]\"}"
+      }
+    ],
+    "dataIngestion": [
+      {
+        "kpiId": "cbbi-multi",
+        "status": 200,
+        "success": true,
+        "response": "{\"success\":true,\"processed\":1,\"skipped\":0,\"errors\":0,\"results\":[{\"kpi_id\":\"cbbi-multi\",\"status\":\"processed\",\"timestamp\":\"2025-08-24T02:08:33.162Z\"}]}"
+      },
+      {
+        "kpiId": "kpi-cmc",
+        "status": 200,
+        "success": true,
+        "response": "{\"success\":true,\"processed\":1,\"skipped\":0,\"errors\":0,\"results\":[{\"kpi_id\":\"kpi-cmc\",\"status\":\"processed\",\"timestamp\":\"2025-08-24T02:08:33.162Z\"}]}"
+      }
+    ],
+    "kvStore": {
+      "success": false,
+      "error": "{\"error\":\"Failed to list KPIs\",\"message\":\"Failed to list KPIs from KV store\"}"
+    },
+    "orchestration": {
+      "success": false,
+      "error": "{\n  \"status\": \"degraded\",\n  \"timestamp\": \"2025-08-24T02:08:38.805Z\",\n  \"worker\": \"orchestration-worker\",\n  \"version\": \"1.0.0\",\n  \"kvStore\": \"error\",\n  \"kvError\": \"Cannot read properties of undefined (reading 'get')\",\n  \"queue\": \"connected\"\n}"
+    }
+  }
+}

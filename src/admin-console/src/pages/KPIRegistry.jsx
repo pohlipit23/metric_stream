@@ -39,14 +39,30 @@ function KPIRegistry() {
     }
   }, [isAuthenticated])
 
+  // Convert API response format to frontend format
+  const convertKpiFromApi = (apiKpi) => ({
+    ...apiKpi,
+    webhook_url: apiKpi.webhookUrl,
+    analysis_config: apiKpi.analysisConfig,
+    created_at: apiKpi.metadata?.created || new Date().toISOString()
+  })
+
+  // Convert frontend format to API format
+  const convertKpiToApi = (frontendKpi) => ({
+    ...frontendKpi,
+    webhookUrl: frontendKpi.webhook_url,
+    analysisConfig: frontendKpi.analysis_config
+  })
+
   // API Functions
   const loadKPIs = async () => {
     try {
       setLoading(true)
       setError(null)
       
-      const kpis = await kpiAPI.list()
-      setKpis(kpis)
+      const apiKpis = await kpiAPI.list()
+      const convertedKpis = apiKpis.map(convertKpiFromApi)
+      setKpis(convertedKpis)
     } catch (err) {
       console.error('Error loading KPIs:', err)
       if (err instanceof APIError) {
@@ -64,12 +80,17 @@ function KPIRegistry() {
       setSubmitting(true)
       setFormErrors({})
 
+      // Convert frontend format to API format
+      const apiKpiData = convertKpiToApi(kpiData)
+
       let savedKPI
       if (editingKpi) {
-        savedKPI = await kpiAPI.update(editingKpi.id, kpiData)
+        const apiResponse = await kpiAPI.update(editingKpi.id, apiKpiData)
+        savedKPI = convertKpiFromApi(apiResponse)
         setKpis(kpis.map(kpi => kpi.id === editingKpi.id ? savedKPI : kpi))
       } else {
-        savedKPI = await kpiAPI.create(kpiData)
+        const apiResponse = await kpiAPI.create(apiKpiData)
+        savedKPI = convertKpiFromApi(apiResponse)
         setKpis([savedKPI, ...kpis])
       }
 

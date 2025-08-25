@@ -14,3 +14,4 @@ function LoadingSpinner({ size = 'md', className = '' }) {
 }
 
 export default LoadingSpinner
+export { LoadingSpinner }

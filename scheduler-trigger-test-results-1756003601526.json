@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-08-24T02:46:40.333Z",
+  "subtask": "Trigger Scheduler Worker via cron or manual execution",
+  "status": "failed",
+  "steps": {
+    "verifyN8N": {
+      "status": "completed",
+      "details": "N8N instance confirmed running",
+      "timestamp": "2025-08-24T02:46:40.766Z"
+    },
+    "verifyWorkerDeployments": {
+      "status": "completed",
+      "details": {
+        "ingestion": {
+          "status": "accessible",
+          "statusCode": 404,
+          "timestamp": "2025-08-24T02:46:40.876Z"
+        },
+        "scheduler": {
+          "status": "accessible",
+          "statusCode": 404,
+          "timestamp": "2025-08-24T02:46:40.959Z"
+        },
+        "orchestration": {
+          "status": "accessible",
+          "statusCode": 200,
+          "timestamp": "2025-08-24T02:46:41.415Z"
+        },
+        "adminConsole": {
+          "status": "accessible",
+          "statusCode": 503,
+          "timestamp": "2025-08-24T02:46:41.495Z"
+        }
+      },
+      "timestamp": "2025-08-24T02:46:41.496Z"
+    },
+    "triggerScheduler": {
+      "status": "failed",
+      "error": "Scheduler trigger failed with status: 404",
+      "timestamp": "2025-08-24T02:46:41.525Z"
+    }
+  },
+  "errors": [
+    {
+      "step": "overall",
+      "error": "Scheduler trigger failed: Scheduler trigger failed with status: 404",
+      "timestamp": "2025-08-24T02:46:41.526Z"
+    }
+  ],
+  "jobId": null
+}

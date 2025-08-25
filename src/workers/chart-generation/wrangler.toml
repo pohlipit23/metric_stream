@@ -9,13 +9,13 @@ ENVIRONMENT = "development"
 # KV Namespaces
 [[kv_namespaces]]
 binding = "TIMESERIES_KV"
-id = "your-timeseries-kv-namespace-id"
-preview_id = "your-preview-timeseries-kv-namespace-id"
+id = "134812605b5b435eab23b4a72d8b7ced"
+preview_id = "695488b5895646f190511fe25cf90e7b"
 
 [[kv_namespaces]]
 binding = "CHARTS_KV"
-id = "your-charts-kv-namespace-id"
-preview_id = "your-preview-charts-kv-namespace-id"
+id = "935d01fc21f0462fad041b2adfc0d17a"
+preview_id = "825902cc80ad425eacf4aefc25c723dc"
 
 # R2 Buckets
 [[r2_buckets]]

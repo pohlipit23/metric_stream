@@ -16,12 +16,12 @@ export class JobMonitor {
   async getActiveJobs() {
     try {
       // List all job keys in KV store
-      const jobKeys = await this.env.KV_STORE.list({ prefix: 'job:' });
+      const jobKeys = await this.env.JOBS_KV.list({ prefix: 'job:' });
       const activeJobs = [];
 
       for (const key of jobKeys.keys) {
         try {
-          const jobData = await this.env.KV_STORE.get(key.name);
+          const jobData = await this.env.JOBS_KV.get(key.name);
           if (!jobData) continue;
 
           const job = JSON.parse(jobData);
@@ -53,7 +53,7 @@ export class JobMonitor {
   async checkJobStatus(traceId) {
     try {
       const jobKey = `job:${traceId}`;
-      const jobData = await this.env.KV_STORE.get(jobKey);
+      const jobData = await this.env.JOBS_KV.get(jobKey);
       
       if (!jobData) {
         throw new Error(`Job ${traceId} not found`);
@@ -103,7 +103,7 @@ export class JobMonitor {
   async markJobAsProcessed(traceId, finalStatus) {
     try {
       const jobKey = `job:${traceId}`;
-      const jobData = await this.env.KV_STORE.get(jobKey);
+      const jobData = await this.env.JOBS_KV.get(jobKey);
       
       if (!jobData) {
         throw new Error(`Job ${traceId} not found`);
@@ -125,7 +125,7 @@ export class JobMonitor {
         job.processingNote = 'All KPIs completed successfully';
       }
       
-      await this.env.KV_STORE.put(jobKey, JSON.stringify(job));
+      await this.env.JOBS_KV.put(jobKey, JSON.stringify(job));
       
       console.log(`Job ${traceId} marked as ${finalStatus}`);
       
@@ -140,7 +140,7 @@ export class JobMonitor {
    */
   async getJobStatistics() {
     try {
-      const jobKeys = await this.env.KV_STORE.list({ prefix: 'job:' });
+      const jobKeys = await this.env.JOBS_KV.list({ prefix: 'job:' });
       const stats = {
         total: 0,
         active: 0,
@@ -152,7 +152,7 @@ export class JobMonitor {
 
       for (const key of jobKeys.keys) {
         try {
-          const jobData = await this.env.KV_STORE.get(key.name);
+          const jobData = await this.env.JOBS_KV.get(key.name);
           if (!jobData) continue;
 
           const job = JSON.parse(jobData);

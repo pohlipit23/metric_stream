@@ -41,6 +41,8 @@ export async function handleKPIEndpoints(request, env, user) {
     } else if (path.match(/^\/api\/kpis\/[^\/]+\/sample-csv$/) && method === 'GET') {
       const kpiId = path.split('/')[3]; // Extract KPI ID from path
       response = await generateSampleCSV(kpiId, env);
+    } else if (path === '/api/kpis/migrate' && method === 'POST') {
+      response = await migrateKPIData(env);
     } else {
       response = new Response(JSON.stringify({ error: 'KPI endpoint not found' }), {
         status: 404,
@@ -68,12 +70,39 @@ export async function handleKPIEndpoints(request, env, user) {
  */
 async function listKPIs(env) {
   try {
-    const kpis = await KVOperations.listKPIs(env.KV_STORE);
+    // Use KVOperations to list KPIs from individual entries
+    const kpis = await KVOperations.listKPIs(env.CONFIG_KV);
+    
+    // Convert to the expected format for the UI
+    const formattedKPIs = kpis.map(kpi => ({
+      id: kpi.id,
+      name: kpi.name,
+      description: kpi.description,
+      type: kpi.type,
+      active: kpi.active,
+      webhookUrl: kpi.webhook_url, // Convert snake_case to camelCase for UI
+      analysisConfig: kpi.analysis_config || {},
+      metadata: {
+        ...kpi.metadata,
+        created: kpi.created_at,
+        lastModified: kpi.updated_at,
+        source: kpi.metadata?.source || 'unknown',
+        category: kpi.type
+      }
+    }));
     
     return new Response(JSON.stringify({
       success: true,
-      data: kpis,
-      count: kpis.length
+      data: formattedKPIs,
+      count: formattedKPIs.length,
+      metadata: {
+        lastUpdated: new Date().toISOString(),
+        version: '1.0.0-development',
+        totalKPIs: formattedKPIs.length,
+        activeKPIs: formattedKPIs.filter(kpi => kpi.active).length,
+        environment: 'development',
+        testingPhase: 'comprehensive-end-to-end'
+      }
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
@@ -114,7 +143,7 @@ async function createKPI(request, env, user) {
     const kpiId = generateKPIId(kpiData.name);
     
     // Check if KPI with this ID already exists
-    const existing = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const existing = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     if (existing) {
       return new Response(JSON.stringify({
         error: 'KPI with this name already exists',
@@ -140,7 +169,7 @@ async function createKPI(request, env, user) {
     };
 
     // Store in KV
-    await KVOperations.saveKPI(env.KV_STORE, kpiId, kpi);
+    await KVOperations.saveKPI(env.CONFIG_KV, kpiId, kpi);
 
     return new Response(JSON.stringify({
       success: true,
@@ -167,7 +196,7 @@ async function createKPI(request, env, user) {
  */
 async function getKPI(kpiId, env) {
   try {
-    const kpi = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const kpi = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     
     if (!kpi) {
       return new Response(JSON.stringify({
@@ -206,7 +235,7 @@ async function updateKPI(kpiId, request, env, user) {
     const updateData = await request.json();
     
     // Get existing KPI
-    const existingKPI = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const existingKPI = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     if (!existingKPI) {
       return new Response(JSON.stringify({
         error: 'KPI not found'
@@ -228,23 +257,51 @@ async function updateKPI(kpiId, request, env, user) {
       });
     }
 
+    // Convert UI format to storage format
+    const storageUpdateData = {
+      name: updateData.name,
+      description: updateData.description,
+      webhook_url: updateData.webhookUrl, // Convert camelCase to snake_case
+      analysis_config: updateData.analysisConfig || updateData.analysis_config,
+      active: updateData.active,
+      type: updateData.type
+    };
+
     // Update KPI
     const updatedKPI = {
       ...existingKPI,
-      ...updateData,
+      ...storageUpdateData,
       id: kpiId, // Ensure ID doesn't change
       created_at: existingKPI.created_at, // Preserve creation info
       created_by: existingKPI.created_by,
       updated_at: new Date().toISOString(),
-      updated_by: user.email
+      updated_by: user?.email || 'anonymous'
     };
 
     // Store updated KPI
-    await KVOperations.saveKPI(env.KV_STORE, kpiId, updatedKPI);
+    await KVOperations.saveKPI(env.CONFIG_KV, kpiId, updatedKPI);
+
+    // Convert back to UI format for response
+    const responseKPI = {
+      id: updatedKPI.id,
+      name: updatedKPI.name,
+      description: updatedKPI.description,
+      type: updatedKPI.type,
+      active: updatedKPI.active,
+      webhookUrl: updatedKPI.webhook_url,
+      analysisConfig: updatedKPI.analysis_config || {},
+      metadata: {
+        ...updatedKPI.metadata,
+        created: updatedKPI.created_at,
+        lastModified: updatedKPI.updated_at,
+        source: updatedKPI.metadata?.source || 'unknown',
+        category: updatedKPI.type
+      }
+    };
 
     return new Response(JSON.stringify({
       success: true,
-      data: updatedKPI
+      data: responseKPI
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
@@ -268,7 +325,7 @@ async function updateKPI(kpiId, request, env, user) {
 async function deleteKPI(kpiId, env, user) {
   try {
     // Check if KPI exists
-    const existingKPI = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const existingKPI = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     if (!existingKPI) {
       return new Response(JSON.stringify({
         error: 'KPI not found'
@@ -279,7 +336,7 @@ async function deleteKPI(kpiId, env, user) {
     }
 
     // Delete KPI from KV
-    await KVOperations.deleteKPI(env.KV_STORE, kpiId);
+    await KVOperations.deleteKPI(env.CONFIG_KV, kpiId);
 
     // Log deletion
     console.log(`KPI ${kpiId} deleted by ${user.email}`);
@@ -310,7 +367,7 @@ async function deleteKPI(kpiId, env, user) {
 async function generateSampleCSV(kpiId, env) {
   try {
     // Check if KPI exists
-    const kpi = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const kpi = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     if (!kpi) {
       return new Response(JSON.stringify({
         error: 'KPI not found'
@@ -321,7 +378,7 @@ async function generateSampleCSV(kpiId, env) {
     }
 
     // Generate sample CSV content
-    const csvContent = await KVOperations.generateSampleCSVForKPI(env.KV_STORE, kpiId, kpi);
+    const csvContent = await KVOperations.generateSampleCSVForKPI(env.CONFIG_KV, kpiId, kpi);
 
     return new Response(csvContent, {
       status: 200,
@@ -344,12 +401,84 @@ async function generateSampleCSV(kpiId, env) {
 }
 
 /**
+ * Migrate KPI data from registry format to individual KV entries
+ */
+async function migrateKPIData(env) {
+  try {
+    // Get the current registry data
+    const registryData = await env.CONFIG_KV.get('kpi-registry', 'json');
+    
+    if (!registryData || !registryData.kpis) {
+      return new Response(JSON.stringify({
+        success: true,
+        message: 'No KPI registry data found to migrate'
+      }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    const migratedKPIs = [];
+    const errors = [];
+
+    // Migrate each KPI to individual entries
+    for (const kpi of registryData.kpis) {
+      try {
+        // Convert to the expected format
+        const migratedKPI = {
+          id: kpi.id,
+          name: kpi.name,
+          description: kpi.description,
+          webhook_url: kpi.webhookUrl, // Convert camelCase to snake_case
+          analysis_config: kpi.analysisConfig || {},
+          active: kpi.active !== false,
+          created_at: kpi.metadata?.created || new Date().toISOString(),
+          created_by: 'system-migration',
+          updated_at: kpi.metadata?.lastModified || new Date().toISOString(),
+          updated_by: 'system-migration',
+          type: kpi.type,
+          metadata: kpi.metadata || {}
+        };
+
+        // Save individual KPI entry
+        await KVOperations.saveKPI(env.CONFIG_KV, kpi.id, migratedKPI);
+        migratedKPIs.push(kpi.id);
+      } catch (error) {
+        errors.push(`Failed to migrate KPI ${kpi.id}: ${error.message}`);
+      }
+    }
+
+    return new Response(JSON.stringify({
+      success: true,
+      message: 'KPI data migration completed',
+      migrated_kpis: migratedKPIs,
+      errors: errors.length > 0 ? errors : null,
+      migrated_count: migratedKPIs.length,
+      error_count: errors.length
+    }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+  } catch (error) {
+    console.error('Error migrating KPI data:', error);
+    return new Response(JSON.stringify({
+      error: 'Failed to migrate KPI data',
+      message: error.message
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+}
+
+/**
  * Import historical data for a KPI
  */
 async function importHistoricalData(kpiId, request, env, user) {
   try {
     // Check if KPI exists
-    const kpi = await KVOperations.getKPI(env.KV_STORE, kpiId);
+    const kpi = await KVOperations.getKPI(env.CONFIG_KV, kpiId);
     if (!kpi) {
       return new Response(JSON.stringify({
         error: 'KPI not found'
@@ -364,7 +493,7 @@ async function importHistoricalData(kpiId, request, env, user) {
     
     // Process CSV and validate data
     const importResult = await KVOperations.importHistoricalData(
-      env.KV_STORE, 
+      env.CONFIG_KV, 
       kpiId, 
       csvData, 
       user.email

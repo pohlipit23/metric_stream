@@ -823,8 +823,9 @@ async function getRecentExecutions(kvStore) {
     console.error('Error getting execution history:', error);
     return [];
   }
-}/
-**
+}
+
+/**
  * Get current Cloudflare Cron Triggers configuration
  */
 async function getCronTriggers(env) {
